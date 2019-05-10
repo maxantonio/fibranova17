@@ -1,0 +1,137 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    {% block head %}
+        {% include 'partials/head.html' %}
+    {% endblock %}
+
+    {% block otherstyles %}
+
+    {% endblock %}
+</head>
+<body>
+<div class="page-wrapper">
+
+    <!-- Preloader -->
+    <div class="preloader"></div>
+
+    <!-- Main Header-->
+    <header class="main-header">
+
+        <!--Header-Upper-->
+        {# Revisar overflow #}
+        <div class="header-upper">
+            <div class="auto-container">
+                <div class="clearfix">
+
+                    <div class="logo-outer">
+                        <div class="logo"><a href="{% url 'frontend:index' %}"><img src="{% static 'images/logo.png' %}"
+                                                                                    alt=""
+                                                                                    title=""></a></div>
+                    </div>
+
+                    <div class="upper-right clearfix">
+
+                        <div class="nav-outer clearfix">
+                            <!-- Main Menu -->
+                            <nav class="main-menu">
+                                <div class="navbar-header">
+                                    <!-- Toggle Button -->
+                                    <button type="button" class="navbar-toggle" data-toggle="collapse"
+                                            data-target=".navbar-collapse">
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                    </button>
+                                </div>
+
+                                <div class="navbar-collapse collapse clearfix">
+                                    <ul class="navigation clearfix">
+                                        {% include 'partials/menu.html' %}
+                                    </ul>
+                                </div>
+                            </nav>
+                            <!-- Main Menu End-->
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!--End Header Upper-->
+
+        <!--Sticky Header-->
+        <div class="sticky-header">
+            <div class="auto-container clearfix">
+                <!--Logo-->
+                <div class="logo pull-left">
+                    <a href="index.html" class="img-responsive" title="Investing"><img
+                            src="{% static 'images/logo-small.png' %}"
+                            alt="Investing"
+                            title="Investing"></a>
+                </div>
+
+                <!--Right Col-->
+                <div class="right-col pull-right">
+                    <!-- Main Menu -->
+                    <nav class="main-menu">
+                        <div class="navbar-header">
+                            <!-- Toggle Button -->
+                            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                                    data-target=".navbar-collapse">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+
+                        <div class="navbar-collapse collapse clearfix">
+                            <ul class="navigation clearfix">
+                                {% include 'partials/menu.html' %}
+                            </ul>
+                        </div>
+                    </nav><!-- Main Menu End-->
+                </div>
+
+            </div>
+        </div>
+        <!--End Sticky Header-->
+
+    </header>
+    <!--End Main Header -->
+
+    {% if request.path == '/' %}
+        <!--Main Slider-->
+        {% include 'partials/slider.html' %}
+        <!--End Main Slider-->
+    {% else %}
+        <!--Page Title-->
+        {% include 'partials/breadcrumb.html' %}
+        <!--End Page Title-->
+    {% endif %}
+
+    {% block content %}
+
+    {% endblock %}
+
+    <!--Main Footer-->
+    {% include 'partials/footer.html' %}
+    <!--End Footer-->
+
+</div>
+<!--End pagewrapper-->
+
+<!--Scroll to top-->
+<div class="scroll-to-top scroll-to-target" data-target="html"><span class="icon fa fa-arrow-up"></span></div>
+
+{% block scripts %}
+    {% include 'partials/scripts.html' %}
+{% endblock %}
+
+{% block otherscripts %}
+
+{% endblock %}
+</body>
+</html>
