@@ -6,50 +6,35 @@
         <li><a href="{% url 'frontend:perfil-estrategia' %}">Estrategia</a></li>
     </ul>
 </li>
-<li class="dropdown"><a href="#">About</a>
+<li class="dropdown"><a href="#">Portafolio</a>
+    {#    <ul>#}
+    {#        <li><a href="{% url '' %}">Directivos</a></li>#}
+    {#    </ul>#}
+</li>
+<li class="dropdown"><a href="#">Inversionistas</a>
     <ul>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="faqs.html">FAQs</a></li>
-        <li><a href="team.html">Our Team</a></li>
-        <li><a href="testimonial.html">Testimonial</a></li>
-        <li><a href="error-page.html">Error 404</a></li>
-        <li><a href="commingsoon.html">Comming soon</a></li>
+        <li><a href="{% url 'frontend:inversionistas-reportes-trimestrales' %}">Reportes Trimestrales</a></li>
+        <li><a href="{% url 'frontend:inversionistas-reportes-anuales' %}">Reportes Anuales</a></li>
+        <li><a href="{% url 'frontend:inversionistas-fundamentales' %}">Fundamentales</a></li>
+        <li><a href="{% url 'frontend:inversionistas-eventos-relevantes' %}">Eventos Relevantes</a></li>
+        <li><a href="{% url 'frontend:inversionistas-faqs' %}">FAQs</a></li>
     </ul>
 </li>
-<li class="dropdown"><a href="#">Services</a>
+<li class="dropdown"><a href="#">Información Bursátil</a>
     <ul>
-        <li><a href="services.html">services</a></li>
-        <li><a href="services-single.html">Financial Advise</a></li>
-        <li><a href="services-single.html">Market Research</a></li>
-        <li><a href="services-single.html">Sales & Trading</a></li>
-        <li><a href="services-single.html">Performance & Growth</a></li>
-        <li><a href="services-single.html">Consulting</a></li>
-        <li><a href="services-single.html">Immigration Services</a></li>
+        <li><a href="{% url 'frontend:bursatil-cotizacion' %}">Cotización</a></li>
+        <li><a href="{% url 'frontend:bursatil-precio-historico' %}">Precio Historico</a></li>
+        <li><a href="{% url 'frontend:bursatil-distribuciones' %}">Distribuciones</a></li>
     </ul>
 </li>
-<li class="dropdown"><a href="#">Projects</a>
+<li class="dropdown"><a href="#">Gobierno Corporativo</a>
     <ul>
-        <li><a href="projects-1.html">Projects Standard</a></li>
-        <li><a href="projects-2.html">Projects Modern</a></li>
-        <li><a href="projects-3.html">Projects Masonry</a></li>
-        <li><a href="projects-4.html">Projects Fullwidth</a></li>
-        <li><a href="projects-5.html">Projects With Sidebar</a></li>
-        <li><a href="project-details.html">Project Details</a></li>
+        <li><a href="{% url 'frontend:gobierno-directivos' %}">Directivos</a></li>
+        <li><a href="{% url 'frontend:gobierno-comites' %}">Comites</a></li>
+        <li><a href="{% url 'frontend:gobierno-auditor-externo' %}">Auditor Externo</a></li>
+        <li><a href="{% url 'frontend:gobierno-prospectos-suplementos' %}">Prospectos y Suplementos</a></li>
+        <li><a href="{% url 'frontend:gobierno-asambleas' %}">Asambleas</a></li>
+        <li><a href="{% url 'frontend:gobierno-codigo-etica' %}">Código de etica</a></li>
     </ul>
 </li>
-<li class="dropdown"><a href="#">Shop</a>
-    <ul>
-        <li><a href="shop.html">Our Shop</a></li>
-        <li><a href="shop-single.html">Product Details</a></li>
-        <li><a href="shopping-cart.html">Shopping Cart</a></li>
-        <li><a href="checkout.html">Checkout</a></li>
-    </ul>
-</li>
-<li class="dropdown"><a href="#">Blog</a>
-    <ul>
-        <li><a href="blog.html">Blog Classic View</a></li>
-        <li><a href="blog-grid.html">Blog Grid View</a></li>
-        <li><a href="blog-details.html">Blog Details</a></li>
-    </ul>
-</li>
-<li><a href="contact.html">Contact</a></li>
+<li><a href="{% url 'frontend:contacto' %}">Contacto</a></li>
