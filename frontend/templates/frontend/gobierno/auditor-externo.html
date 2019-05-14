@@ -1,16 +1,20 @@
 {% extends 'layouts/base.html' %}
-
+{% load static %}
 {% block content %}
     <section class="default-section">
         <div class="auto-container">
-            <div class="row clearfix">
+            <div class="row clearfix mb-20">
                 <p>Nuestro Auditor Externo es Mancera, S.C., integrante de Ernst &
-                  Young Global Limited quien no ha emitido alguna opinión con salvedad,
-                  ni negativa, así como tampoco se han abstenido de emitir opinión acerca 
-                  de los estados financieros de Fibra Nova. </p>
+                    Young Global Limited quien no ha emitido alguna opinión con salvedad,
+                    ni negativa, así como tampoco se han abstenido de emitir opinión acerca
+                    de los estados financieros de Fibra Nova. </p>
                 <p>poner logo ernst & young</p>
             </div>
-            <br><br>
+            <div class="row clearfix">
+                <div class="col-md-12 text-center">
+                    <img src="{% static 'images/historia/historia1.jpg' %}" alt="">
+                </div>
+            </div>
         </div>
     </section>
 {% endblock %}
