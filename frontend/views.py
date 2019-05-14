@@ -10,6 +10,10 @@ def contacto(request):
     context = {'title': 'Contacto'}
     return render(request, 'frontend/contacto.html', context)
 
+def portafolio(request):
+    context = {'title': 'Portafolio'}
+    return render(request, 'frontend/portafolio.html', context)
+
 # PERFIL
 def perfil_nosotros(request):
     context = {'title': 'Nosotros'}

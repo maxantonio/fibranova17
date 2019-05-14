@@ -1,10 +1,321 @@
 {% extends 'layouts/base.html' %}
+{% load static %}
+{% block otherstyles %}
+    <link rel="stylesheet" href="{% static 'css/timeline/timeline.css' %}">
+    <link rel="stylesheet" href="{% static 'css/timeline/historia.css' %}">
+{% endblock %}
 
 {% block content %}
     <section class="default-section">
         <div class="auto-container">
             <div class="row clearfix">
-                <h1>{{ title }}</h1>
+                <div class="col-md-12" id="historia">
+                    <section class="slice  no-padding">
+                        <div class="infoGeneral">
+                            <div class="w-section inverse">
+                                <div class="">
+
+                                    <ul class="timeline">
+                                        <li class="year">2017</li>
+                                        <li class="event  left_side ">
+                                            <div class="event-date">
+                                                <p>Monterrey se convierte en el centro más grande, con 24 rutas sin
+                                                    escalas.</p>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="event-body">
+                                                        <div class="row">
+                                                            <div class="col-md-12">
+                                                                <img src="{% static 'images/historia/historia1.jpg' %}"
+                                                                     class="img-responsive" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="event  right_side">
+                                            <div class="event-date ">
+                                                <p>Segunda entrega de NEO.</p>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="event-body">
+                                                        <div class="row">
+                                                            <div class="col-md-12">
+                                                                <img src="{% static 'images/historia/historia1.jpg' %}"
+                                                                     class="img-responsive" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </li>
+                                        <li class="event  left_side">
+                                            <div class="event-date ">
+                                                <p>Nueva ruta internacional desde Guadalajara a Los Ángeles.</p>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="event-body">
+                                                        <div class="row">
+                                                            <div class="col-md-12">
+                                                                <img src="{% static 'images/historia/historia1.jpg' %}"
+                                                                     class="img-responsive" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </li>
+                                        <li class="event  right_side">
+                                            <div class="event-date ">
+                                                <p>Primer destino internacional sin escalas desde la Ciudad de México
+                                                    hasta Las
+                                                    Vegas.</p>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="event-body">
+                                                        <div class="row">
+                                                            <div class="col-md-12">
+                                                                <img src="{% static 'images/historia/historia1.jpg' %}"
+                                                                     class="img-responsive" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <div class="clearfix"></div>
+                                        <br><br>
+
+                                        <li class="year">2016</li>
+                                        <li class="event  left_side ">
+                                            <div class="event-date">
+                                                <p>Alcanza nueva marca de 6 millones de pasajeros al año.</p>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="event-body">
+                                                        <div class="row">
+                                                            <div class="col-md-12">
+                                                                <img src="{% static 'images/historia/historia1.jpg' %}"
+                                                                     class="img-responsive" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="event  right_side ">
+                                            <div class="event-date">
+                                                <p>Primera entrega de NEO.</p>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="event-body">
+                                                        <div class="row">
+                                                            <div class="col-md-12">
+                                                                <img src="{% static 'images/historia/historia1.jpg' %}"
+                                                                     class="img-responsive" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <div class="clearfix"></div>
+                                        <br><br>
+
+                                        <li class="year">2015</li>
+                                        <li class="event  left_side ">
+                                            <div class="event-date">
+                                                <p>Exitosa colocación de Bonos Fiduciarios Senior por 1,000 millones de
+                                                    pesos en
+                                                    el mercado
+                                                    mexicano.</p>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="event-body">
+                                                        <div class="row">
+                                                            <div class="col-md-12">
+                                                                <img src="{% static 'images/historia/historia1.jpg' %}"
+                                                                     class="img-responsive" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="event  right_side ">
+                                            <div class="event-date">
+                                                <p>Comienzan viajes a Tijuana, aprovechando el nuevo Cross Border Xpress
+                                                    (puente
+                                                    terrestre entre los
+                                                    Estados Unidos y México).</p>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="event-body">
+                                                        <div class="row">
+                                                            <div class="col-md-12">
+                                                                <img src="{% static 'images/historia/historia1.jpg' %}"
+                                                                     class="img-responsive" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <div class="clearfix"></div>
+                                        <br><br>
+
+                                        <li class="year">2014</li>
+                                        <li class="event  left_side ">
+                                            <div class="event-date">
+                                                <p>Primera entrega de avión Airbus A320, comienza una nueva etapa de
+                                                    reducción
+                                                    de costos.</p>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="event-body">
+                                                        <div class="row">
+                                                            <div class="col-md-12">
+                                                                <img src="{% static 'images/historia/historia1.jpg' %}"
+                                                                     class="img-responsive" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <div class="clearfix"></div>
+                                        <br>
+
+                                        <li class="year">2013</li>
+                                        <li class="event  right_side ">
+                                            <div class="event-date">
+                                                <p>Pedido de 52 A320 aviones, modelos de ancho fuselaje de Airbus, el
+                                                    más grande
+                                                    de América Latina a la fecha.</p>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="event-body">
+                                                        <div class="row">
+                                                            <div class="col-md-12">
+                                                                <img src="{% static 'images/historia/historia1.jpg' %}"
+                                                                     class="img-responsive" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="event  left_side ">
+                                            <div class="event-date">
+                                                <p>Inauguración de la 4ta base operativa en Cancún.</p>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="event-body">
+                                                        <div class="row">
+                                                            <div class="col-md-12">
+                                                                <img src="{% static 'images/historia/historia1.jpg' %}"
+                                                                     class="img-responsive" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <div class="clearfix"></div>
+                                        <br><br>
+
+                                        <li class="year">2011</li>
+                                        <li class="event  right_side ">
+                                            <div class="event-date">
+                                                <p>Inauguración de la 3ra base de operaciones en el Aeropuerto
+                                                    Internacional de
+                                                    la Ciudad de México, el mercado más grande de México.</p>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="event-body">
+                                                        <div class="row">
+                                                            <div class="col-md-12">
+                                                                <img src="{% static 'images/historia/historia1.jpg' %}"
+                                                                     class="img-responsive" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        </li>
+
+                                        <div class="clearfix"></div>
+                                        <br><br>
+
+                                        <li class="year">2009</li>
+                                        <li class="event  right_side ">
+                                            <div class="event-date">
+                                                <p>Guadalajara se convierte en la segunda base de operaciones.</p>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="event-body">
+                                                        <div class="row">
+                                                            <div class="col-md-12">
+                                                                <img src="{% static 'images/historia/historia1.jpg' %}"
+                                                                     class="img-responsive" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="event  left_side ">
+                                            <div class="event-date">
+                                                <p>Rentable al 3er año de operaciones a pesar de la epidemia de virus
+                                                    H1N1.</p>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="event-body">
+                                                        <div class="row">
+                                                            <div class="col-md-12">
+                                                                <img src="{% static 'images/historia/historia1.jpg' %}"
+                                                                     class="img-responsive" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <div class="clearfix"></div>
+                                        <br><br>
+
+                                        `
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                    </section>
+                </div>
             </div>
             <br><br>
         </div>
