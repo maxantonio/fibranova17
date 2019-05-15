@@ -1,12 +1,331 @@
 {% extends 'layouts/base.html' %}
-
+{% load static %}
 {% block content %}
     <section class="default-section">
         <div class="auto-container">
             <div class="row clearfix">
-                <h1>{{ title }}</h1>
+                <div id="fundamentales">
+                    <select class="form-control drop-corto" id="select_grafico">
+                        <option value="g1" selected>Situación Financiera</option>
+                        <option value="g2">Estado de Resultados</option>
+                        <option value="g3">Indicadores de operación</option>
+                        <option value="g4">Flujo de Efectivo</option>
+                    </select>
+                    <br>
+
+                    <div id="g1" class="hidden" data-divG="chart_situacion">
+                        <h3>Situación Financiera</h3>
+                        <div class="contentTable">
+                            <table class="table table-bordered table-hover">
+                                <thead class="thead-pink">
+                                <tr>
+                                    <th class="col-md-4"></th>
+                                    <th class="col-md-1">1T19</th>
+                                    <th class="col-md-1">4T18</th>
+                                    <th class="col-md-1">3T18</th>
+                                    <th class="col-md-1">2T18</th>
+                                    <th class="col-md-1">1T18</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>Activo Total</td>
+                                    <td>5,488,027.00</td>
+                                    <td>5,469,909.00</td>
+                                    <td>5,234,480.00</td>
+                                    <td>5,069,636.00</td>
+                                    <td>5,469,909.00</td>
+                                <tr>
+                                    <td>Pasivo Total</td>
+                                    <td>787,232.00</td>
+                                    <td>775,886.00</td>
+                                    <td>592,012.00</td>
+                                    <td>421,404.00</td>
+                                    <td>311,285.00</td>
+                                </tr>
+                                <tr>
+                                    <td>Capital Contable</td>
+                                    <td>4,700,795.00</td>
+                                    <td>4,694,023.00</td>
+                                    <td>4,642,468.00</td>
+                                    <td>4,648,232.00</td>
+                                    <td>4,645,461.00</td>
+                                </tr>
+                                <tr>
+                                    <td>Efectivos y equivalentes de efectivo</td>
+                                    <td>24,772.00</td>
+                                    <td>61,668.00</td>
+                                    <td>19,442.00</td>
+                                    <td>95,983.00</td>
+                                    <td>51,197.00</td>
+                                </tr>
+                                <tr>
+                                    <td>Aportaciones de los Fidecomitentes</td>
+                                    <td>4,047,730.00</td>
+                                    <td>4,143,009.00</td>
+                                    <td>4,237,604.00</td>
+                                    <td>4,329,862.00</td>
+                                    <td>4,420,262.00</td>
+                                </tr>
+                                <tr>
+                                    <td>Propiedades de Inversión</td>
+                                    <td>5,320,217.00</td>
+                                    <td>5,391,490.00</td>
+                                    <td>5,172,669.00</td>
+                                    <td>4,841,500.00</td>
+                                    <td>4,833,739.00</td>
+                                </tr>
+                                <tr>
+                                    <td>CBFI's en Circulación</td>
+                                    <td>241,779,207.00</td>
+                                    <td>241,761,731.00</td>
+                                    <td>241,727,317.00</td>
+                                    <td>241,910,714.00</td>
+                                    <td>241,910,714.00</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div id="chart_situacion" class="char-fundamentales chartdiv"></div>
+                    </div>
+
+                    <div id="g2" class="hidden" data-divG="chart_resultados">
+                        <h3>Estado de Resultados</h3>
+                        <div class="contentTable">
+                            <table class="table table-bordered table-hover">
+                                <thead class="thead-pink">
+                                <tr>
+                                    <th class="col-md-4"></th>
+                                    <th class="col-md-1">1T19</th>
+                                    <th class="col-md-1">4T18</th>
+                                    <th class="col-md-1">3T18</th>
+                                    <th class="col-md-1">2T18</th>
+                                    <th class="col-md-1">1T18</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>Ingresos Totales</td>
+                                    <td>118,206.00</td>
+                                    <td>116,578.00</td>
+                                    <td>113,876.00</td>
+                                    <td>106,790.00</td>
+                                    <td>103,643.00</td>
+                                </tr>
+                                <tr>
+                                    <td>Ingresos por arrendamiento de inmuebles</td>
+                                    <td>117,696.00</td>
+                                    <td>115,590.00</td>
+                                    <td>110,803.00</td>
+                                    <td>105,807.00</td>
+                                    <td>102,138.00</td>
+                                </tr>
+                                <tr>
+                                    <td>Gastos de operación</td>
+                                    <td>3,562.00</td>
+                                    <td>3,828.00</td>
+                                    <td>3,408.00</td>
+                                    <td>3,059.00</td>
+                                    <td>3,002.00</td>
+                                </tr>
+                                <tr>
+                                    <td>Ingreso Operativo Neto (ION)</td>
+                                    <td>114,644.00</td>
+                                    <td>112,750.00</td>
+                                    <td>110,468.00</td>
+                                    <td>103,731.00</td>
+                                    <td>100,541.00</td>
+                                </tr>
+                                <tr>
+                                    <td>Margen ION</td>
+                                    <td>97%</td>
+                                    <td>97%</td>
+                                    <td>97%</td>
+                                    <td>97%</td>
+                                    <td>97%</td>
+                                </tr>
+                                <tr>
+                                    <td>Utilidad de Operación</td>
+                                    <td>106,456.00</td>
+                                    <td>105,168.00</td>
+                                    <td>102,575.00</td>
+                                    <td>95,574.00</td>
+                                    <td>93,345.00</td>
+                                </tr>
+                                <tr>
+                                    <td>EBITDA</td>
+                                    <td>106,503.00</td>
+                                    <td>105,204.00</td>
+                                    <td>102,584.00</td>
+                                    <td>95,583.00</td>
+                                    <td>93,354.00</td>
+                                </tr>
+                                <tr>
+                                    <td>Margen EBITDA</td>
+                                    <td>90%</td>
+                                    <td>90%</td>
+                                    <td>90%</td>
+                                    <td>90%</td>
+                                    <td>90%</td>
+                                </tr>
+                                <tr>
+                                    <td>Resultado Integral de Financiamiento</td>
+                                    <td>-4,793.00</td>
+                                    <td>40,275.00</td>
+                                    <td>-12,514.00</td>
+                                    <td>-2,403.00</td>
+                                    <td>-5,783.00</td>
+                                </tr>
+                                <tr>
+                                    <td>Utilidad antes de impuestos a la utilidad</td>
+                                    <td>101,710.00</td>
+                                    <td>145,479.00</td>
+                                    <td>90,070.00</td>
+                                    <td>93,171.00</td>
+                                    <td>87,562.00</td>
+                                </tr>
+                                <tr>
+                                    <td>Utilidad Neta</td>
+                                    <td>101,710.00</td>
+                                    <td>145,479.00</td>
+                                    <td>90,070.00</td>
+                                    <td>93,171.00</td>
+                                    <td>87,562.00</td>
+                                </tr>
+                                <tr>
+                                    <td>Distribución por CBFI</td>
+                                    <td>0.3980</td>
+                                    <td>0.3941</td>
+                                    <td>0.3913</td>
+                                    <td>0.3817</td>
+                                    <td>0.3737</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div id="chart_resultados" class="char-fundamentales chartdiv"></div>
+                    </div>
+
+                    <div id="g3" class="hidden" data-divG="chart_operativos">
+                        <h3>Indicadores Operativos</h3>
+                        <div class="contentTable">
+                            <table class="table table-bordered table-hover">
+                                <thead class="thead-pink">
+                                <tr>
+                                    <th class="col-md-4"></th>
+                                    <th class="col-md-1">1T19</th>
+                                    <th class="col-md-1">4T18</th>
+                                    <th class="col-md-1">3T18</th>
+                                    <th class="col-md-1">2T18</th>
+                                    <th class="col-md-1">1T18</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>ABR (m2)</td>
+                                    <td>285,758</td>
+                                    <td>285,758</td>
+                                    <td>281,623</td>
+                                    <td>275,479</td>
+                                    <td>245,854</td>
+                                </tr>
+                                <tr>
+                                    <td>Margen de Ocupación 100%</td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                </tr>
+                                <tr>
+                                    <td>Activos Inmobiliarios</td>
+                                    <td>92</td>
+                                    <td>92</td>
+                                    <td>87</td>
+                                    <td>86</td>
+                                    <td>84</td>
+                                </tr>
+                                <tr>
+                                    <td>Vigencia promedio del contrato (años)</td>
+                                    <td>8.0</td>
+                                    <td>8.3</td>
+                                    <td>8.4</td>
+                                    <td>8.4</td>
+                                    <td>8.8</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div id="chart_operativos" class="char-fundamentales chartdiv"></div>
+                    </div>
+
+                    <div id="g4" class="hidden" data-divG="chart_efectivo">
+                        <h3>Flujo de efectivo</h3>
+                        <div class="contentTable">
+                            <table class="table table-bordered table-hover">
+                                <thead class="thead-pink">
+                                <tr>
+                                    <th class="col-md-4"></th>
+                                    <th class="col-md-1">1T19</th>
+                                    <th class="col-md-1">4T18</th>
+                                    <th class="col-md-1">3T18</th>
+                                    <th class="col-md-1">2T18</th>
+                                    <th class="col-md-1">1T18</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>Actividades de Operación</td>
+                                    <td>152,127.00</td>
+                                    <td>418,103.00</td>
+                                    <td>297,871.00</td>
+                                    <td>321,634.00</td>
+                                    <td>77,979.00</td>
+                                </tr>
+                                <tr>
+                                    <td>Actividades de Inversión</td>
+                                    <td>-54,465.00</td>
+                                    <td>-509,413.00</td>
+                                    <td>-349,050.00</td>
+                                    <td>-137,969.00</td>
+                                    <td>-23,003.00</td>
+                                </tr>
+                                <tr>
+                                    <td>Actividades de Financiamiento</td>
+                                    <td>-134,558.00</td>
+                                    <td>56,995.00</td>
+                                    <td>-25,362.00</td>
+                                    <td>-201,265.00</td>
+                                    <td>-99,762.00</td>
+                                </tr>
+                                <tr>
+                                    <td>Efectivo generado en el periodo</td>
+                                    <td>-36,896.00</td>
+                                    <td>-34,314.00</td>
+                                    <td>-76,541.00</td>
+                                    <td>-17,600.00</td>
+                                    <td>-44,786.00</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <small>* Incluyendo los efectos del tipo de cambio
+                            </small>
+                        </div>
+
+                        <div id="chart_efectivo" class="char-fundamentales chartdiv"></div>
+                    </div>
+
+                </div>
             </div>
             <br><br>
         </div>
     </section>
+{% endblock %}
+
+{% block otherscripts %}
+    <script src="{% static 'js/amCharts/amcharts.js' %}"></script>
+    <script src="{% static 'js/amCharts/serial.js' %}"></script>
+    <script src="{% static 'js/amCharts/contenido/fundamentales.js' %}"></script>
 {% endblock %}
