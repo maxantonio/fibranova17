@@ -3959,7 +3959,7 @@ img{
 .testimonial-block-five .author-info:before{
   position: absolute;
   content: '';
-  background: url(../images/icons/quote.png);
+  /*background: url(../images/icons/quote.png);*/
   width: 43px;
   height: 33px;
   top: 8px;

@@ -54,20 +54,21 @@ def eventos_relevantes(request):
 def faqs(request):
     context = {'title': 'FAQs'}
     return render(request, 'frontend/inversionistas/faqs.html', context)
-# END INVERSIONISTA
-
-# BURSATIL
-def cotizacion(request):
-    context = {'title': 'Cotización'}
-    return render(request, 'frontend/bursatil/cotizacion.html', context)
-
-def precio_historico(request):
-    context = {'title': 'Precio Historico'}
-    return render(request, 'frontend/bursatil/precio-historico.html', context)
 
 def distribuciones(request):
     context = {'title': 'Distribuciones'}
-    return render(request, 'frontend/bursatil/distribuciones.html', context)
+    return render(request, 'frontend/inversionistas/distribuciones.html', context)
+# END INVERSIONISTA
+
+# BURSATIL
+# def cotizacion(request):
+#     context = {'title': 'Cotización'}
+#     return render(request, 'frontend/bursatil/cotizacion.html', context)
+#
+# def precio_historico(request):
+#     context = {'title': 'Precio Historico'}
+#     return render(request, 'frontend/bursatil/precio-historico.html', context)
+
 # END BURSATIL
 
 # GOBIERNO

@@ -1,4 +1,4 @@
-.mb-20{
+.mb-20 {
     margin-bottom: 20px;
 }
 
@@ -11,6 +11,26 @@
 }
 
 .chartdiv {
-  width: 100%;
-  height: 500px;
+    width: 100%;
+    height: 500px;
+}
+
+.td-tab-1 {
+    width: 30px;
+    padding: 10px;
+    border-bottom: 1px solid #0033a0;
+    vertical-align: middle !important;
+}
+
+.td-tab-2 {
+    border-bottom: 1px solid #0033a0;
+    padding: 10px;
+}
+
+.acc-content > p, .row.clearfix > p {
+    margin-bottom: 15px !important;
+}
+
+ul li {
+    font-size: 16px;
 }

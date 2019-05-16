@@ -277,6 +277,7 @@
 			$(this).addClass('active-btn');
 			$('.prod-tabs .tab').fadeOut(0);
 			$('.prod-tabs .tab').removeClass('active-tab-box');
+			$('.prod-tabs .tab').removeClass('active-tab');
 			$(target).fadeIn(500);
 			$(target).addClass('active-tab-box');
 		});
