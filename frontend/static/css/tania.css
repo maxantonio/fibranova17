@@ -34,3 +34,7 @@
 ul li {
     font-size: 16px;
 }
+
+.contact-info {
+     min-height: 130px;
+}
