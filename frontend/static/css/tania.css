@@ -36,5 +36,37 @@ ul li {
 }
 
 .contact-info {
-     min-height: 130px;
+    min-height: 130px;
+}
+
+.testimonial-block-four .inner-box .text {
+    font-size: 16px !important;
+}
+
+.testimonial-block-four .inner-box {
+    min-height: 620px;
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+    .testimonial-block-four .inner-box {
+        min-height: 800px;
+    }
+}
+
+@media (min-width: 764px) and (max-width: 992px) {
+    .testimonial-block-four .inner-box {
+        min-height: 1100px;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 763px) {
+    .testimonial-block-four .inner-box {
+        min-height: 600px;
+    }
+}
+
+@media (max-width: 499px) {
+    .testimonial-block-four .inner-box {
+        min-height: 900px;
+    }
 }

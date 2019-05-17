@@ -4,7 +4,151 @@
     <section class="default-section">
         <div class="auto-container">
             <div class="row clearfix">
-                <h1>{{ title }}</h1>
+                <div class="product-info-tabs">
+
+                    <!--Product Tabs-->
+                    <div class="prod-tabs" id="product-tabs">
+
+                        <!--Tab Btns-->
+                        <div class="tab-btns clearfix">
+                            {% for anno in annos %}
+                                <a href="#{{ anno }}"
+                                   class="tab-btn {% if forloop.counter == 1 %}active-btn{% endif %}">{{ anno }}</a>
+                            {% endfor %}
+                        </div>
+
+                        <!--Tabs Container-->
+                        <div class="tabs-container">
+                            {% for item in info %}
+                                <div class="tab {% if forloop.counter == 1 %}active-tab{% endif %}"
+                                     id="{{ item.anno }}">
+                                    <table class="table table-bordered table-hover">
+                                        <thead>
+                                        <tr>
+                                            <th class="text-center">Periodo</th>
+                                            <th class="text-center">Reporte Trimestral</th>
+                                            <th class="text-center">Reporte Trimestral (SIFIC)</th>
+                                            <th class="text-center">Conferencia Trimestral</th>
+                                            <th class="text-center">Estados Financieros Consolidados</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td class="text-center">{{ item.tri_1T.fecha }}</td>
+                                            <td class="text-center">
+                                                {% if item.tri_1T.reporte %}
+                                                    <a href="{{ item.tri_1T.reporte }}" target="_blank"><i
+                                                            class="fa fa-file-pdf-o"></i></a>
+                                                {% endif %}
+                                            </td>
+                                            <td class="text-center">
+                                                {% if item.tri_1T.reporte %}
+                                                    <a href="{{ item.tri_1T.sific }}" target="_blank"><i
+                                                            class="fa fa-file-pdf-o"></i></a>
+                                                {% endif %}
+                                            </td>
+                                            <td class="text-center">
+                                                {% if item.tri_1T.conferencia %}
+                                                    <a href="{{ item.tri_1T.conferencia }}" target="_blank"><i
+                                                            class="fa fa-volume-up"></i></a>
+                                                {% endif %}
+                                            </td>
+                                            <td class="text-center">
+                                                {% if item.tri_1T.estados %}
+                                                    <a href="{{ item.tri_1T.estados }}" target="_blank"><i
+                                                            class="fa fa-file-pdf-o"></i></a>
+                                                {% endif %}
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center">{{ item.tri_2T.fecha }}</td>
+                                            <td class="text-center">
+                                                {% if item.tri_2T.reporte %}
+                                                    <a href="{{ item.tri_2T.reporte }}" target="_blank"><i
+                                                            class="fa fa-file-pdf-o"></i></a>
+                                                {% endif %}
+                                            </td>
+                                            <td class="text-center">
+                                                {% if item.tri_2T.reporte %}
+                                                    <a href="{{ item.tri_2T.sific }}" target="_blank"><i
+                                                            class="fa fa-file-pdf-o"></i></a>
+                                                {% endif %}
+                                            </td>
+                                            <td class="text-center">
+                                                {% if item.tri_2T.conferencia %}
+                                                    <a href="{{ item.tri_2T.conferencia }}" target="_blank"><i
+                                                            class="fa fa-volume-up"></i></a>
+                                                {% endif %}
+                                            </td>
+                                            <td class="text-center">
+                                                {% if item.tri_2T.estados %}
+                                                    <a href="{{ item.tri_2T.estados }}" target="_blank"><i
+                                                            class="fa fa-file-pdf-o"></i></a>
+                                                {% endif %}
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center">{{ item.tri_3T.fecha }}</td>
+                                            <td class="text-center">
+                                                {% if item.tri_3T.reporte %}
+                                                    <a href="{{ item.tri_3T.reporte }}" target="_blank"><i
+                                                            class="fa fa-file-pdf-o"></i></a>
+                                                {% endif %}
+                                            </td>
+                                            <td class="text-center">
+                                                {% if item.tri_3T.reporte %}
+                                                    <a href="{{ item.tri_3T.sific }}" target="_blank"><i
+                                                            class="fa fa-file-pdf-o"></i></a>
+                                                {% endif %}
+                                            </td>
+                                            <td class="text-center">
+                                                {% if item.tri_3T.conferencia %}
+                                                    <a href="{{ item.tri_3T.conferencia }}" target="_blank"><i
+                                                            class="fa fa-volume-up"></i></a>
+                                                {% endif %}
+                                            </td>
+                                            <td class="text-center">
+                                                {% if item.tri_3T.estados %}
+                                                    <a href="{{ item.tri_3T.estados }}" target="_blank"><i
+                                                            class="fa fa-file-pdf-o"></i></a>
+                                                {% endif %}
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center">{{ item.tri_4T.fecha }}</td>
+                                            <td class="text-center">
+                                                {% if item.tri_4T.reporte %}
+                                                    <a href="{{ item.tri_4T.reporte }}" target="_blank"><i
+                                                            class="fa fa-file-pdf-o"></i></a>
+                                                {% endif %}
+                                            </td>
+                                            <td class="text-center">
+                                                {% if item.tri_4T.reporte %}
+                                                    <a href="{{ item.tri_4T.sific }}" target="_blank"><i
+                                                            class="fa fa-file-pdf-o"></i></a>
+                                                {% endif %}
+                                            </td>
+                                            <td class="text-center">
+                                                {% if item.tri_4T.conferencia %}
+                                                    <a href="{{ item.tri_4T.conferencia }}" target="_blank"><i
+                                                            class="fa fa-volume-up"></i></a>
+                                                {% endif %}
+                                            </td>
+                                            <td class="text-center">
+                                                {% if item.tri_4T.estados %}
+                                                    <a href="{{ item.tri_4T.estados }}" target="_blank"><i
+                                                            class="fa fa-file-pdf-o"></i></a>
+                                                {% endif %}
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+
+                </div>
             </div>
             <br><br>
         </div>
