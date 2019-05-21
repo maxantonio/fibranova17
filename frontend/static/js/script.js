@@ -240,14 +240,17 @@
 						$t.find(".count-text").text(Math.floor(this.countNum));
 					},
 					complete: function() {
-						$t.find(".count-text").text(this.countNum);
+						$t.find(".count-text").text(numberWithCommas(this.countNum));
 					}
 				});
 			}
 			
 		},{accY: 0});
 	}
-	
+
+	function numberWithCommas(x) {
+        return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    }
 	
 	//Tabs Box
 	if($('.tabs-box').length){
