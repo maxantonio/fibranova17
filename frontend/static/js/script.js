@@ -14,13 +14,6 @@
             } else {
                 $('.gallery-item').fadeOut('slow');
                 $('.' + filter).fadeIn('slow');
-                // $('.gallery-item').not('.' + filter).addClass('proj-hidden');
-                // $('.' + filter).removeClass('proj-hidden');
-                // $('.' + filter).removeClass('hidden');
-
-                // setTimeout(function () {
-                //     $('.gallery-item').not('.' + filter).addClass('hidden');
-                // }, 500);
             }
         });
     }
