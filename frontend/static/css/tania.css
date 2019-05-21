@@ -47,6 +47,54 @@ ul li {
     min-height: 620px;
 }
 
+.portfolio-filter {
+    position: relative;
+    margin: 0 0 40px 0;
+    list-style: none;
+    border: 1px solid rgba(0, 0, 0, 0.07);
+    float: left;
+    border-radius: 4px;
+}
+
+.portfolio-filter li {
+    float: left;
+    position: relative;
+}
+
+.portfolio-filter li.activeFilter a {
+    color: #FFF !important;
+    background-color: #7BCAFF;
+    margin: -1px 0;
+    padding: 13px 18px;
+    font-weight: bold;
+}
+
+.portfolio-filter li:first-child a {
+    border-left: none;
+    border-radius: 4px 0 0 4px;
+}
+
+.portfolio-filter li a {
+    display: block;
+    position: relative;
+    padding: 12px 18px;
+    font-size: 13px;
+    line-height: 15px;
+    color: #666;
+    border-left: 1px solid rgba(0, 0, 0, 0.07);
+}
+
+.pl-15 {
+    padding-left: 15px;
+}
+
+.proj-hidden {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s linear 0.33s, opacity 0.33s linear;
+}
+
+
 @media (min-width: 993px) and (max-width: 1200px) {
     .testimonial-block-four .inner-box {
         min-height: 800px;

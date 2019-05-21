@@ -4,10 +4,20 @@
     <section class="work-section sp-one">
         <div class="auto-container">
 
+            <div class="row clearfix pl-15">
+                <ul id="portfolio-filter" class="portfolio-filter clearfix" data-container="#portfolio">
+                    <li class="activeFilter"><a href="#" data-filter="all">Todos</a></li>
+                    <!--<li><a href="#" data-filter=".pf-icons">Be</a></li>-->
+                    <li><a href="#" data-filter="proj-1">Project 1</a></li>
+                    <li><a href="#" data-filter="proj-2">Project 2</a></li>
+                    <li><a href="#" data-filter="proj-3">Project 3</a></li>
+                </ul><!-- #portfolio-filter end -->
+            </div>
+
             <div class="row clearfix">
 
                 <!--Gallery Block-->
-                <div class="gallery-item col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <div class="gallery-item col-lg-4 col-md-4 col-sm-6 col-xs-12 proj-1">
                     <div class="inner-box">
                         <figure class="image imghvr-strip-vert-bottom-right">
                             <img src="{% static 'images/gallery/1.jpg' %}" alt=""/>
@@ -20,7 +30,7 @@
                             </figcaption>
                         </figure>
                         <div class="lower-content">
-                            <a href="#"><h3>Project Title</h3></a>
+                            <a href="#"><h3>Project Title 1</h3></a>
                             <div class="text">Lorem Ipsum is simply dummy text of the printing and typesetting
                                 industry.
                             </div>
@@ -30,7 +40,7 @@
 
 
                 <!--Gallery Block-->
-                <div class="gallery-item col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <div class="gallery-item col-lg-4 col-md-4 col-sm-6 col-xs-12 proj-2">
                     <div class="inner-box">
                         <figure class="image imghvr-strip-vert-bottom-right">
                             <img src="{% static 'images/gallery/2.jpg' %}" alt=""/>
@@ -43,7 +53,7 @@
                             </figcaption>
                         </figure>
                         <div class="lower-content">
-                            <a href="#"><h3>Project Title</h3></a>
+                            <a href="#"><h3>Project Title 2</h3></a>
                             <div class="text">Lorem Ipsum is simply dummy text of the printing and typesetting
                                 industry.
                             </div>
@@ -53,7 +63,7 @@
 
 
                 <!--Gallery Block-->
-                <div class="gallery-item col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <div class="gallery-item col-lg-4 col-md-4 col-sm-6 col-xs-12 proj-3">
                     <div class="inner-box">
                         <figure class="image imghvr-strip-vert-bottom-right">
                             <img src="{% static 'images/gallery/3.jpg' %}" alt=""/>
@@ -66,7 +76,7 @@
                             </figcaption>
                         </figure>
                         <div class="lower-content">
-                            <a href="#"><h3>Project Title</h3></a>
+                            <a href="#"><h3>Project Title 3</h3></a>
                             <div class="text">Lorem Ipsum is simply dummy text of the printing and typesetting
                                 industry.
                             </div>
@@ -76,7 +86,7 @@
 
 
                 <!--Gallery Block-->
-                <div class="gallery-item col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <div class="gallery-item col-lg-4 col-md-4 col-sm-6 col-xs-12 proj-1">
                     <div class="inner-box">
                         <figure class="image imghvr-strip-vert-bottom-right">
                             <img src="{% static 'images/gallery/4.jpg' %}" alt=""/>
@@ -89,7 +99,7 @@
                             </figcaption>
                         </figure>
                         <div class="lower-content">
-                            <a href="#"><h3>Project Title</h3></a>
+                            <a href="#"><h3>Project Title 1</h3></a>
                             <div class="text">Lorem Ipsum is simply dummy text of the printing and typesetting
                                 industry.
                             </div>
@@ -99,7 +109,7 @@
 
 
                 <!--Gallery Block-->
-                <div class="gallery-item col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <div class="gallery-item col-lg-4 col-md-4 col-sm-6 col-xs-12 proj-2">
                     <div class="inner-box">
                         <figure class="image imghvr-strip-vert-bottom-right">
                             <img src="{% static 'images/gallery/5.jpg' %}" alt=""/>
@@ -112,7 +122,7 @@
                             </figcaption>
                         </figure>
                         <div class="lower-content">
-                            <a href="#"><h3>Project Title</h3></a>
+                            <a href="#"><h3>Project Title 2</h3></a>
                             <div class="text">Lorem Ipsum is simply dummy text of the printing and typesetting
                                 industry.
                             </div>
@@ -122,7 +132,7 @@
 
 
                 <!--Gallery Block-->
-                <div class="gallery-item col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <div class="gallery-item col-lg-4 col-md-4 col-sm-6 col-xs-12 proj-3">
                     <div class="inner-box">
                         <figure class="image imghvr-strip-vert-bottom-right">
                             <img src="{% static 'images/gallery/6.jpg' %}" alt=""/>
@@ -135,7 +145,143 @@
                             </figcaption>
                         </figure>
                         <div class="lower-content">
-                            <a href="#"><h3>Project Title</h3></a>
+                            <a href="#"><h3>Project Title 3</h3></a>
+                            <div class="text">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item col-lg-4 col-md-4 col-sm-6 col-xs-12 proj-1">
+                    <div class="inner-box">
+                        <figure class="image imghvr-strip-vert-bottom-right">
+                            <img src="{% static 'images/gallery/1.jpg' %}" alt=""/>
+                            <figcaption>
+                                <div class="overlay-box">
+                                    <div class="content">
+                                        <a href="#"><span class="icon fa fa-link"></span></a>
+                                    </div>
+                                </div>
+                            </figcaption>
+                        </figure>
+                        <div class="lower-content">
+                            <a href="#"><h3>Project Title 1</h3></a>
+                            <div class="text">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!--Gallery Block-->
+                <div class="gallery-item col-lg-4 col-md-4 col-sm-6 col-xs-12 proj-2">
+                    <div class="inner-box">
+                        <figure class="image imghvr-strip-vert-bottom-right">
+                            <img src="{% static 'images/gallery/2.jpg' %}" alt=""/>
+                            <figcaption>
+                                <div class="overlay-box">
+                                    <div class="content">
+                                        <a href="#"><span class="icon fa fa-link"></span></a>
+                                    </div>
+                                </div>
+                            </figcaption>
+                        </figure>
+                        <div class="lower-content">
+                            <a href="#"><h3>Project Title 2</h3></a>
+                            <div class="text">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!--Gallery Block-->
+                <div class="gallery-item col-lg-4 col-md-4 col-sm-6 col-xs-12 proj-3">
+                    <div class="inner-box">
+                        <figure class="image imghvr-strip-vert-bottom-right">
+                            <img src="{% static 'images/gallery/3.jpg' %}" alt=""/>
+                            <figcaption>
+                                <div class="overlay-box">
+                                    <div class="content">
+                                        <a href="#"><span class="icon fa fa-link"></span></a>
+                                    </div>
+                                </div>
+                            </figcaption>
+                        </figure>
+                        <div class="lower-content">
+                            <a href="#"><h3>Project Title 3</h3></a>
+                            <div class="text">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!--Gallery Block-->
+                <div class="gallery-item col-lg-4 col-md-4 col-sm-6 col-xs-12 proj-1">
+                    <div class="inner-box">
+                        <figure class="image imghvr-strip-vert-bottom-right">
+                            <img src="{% static 'images/gallery/4.jpg' %}" alt=""/>
+                            <figcaption>
+                                <div class="overlay-box">
+                                    <div class="content">
+                                        <a href="#"><span class="icon fa fa-link"></span></a>
+                                    </div>
+                                </div>
+                            </figcaption>
+                        </figure>
+                        <div class="lower-content">
+                            <a href="#"><h3>Project Title 1</h3></a>
+                            <div class="text">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!--Gallery Block-->
+                <div class="gallery-item col-lg-4 col-md-4 col-sm-6 col-xs-12 proj-2">
+                    <div class="inner-box">
+                        <figure class="image imghvr-strip-vert-bottom-right">
+                            <img src="{% static 'images/gallery/5.jpg' %}" alt=""/>
+                            <figcaption>
+                                <div class="overlay-box">
+                                    <div class="content">
+                                        <a href="#"><span class="icon fa fa-link"></span></a>
+                                    </div>
+                                </div>
+                            </figcaption>
+                        </figure>
+                        <div class="lower-content">
+                            <a href="#"><h3>Project Title 2</h3></a>
+                            <div class="text">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!--Gallery Block-->
+                <div class="gallery-item col-lg-4 col-md-4 col-sm-6 col-xs-12 proj-3">
+                    <div class="inner-box">
+                        <figure class="image imghvr-strip-vert-bottom-right">
+                            <img src="{% static 'images/gallery/6.jpg' %}" alt=""/>
+                            <figcaption>
+                                <div class="overlay-box">
+                                    <div class="content">
+                                        <a href="#"><span class="icon fa fa-link"></span></a>
+                                    </div>
+                                </div>
+                            </figcaption>
+                        </figure>
+                        <div class="lower-content">
+                            <a href="#"><h3>Project Title 3</h3></a>
                             <div class="text">Lorem Ipsum is simply dummy text of the printing and typesetting
                                 industry.
                             </div>
