@@ -29,7 +29,6 @@
                                             <th class="text-center">Reporte Trimestral</th>
                                             <th class="text-center">Reporte Trimestral (SIFIC)</th>
                                             <th class="text-center">Conferencia Trimestral</th>
-                                            <th class="text-center">Estados Financieros Consolidados</th>
                                         </tr>
                                         </thead>
                                         <tbody>
@@ -53,12 +52,6 @@
                                                             class="fa fa-volume-up"></i></a>
                                                 {% endif %}
                                             </td>
-                                            <td class="text-center">
-                                                {% if item.tri_1T.estados %}
-                                                    <a href="{{ item.tri_1T.estados }}" target="_blank"><i
-                                                            class="fa fa-file-pdf-o"></i></a>
-                                                {% endif %}
-                                            </td>
                                         </tr>
                                         <tr>
                                             <td class="text-center">{{ item.tri_2T.fecha }}</td>
@@ -78,12 +71,6 @@
                                                 {% if item.tri_2T.conferencia %}
                                                     <a href="{{ item.tri_2T.conferencia }}" target="_blank"><i
                                                             class="fa fa-volume-up"></i></a>
-                                                {% endif %}
-                                            </td>
-                                            <td class="text-center">
-                                                {% if item.tri_2T.estados %}
-                                                    <a href="{{ item.tri_2T.estados }}" target="_blank"><i
-                                                            class="fa fa-file-pdf-o"></i></a>
                                                 {% endif %}
                                             </td>
                                         </tr>
@@ -107,12 +94,6 @@
                                                             class="fa fa-volume-up"></i></a>
                                                 {% endif %}
                                             </td>
-                                            <td class="text-center">
-                                                {% if item.tri_3T.estados %}
-                                                    <a href="{{ item.tri_3T.estados }}" target="_blank"><i
-                                                            class="fa fa-file-pdf-o"></i></a>
-                                                {% endif %}
-                                            </td>
                                         </tr>
                                         <tr>
                                             <td class="text-center">{{ item.tri_4T.fecha }}</td>
@@ -132,12 +113,6 @@
                                                 {% if item.tri_4T.conferencia %}
                                                     <a href="{{ item.tri_4T.conferencia }}" target="_blank"><i
                                                             class="fa fa-volume-up"></i></a>
-                                                {% endif %}
-                                            </td>
-                                            <td class="text-center">
-                                                {% if item.tri_4T.estados %}
-                                                    <a href="{{ item.tri_4T.estados }}" target="_blank"><i
-                                                            class="fa fa-file-pdf-o"></i></a>
                                                 {% endif %}
                                             </td>
                                         </tr>

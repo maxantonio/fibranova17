@@ -42,68 +42,87 @@ def estrategia(request):
 
 # INVERSIONISTAS
 def reportes_trimestrales(request):
-    annos = ['2018', '2017', '2016', '2015', '2014', '2013', '2012']
+    annos = ['2019', '2018', '2017']
     info = [
         {
-            'anno': 2018,
+            'anno': 2019,
             'tri_1T': {
                 'fecha': '1T',
-                'reporte': 'http://www.alpek.com/pdf/2018/Alpek-1T18.pdf',
-                'sific': 'http://www.alpek.com/pdf/2018/1T-2018-ALPEK-XBRL.pdf',
-                'conferencia': 'http://www.alpek.com/audio/20180419-129088-alpek.mp3',
-                'estados': 'http://www.alpek.com/pdf/2018/Alpek-1Q18-Unaudited-Consolidated-Financial-Statements.pdf'
+                'reporte': 'http://www.http://fibra-nova.com/es/wp-content/uploads/2019/04/Press-Release-FNOVA-1T19.pdfalpek.com/pdf/2018/Alpek-1T18.pdf',
+                'sific': 'http://fibra-nova.com/es/wp-content/uploads/2019/04/fibraxbrl_FNOVA_2019-1.pdf',
+                'conferencia': 'http://fibra-nova.com/es/wp-content/uploads/2019/04/Sala-21507-30-de-April-Conferencia-en-Resultados-Fibra-Nova.mp3',
             },
             'tri_2T': {
                 'fecha': '2T',
-                'reporte': 'http://www.alpek.com/pdf/2018/Alpek-2T18.pdf',
-                'sific': 'http://www.alpek.com/pdf/2018/XBRL-2T18-Alpek-formato-BMV.pdf',
-                'conferencia': 'http://www.alpek.com/audio/20180719-130108-alpek.mp3',
-                'estados': 'http://www.alpek.com/pdf/2018/Alpek-2Q18-Unaudited-Consolidated-Financial-Statements.pdf'
+                'reporte': '',
+                'sific': '',
+                'conferencia': '',
             },
             'tri_3T': {
                 'fecha': '3T',
-                'reporte': 'http://www.alpek.com/pdf/2018/Alpek-3T18.pdf',
-                'sific': 'http://www.alpek.com/pdf/2018/XBRL-Alpek-3T18-formato-BMV.pdf',
-                'conferencia': 'http://www.alpek.com/audio/20181016-131058-alpek.mp3',
-                'estados': 'http://www.alpek.com/pdf/2018/Unaudited-Financial-Statement-EEFF-3Q2018.pdf'
+                'reporte': '',
+                'sific': '',
+                'conferencia': '',
             },
             'tri_4T': {
                 'fecha': '4T',
                 'reporte': '',
                 'sific': '',
                 'conferencia': '',
-                'estados': ''
+            }
+        },
+        {
+            'anno': 2018,
+            'tri_1T': {
+                'fecha': '1T',
+                'reporte': 'http://fibra-nova.com/es/wp-content/uploads/2018/07/Press-Release-FNOVA-1T18.pdf',
+                'sific': 'http://fibra-nova.com/es/wp-content/uploads/2018/05/fibraxbrl_FNOVA_2018-1.pdf',
+                'conferencia': 'http://fibra-nova.com/es/wp-content/uploads/2018/05/Sala-21507-03-de-May-Conferencia-en-Resultados-Fibra-Nova.mp3',
+            },
+            'tri_2T': {
+                'fecha': '2T',
+                'reporte': 'http://fibra-nova.com/es/wp-content/uploads/2018/07/Press-Release-FNOVA-2T18.pdf',
+                'sific': 'http://fibra-nova.com/es/wp-content/uploads/2018/07/ifrsxbrl_FNOVA_2018-2.pdf',
+                'conferencia': 'http://fibra-nova.com/es/wp-content/uploads/2018/07/Sala-21507-27-de-July-Conferencia-en-Resultados-Fibra-Nova.mp3',
+            },
+            'tri_3T': {
+                'fecha': '3T',
+                'reporte': 'http://fibra-nova.com/es/wp-content/uploads/2018/10/Press-Release-FNOVA-3T18-1.pdf',
+                'sific': 'http://fibra-nova.com/es/wp-content/uploads/2018/10/fibraxbrl_FNOVA_2018-3.pdf',
+                'conferencia': 'http://fibra-nova.com/es/wp-content/uploads/2018/10/Sala-21507-30-de-October-Conferencia-en-Resultados-Fibra-Nova.mp3',
+            },
+            'tri_4T': {
+                'fecha': '4T',
+                'reporte': 'http://fibra-nova.com/es/wp-content/uploads/2019/04/fibraxbrl_FNOVA_2018-4D.pdf',
+                'sific': 'http://fibra-nova.com/es/wp-content/uploads/2019/02/fibraxbrl_FNOVA_2018-4.pdf',
+                'conferencia': 'http://fibra-nova.com/es/wp-content/uploads/2019/03/Sala-21507-05-de-March-Conferencia-en-Resultados-Fibra-Nova.mp3',
             }
         },
         {
             'anno': 2017,
             'tri_1T': {
                 'fecha': '1T',
-                'reporte': 'http://www.alpek.com/pdf/2018/Alpek-1T18.pdf',
-                'sific': 'http://www.alpek.com/pdf/2018/1T-2018-ALPEK-XBRL.pdf',
-                'conferencia': 'http://www.alpek.com/audio/20180419-129088-alpek.mp3',
-                'estados': 'http://www.alpek.com/pdf/2018/Alpek-1Q18-Unaudited-Consolidated-Financial-Statements.pdf'
+                'reporte': '',
+                'sific': '',
+                'conferencia': '',
             },
             'tri_2T': {
                 'fecha': '2T',
                 'reporte': '',
                 'sific': '',
-                'conferencia': 'http://www.alpek.com/audio/20180719-130108-alpek.mp3',
-                'estados': 'http://www.alpek.com/pdf/2018/Alpek-2Q18-Unaudited-Consolidated-Financial-Statements.pdf'
+                'conferencia': '',
             },
             'tri_3T': {
                 'fecha': '3T',
-                'reporte': 'http://www.alpek.com/pdf/2018/Alpek-3T18.pdf',
-                'sific': 'http://www.alpek.com/pdf/2018/XBRL-Alpek-3T18-formato-BMV.pdf',
-                'conferencia': 'http://www.alpek.com/audio/20181016-131058-alpek.mp3',
-                'estados': ''
+                'reporte': 'http://fibra-nova.com/es/wp-content/uploads/2018/02/Press-Release-FNOVA-3T17.pdf',
+                'sific': 'http://fibra-nova.com/es/wp-content/uploads/2018/02/fibraxbrl_FNOVA_2017-3.pdf',
+                'conferencia': '',
             },
             'tri_4T': {
                 'fecha': '4T',
-                'reporte': '',
-                'sific': '',
-                'conferencia': '',
-                'estados': ''
+                'reporte': 'http://fibra-nova.com/es/wp-content/uploads/2018/02/Press-Release-FNOVA-4T17.pdf',
+                'sific': 'http://fibra-nova.com/es/wp-content/uploads/2018/05/fibraxbrl_FNOVA_2017-4D.pdf',
+                'conferencia': 'http://fibra-nova.com/es/wp-content/uploads/2018/03/Sala-21507-28-de-February-Conferencia-en-Resultados-Fibra-Nova.mp3',
             }
         }
     ]
