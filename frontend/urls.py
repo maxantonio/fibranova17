@@ -26,4 +26,6 @@ urlpatterns = [
     path('bursatil/prospectos-suplementos', views.prospectos_suplementos, name='gobierno-prospectos-suplementos'),
     path('bursatil/asambleas', views.asambleas, name='gobierno-asambleas'),
     path('bursatil/codigo-etica', views.codigo_etica, name='gobierno-codigo-etica'),
+    path('suscribir/', views.suscribir, name='suscribir'),
+
 ]

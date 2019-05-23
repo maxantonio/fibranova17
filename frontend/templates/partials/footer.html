@@ -2,120 +2,128 @@
 
 <footer class="main-footer">
 
+    <div class="auto-container">
+        <div class="row clearfix">
+
+            <!--big column-->
+            <div class="big-column col-md-6 col-sm-12 col-xs-12">
+                <div class="row clearfix">
+
+                    <!--Footer Column-->
+                    <div class="footer-column col-md-7 col-sm-6 col-xs-12">
+                        <div class="footer-widget logo-widget">
+                            <div class="footer-logo">
+                                <figure><a href="{% url 'frontend:index' %}"><img src="{% static 'images/logo-footer.png' %}"
+                                                                  alt=""></a></figure>
+                            </div>
+                            <div class="widget-content">
+                                <div class="text">Fibra Nova es un Fideicomiso de Inversión en Bienes raíces, su
+                                    objetivo es el de adquirir, administrar y desarrollar un portafolio de bienes
+                                    inmuebles de alta calidad en México, contando en la actualidad con 285 mil m2 en sus
+                                    92 propiedades a través del país.
+                                </div>
+                                <div class="emailed-form">
+                                    <form method="post" action="{% url 'frontend:suscribir' %}">
+                                        {% csrf_token %}
+                                        <div class="form-group">
+                                            <input type="email" name="email" value="" placeholder="Correo electrónico"
+                                                   required>
+                                            <button type="submit" class="theme-btn"><span
+                                                    class="fa fa-angle-right"></span></button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Footer Column-->
+                    <div class="footer-column col-md-5 col-sm-6 col-xs-12">
+                        <div class="footer-widget links-widget">
+                            <h2>Enlaces sugeridos</h2>
+                            <div class="widget-content">
+                                <ul class="list">
+                                    <li><a href="{% url 'frontend:perfil-historia' %}">Historia</a></li>
+                                    <li><a href="{% url 'frontend:portafolio' %}">Portafolio</a></li>
+                                    {#                                    <li><a href="{% url '' %}">Inversionistas</a></li>#}
+                                    <li><a href="{% url 'frontend:inversionistas-eventos-relevantes' %}">Eventos
+                                        Relevantes</a></li>
+                                    <li><a href="{% url 'frontend:gobierno-directivos' %}">Directivos</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!--big column-->
+            <div class="big-column col-md-6 col-sm-12 col-xs-12">
+                <div class="row clearfix">
+
+                    <!--Footer Column-->
+                    <div class="footer-column col-md-6 col-sm-6 col-xs-12">
+                        <div class="footer-widget links-widget">
+                            <h2>Oficinas centrales</h2>
+                            <div class="widget-content">
+                                <div class="text">
+                                    kilómetro 7.5 carretera Cuauhtémoc colonia Las Animas en la Ciudad de Chihuahua, Chihuahua
+                                </div>
+{#                                <ul class="list">#}
+{#                                    <li><a href="#">About us</a></li>#}
+{#                                    <li><a href="#">Customer</a></li>#}
+{#                                    <li><a href="#">Service</a></li>#}
+{#                                    <li><a href="#">Collection</a></li>#}
+{#                                    <li><a href="#">Blog</a></li>#}
+{#                                    <li><a href="#">BestSellers</a></li>#}
+{#                                </ul>#}
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Footer Column-->
+                    <div class="footer-column col-md-6 col-sm-6 col-xs-12">
+                        <div class="footer-widget info-widget">
+                            <h2>Contacto</h2>
+                            <div class="widget-content">
+                                <ul class="list-style-one">
+                                    <li><span class="icon flaticon-user"></span>Luis Carlos Piñon Reza</li>
+                                    <li><span class="icon flaticon-business"></span>Director de Finanzas y Administración</li>
+{#                                    <li><span class="icon flaticon-phone-call"></span>+880 1723 801 729</li>#}
+                                    <li><span class="icon flaticon-envelope"></span>lpinon@fibra-nova.com</li>
+                                </ul>
+{#                                <ul class="social-icon-one">#}
+{#                                    <li><a href="#"><span class="fa fa-facebook"></span></a></li>#}
+{#                                    <li><a href="#"><span class="fa fa-twitter"></span></a></li>#}
+{#                                    <li><a href="#"><span class="fa fa-google-plus"></span></a></li>#}
+{#                                    <li><a href="#"><span class="fa fa-dribbble"></span></a></li>#}
+{#                                </ul>#}
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!--Footer Bottom-->
+    <div class="footer-bottom">
         <div class="auto-container">
             <div class="row clearfix">
-
-                <!--big column-->
-                <div class="big-column col-md-6 col-sm-12 col-xs-12">
-                    <div class="row clearfix">
-
-                        <!--Footer Column-->
-                        <div class="footer-column col-md-7 col-sm-6 col-xs-12">
-                            <div class="footer-widget logo-widget">
-                                <div class="footer-logo">
-                                    <figure><a href="index.html"><img src="{% static 'images/logo-footer.png' %}" alt=""></a></figure>
-                                </div>
-                                <div class="widget-content">
-                                    <div class="text">Investing is a global consulting firm with a twist. We bring big
-                                        ideas and challenge the norm. We work with our clients, not at them.
-                                    </div>
-                                    <div class="emailed-form">
-                                        <form method="post" action="contact.html">
-                                            <div class="form-group">
-                                                <input type="email" name="email" value="" placeholder="Enter Your Email"
-                                                       required>
-                                                <button type="submit" class="theme-btn"><span
-                                                        class="fa fa-angle-right"></span></button>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!--Footer Column-->
-                        <div class="footer-column col-md-5 col-sm-6 col-xs-12">
-                            <div class="footer-widget links-widget">
-                                <h2>Useful Links</h2>
-                                <div class="widget-content">
-                                    <ul class="list">
-                                        <li><a href="#">Privacy Policy</a></li>
-                                        <li><a href="#">Terms & Condition</a></li>
-                                        <li><a href="#">Support</a></li>
-                                        <li><a href="#">Contact Us</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <div class="copyright">&copy; 2018 <a href="#">Investing</a> All Rights Reserved.</div>
                 </div>
-
-                <!--big column-->
-                <div class="big-column col-md-6 col-sm-12 col-xs-12">
-                    <div class="row clearfix">
-
-                        <!--Footer Column-->
-                        <div class="footer-column col-md-6 col-sm-6 col-xs-12">
-                            <div class="footer-widget links-widget">
-                                <h2>Information</h2>
-                                <div class="widget-content">
-                                    <ul class="list">
-                                        <li><a href="#">About us</a></li>
-                                        <li><a href="#">Customer</a></li>
-                                        <li><a href="#">Service</a></li>
-                                        <li><a href="#">Collection</a></li>
-                                        <li><a href="#">Blog</a></li>
-                                        <li><a href="#">BestSellers</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!--Footer Column-->
-                        <div class="footer-column col-md-6 col-sm-6 col-xs-12">
-                            <div class="footer-widget info-widget">
-                                <h2>Our address</h2>
-                                <div class="widget-content">
-                                    <ul class="list-style-one">
-                                        <li><span class="icon flaticon-placeholder"></span>60 Grant Ave. Central New
-                                            <br> Road 0708, UK
-                                        </li>
-                                        <li><span class="icon flaticon-phone-call"></span>+880 1723 801 729</li>
-                                        <li><span class="icon flaticon-envelope"></span>Investing@gmail.com</li>
-                                    </ul>
-                                    <ul class="social-icon-one">
-                                        <li><a href="#"><span class="fa fa-facebook"></span></a></li>
-                                        <li><a href="#"><span class="fa fa-twitter"></span></a></li>
-                                        <li><a href="#"><span class="fa fa-google-plus"></span></a></li>
-                                        <li><a href="#"><span class="fa fa-dribbble"></span></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-        <!--Footer Bottom-->
-        <div class="footer-bottom">
-            <div class="auto-container">
-                <div class="row clearfix">
-                    <div class="col-md-6 col-sm-6 col-xs-12">
-                        <div class="copyright">&copy; 2018 <a href="#">Investing</a> All Rights Reserved.</div>
-                    </div>
-                    <div class="col-md-6 col-sm-6 col-xs-12">
-                        <ul class="footer-nav">
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">FAQ’s</a></li>
-                            <li><a href="#">Login</a></li>
-                        </ul>
-                    </div>
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <ul class="footer-nav">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">FAQ’s</a></li>
+                        <li><a href="#">Login</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
+    </div>
 
-    </footer>
+</footer>

@@ -1,7 +1,9 @@
-from django.shortcuts import render
+from django.core.mail import send_mail
+from django.shortcuts import render, redirect
+from django.views.decorators.http import require_POST
+from django.template import loader
 
 
-# Create your views here.
 def index(request):
     context = {'title': 'Index'}
     return render(request, 'frontend/index.html', context)
@@ -203,3 +205,23 @@ def codigo_etica(request):
     return render(request, 'frontend/gobierno/codigo-etica.html', context)
 
 # END GOBIERNO
+
+@require_POST
+def suscribir(request):
+    context = {'title': 'Inicio'}
+    email = request.POST['email']
+    html_message = loader.render_to_string(
+        'frontend/emails/suscribirse.html',
+        {
+            'email': email,
+        }
+    )
+
+    send_mail(
+        'Usuario desea suscribirse a la lista de distribución del sitio FibraNova',
+        '',
+        'no-reply@fibranova.com',
+        ['it@irstrat.com'],
+        html_message=html_message
+    )
+    return redirect('frontend:index')
