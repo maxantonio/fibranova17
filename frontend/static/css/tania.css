@@ -173,7 +173,7 @@ input, button, select, textarea {
     font-family: 'PT Sans', sans-serif;
 }
 
-.emailed-form{
+.emailed-form {
     position: relative;
 }
 
@@ -190,9 +190,33 @@ input, button, select, textarea {
     background: #0d70b7;
 }
 
+.main-footer {
+    padding: 30px 0 0;
+}
+
+.main-footer .footer-bottom {
+    margin-top: 0;
+}
+
+#text1, #text2 {
+    font-size: 30px;
+}
+
+#text3{
+    font-size: 22px;
+}
+
+.main-slider h2 {
+    font-size: 46px;
+}
+
 @media (min-width: 993px) and (max-width: 1200px) {
     .testimonial-block-four .inner-box {
         min-height: 800px;
+    }
+
+    #text1, #text2 {
+        font-size: 25px;
     }
 }
 
@@ -200,6 +224,11 @@ input, button, select, textarea {
     .testimonial-block-four .inner-box {
         min-height: 1100px;
     }
+    #text1, #text2 {
+        font-size: 25px;
+        margin-left: 150px;
+    }
+
 }
 
 @media (min-width: 500px) and (max-width: 763px) {
@@ -211,5 +240,9 @@ input, button, select, textarea {
 @media (max-width: 499px) {
     .testimonial-block-four .inner-box {
         min-height: 900px;
+    }
+
+    #text1, #text2 {
+        font-size: 18px;
     }
 }
