@@ -10,6 +10,7 @@ django = "==2.1.5"
 django-heroku = "*"
 gunicorn = "==19.7.1"
 python-dotenv = "*"
+dotenv = "*"
 
 [requires]
 python_version = "3.7"
