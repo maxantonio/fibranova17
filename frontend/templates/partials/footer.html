@@ -69,17 +69,7 @@
 {#                                    <li><a href="#">BestSellers</a></li>#}
 {#                                </ul>#}
                             </div>
-                            <div class="emailed-form">
-                                <form method="post" action="{% url 'frontend:suscribir' %}">
-                                    {% csrf_token %}
-                                    <div class="form-group">
-                                        <input type="email" name="email" value="" placeholder="Correo electrónico"
-                                               required>
-                                        <button type="submit" class="theme-btn"><span
-                                                class="fa fa-angle-right"></span></button>
-                                    </div>
-                                </form>
-                            </div>
+
                         </div>
                     </div>
 
@@ -94,6 +84,17 @@
 {#                                    <li><span class="icon flaticon-phone-call"></span>+880 1723 801 729</li>#}
                                     <li><span class="icon flaticon-envelope"></span>lpinon@fibra-nova.com</li>
                                 </ul>
+                                <div class="emailed-form">
+                                <form method="post" action="{% url 'frontend:suscribir' %}">
+                                    {% csrf_token %}
+                                    <div class="form-group">
+                                        <input type="email" name="email" value="" placeholder="Correo electrónico"
+                                               required>
+                                        <button type="submit" class="theme-btn"><span
+                                                class="fa fa-angle-right"></span></button>
+                                    </div>
+                                </form>
+                            </div>
 {#                                <ul class="social-icon-one">#}
 {#                                    <li><a href="#"><span class="fa fa-facebook"></span></a></li>#}
 {#                                    <li><a href="#"><span class="fa fa-twitter"></span></a></li>#}
