@@ -59,17 +59,7 @@
                                 <div class="text">
                                     km 7.5 carretera Cuauhtémoc colonia Las Animas en la Ciudad de Chihuahua, Chihuahua
                                 </div>
-                                <div class="emailed-form">
-                                    <form method="post" action="{% url 'frontend:suscribir' %}">
-                                        {% csrf_token %}
-                                        <div class="form-group">
-                                            <input type="email" name="email" value="" placeholder="Correo electrónico"
-                                                   required>
-                                            <button type="submit" class="theme-btn"><span
-                                                    class="fa fa-angle-right"></span></button>
-                                        </div>
-                                    </form>
-                                </div>
+
 {#                                <ul class="list">#}
 {#                                    <li><a href="#">About us</a></li>#}
 {#                                    <li><a href="#">Customer</a></li>#}
@@ -78,6 +68,17 @@
 {#                                    <li><a href="#">Blog</a></li>#}
 {#                                    <li><a href="#">BestSellers</a></li>#}
 {#                                </ul>#}
+                            </div>
+                            <div class="emailed-form">
+                                <form method="post" action="{% url 'frontend:suscribir' %}">
+                                    {% csrf_token %}
+                                    <div class="form-group">
+                                        <input type="email" name="email" value="" placeholder="Correo electrónico"
+                                               required>
+                                        <button type="submit" class="theme-btn"><span
+                                                class="fa fa-angle-right"></span></button>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>
@@ -114,14 +115,8 @@
         <div class="auto-container">
             <div class="row clearfix">
                 <div class="col-md-6 col-sm-6 col-xs-12">
-                    <div class="copyright">&copy; 2018 <a href="#">Investing</a> All Rights Reserved.</div>
-                </div>
-                <div class="col-md-6 col-sm-6 col-xs-12">
-                    <ul class="footer-nav">
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">FAQ’s</a></li>
-                        <li><a href="#">Login</a></li>
-                    </ul>
+                    <div class="copyright">&copy; 2019 <a href="#">Fibra Nova</a> -
+                      Diseñado y generado por <a href="http://www.irdesign.mx/">IRDesign</a></div>
                 </div>
             </div>
         </div>
