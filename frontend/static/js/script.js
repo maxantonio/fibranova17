@@ -333,7 +333,7 @@
             margin: 30,
             nav: true,
             smartSpeed: 1000,
-            autoplay: 5000,
+            autoplay: false,
             navText: ['<span class="fa fa-angle-left"></span>', '<span class="fa fa-angle-right"></span>'],
             responsive: {
                 0: {

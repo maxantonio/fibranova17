@@ -144,6 +144,12 @@ ul.list3 li::before {
     font-style: normal;
     color: #242424;
 }
+.testimonial-block-five .author-info {
+    position: relative;
+    text-align: right;
+    float: left;
+    padding: 0px 95px 0px 0px;
+}
 
 .author-info .text {
     position: relative;
@@ -151,6 +157,7 @@ ul.list3 li::before {
     font-weight: 600 !important;
     font-style: italic !important;
     color: #242424;
+    text-align: left !important;
 }
 
 input {
