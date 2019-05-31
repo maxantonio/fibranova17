@@ -210,6 +210,10 @@ input, button, select, textarea {
     font-size: 46px;
 }
 
+.gallery-item .lower-content {
+    min-height: 320px;
+}
+
 @media (min-width: 993px) and (max-width: 1200px) {
     .testimonial-block-four .inner-box {
         min-height: 800px;
