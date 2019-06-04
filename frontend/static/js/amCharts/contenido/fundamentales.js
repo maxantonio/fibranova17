@@ -48,7 +48,7 @@ var chart = AmCharts.makeChart("chart_situacion", {
     "categoryField": "year",
     "rotate": false,
     "startDuration": 1,
-    "colors": ["#0056A1", "#0384B2", "#F2C951", "#FCB871", "#EF8B21", "#F26544", "#B17029"],
+    "colors": ["#1F478D", "#E11D50", "#08193B", "#B81F3C", "#4F709E", "#F16991", "#8EBEE6"],
     "categoryAxis": {
         "gridPosition": "start",
         "position": "left"
@@ -230,7 +230,7 @@ var configFundamentales = {
         "categoryField": "year",
         "rotate": false,
         "startDuration": 1,
-        "colors": ["#0056A1", "#0384B2", "#F2C951", "#FCB871", "#EF8B21", "#F26544", "#B17029"],
+        "colors": ["#1F478D", "#E11D50", "#08193B", "#B81F3C", "#4F709E", "#F16991", "#8EBEE6"],
         "categoryAxis": {
             "gridPosition": "start",
             "position": "left"
@@ -375,7 +375,7 @@ var configFundamentales = {
                 "size": 12
             }
         ],
-        "colors": ["#0056A1", "#0384B2", "#F2C951", "#FCB871", "#EF8B21", "#F26544", "#B17029"],
+        "colors": ["#1F478D", "#E11D50", "#08193B", "#B81F3C", "#4F709E", "#F16991", "#8EBEE6"],
         "categoryAxis": {
             "gridPosition": "start",
             "position": "left"
@@ -524,7 +524,7 @@ var configFundamentales = {
         "categoryField": "year",
         "rotate": false,
         "startDuration": 1,
-        "colors": ["#0056A1", "#0384B2", "#F2C951", "#FCB871", "#EF8B21", "#F26544", "#B17029"],
+        "colors": ["#1F478D", "#E11D50", "#08193B", "#B81F3C", "#4F709E", "#F16991", "#8EBEE6"],
         "categoryAxis": {
             "gridPosition": "start",
             "position": "left"
@@ -592,7 +592,7 @@ var configFundamentales = {
         "categoryField": "year",
         "rotate": false,
         "startDuration": 1,
-        "colors": ["#0056A1", "#0384B2", "#F2C951", "#FCB871", "#EF8B21", "#F26544", "#B17029"],
+        "colors": ["#1F478D", "#E11D50", "#08193B", "#B81F3C", "#4F709E", "#F16991", "#8EBEE6"],
         "categoryAxis": {
             "gridPosition": "start",
             "position": "left"
