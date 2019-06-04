@@ -11,6 +11,7 @@ django-heroku = "*"
 gunicorn = "==19.7.1"
 python-dotenv = "*"
 dotenv = "*"
+upgrade = "*"
 
 [requires]
 python_version = "3.7"
