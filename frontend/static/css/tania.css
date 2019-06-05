@@ -239,6 +239,15 @@ input, button, select, textarea {
     height: 50px;
 }
 
+.theme-btn.btn-style-one:hover{
+    background-color: #1F478D;
+    color: white;
+}
+
+.news-block .inner-box .lower-content {
+    min-height: 220px;
+}
+
 @media (min-width: 993px) and (max-width: 1200px) {
     .testimonial-block-four .inner-box {
         min-height: 800px;
