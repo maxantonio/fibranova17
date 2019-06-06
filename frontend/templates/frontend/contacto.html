@@ -25,11 +25,12 @@
     <!-- Get in Touch -->
     <section class="getintouch">
         <div class="auto-container">
-            <div class="sec-title">
-                <h2>Contáctanos </h2>
-            </div>
+
             <div class="row">
-                <div class="col-md-5 col-sm-6 col-xs-12">
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                  <div class="sec-title">
+                      <h2>Contáctanos </h2>
+                  </div>
                     <div class="contact-form default-form">
                         <form action="{% url 'frontend:send-mail-contact' %}" method="post">
                             {% csrf_token %}
@@ -65,8 +66,8 @@
                     </div>
                     <br><br><br>
                 </div>
-                <div class="col-md-5 col-sm-6 col-xs-12 text-right">
-                    <img src="{% static 'images/historia/2018-1.png' %}" alt="">
+                <div class="col-md-6 col-sm-6 col-xs-12 text-right">
+                    <img src="{% static 'images/contenido/contacto.png' %}" alt="">
                 </div>
             </div>
         </div>
