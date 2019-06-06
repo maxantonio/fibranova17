@@ -204,6 +204,7 @@ def codigo_etica(request):
     context = {'title': 'Código de etica'}
     return render(request, 'frontend/gobierno/codigo-etica.html', context)
 
+
 # END GOBIERNO
 
 @require_POST
@@ -219,6 +220,33 @@ def suscribir(request):
 
     send_mail(
         'Usuario desea suscribirse a la lista de distribución del sitio FibraNova',
+        '',
+        'no-reply@fibranova.com',
+        ['it@irstrat.com'],
+        html_message=html_message
+    )
+    return redirect('frontend:index')
+
+
+@require_POST
+def send_mail_contact(request):
+    context = {'title': 'Inicio'}
+    nombre = request.POST['username']
+    email = request.POST['email']
+    asunto = request.POST['subject']
+    mensaje = request.POST['message']
+    html_message = loader.render_to_string(
+        'frontend/emails/send_mail.html',
+        {
+            'nombre': nombre,
+            'email': email,
+            'asunto': asunto,
+            'mensaje': mensaje,
+        }
+    )
+
+    send_mail(
+        'Usuario anónimo desea contactar con admin del sitio FibraNova',
         '',
         'no-reply@fibranova.com',
         ['it@irstrat.com'],

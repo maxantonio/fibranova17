@@ -27,5 +27,6 @@ urlpatterns = [
     path('bursatil/asambleas', views.asambleas, name='gobierno-asambleas'),
     path('bursatil/codigo-etica', views.codigo_etica, name='gobierno-codigo-etica'),
     path('suscribir/', views.suscribir, name='suscribir'),
+    path('send-mail-contact/', views.send_mail_contact, name='send-mail-contact'),
 
 ]

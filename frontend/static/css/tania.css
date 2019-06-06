@@ -144,6 +144,7 @@ ul.list3 li::before {
     font-style: normal;
     color: #242424;
 }
+
 .testimonial-block-five .author-info {
     position: relative;
     text-align: right;
@@ -209,7 +210,7 @@ input, button, select, textarea {
     font-size: 30px;
 }
 
-#text3{
+#text3 {
     font-size: 22px;
 }
 
@@ -221,12 +222,12 @@ input, button, select, textarea {
     min-height: 320px;
 }
 
-.nosotros .row{
+.nosotros .row {
     display: flex;
     align-items: center;
 }
 
-.pt-0{
+.pt-0 {
     padding-top: 0 !important;
 }
 
@@ -239,13 +240,17 @@ input, button, select, textarea {
     height: 50px;
 }
 
-.theme-btn.btn-style-one:hover{
+.theme-btn.btn-style-one:hover {
     background-color: #1F478D;
     color: white;
 }
 
 .news-block .inner-box .lower-content {
     min-height: 220px;
+}
+
+.cp, .cp:hover, .cp:focus, .cp:active {
+    cursor: pointer !important;
 }
 
 @media (min-width: 993px) and (max-width: 1200px) {
@@ -262,6 +267,7 @@ input, button, select, textarea {
     .testimonial-block-four .inner-box {
         min-height: 1100px;
     }
+
     #text1, #text2 {
         font-size: 25px;
         /*margin-left: 150px;*/
@@ -288,7 +294,7 @@ input, button, select, textarea {
         font-size: 18px;
     }
 
-    #text4{
-     font-size: 22px;
+    #text4 {
+        font-size: 22px;
     }
 }
