@@ -314,12 +314,42 @@ input, button, select, textarea {
 .accordion .panel .panel--heading a {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
-    color: black;
+    color: #042156;
     font-weight: 700;
     line-height: 20px;
     text-transform: capitalize;
     position: relative;
     display: block;
+}
+
+table {
+  border-left: none !important;
+  border-top: none !important;
+  border-right: none !important;
+}
+
+table thead tr th:first-child {
+  border-top-left-radius: 2em;
+  border-left: none !important;
+  border-top: none !important;
+  border-right: none !important;
+}
+
+table thead tr th:last-child {
+  border-top-right-radius: 2em;
+  border-left: none !important;
+  border-top: none !important;
+  border-right: none !important;
+}
+
+table thead tr th {
+  background-color: #042156 !important;
+  color: white !important;
+  border-top: none !important;
+}
+
+table tbody tr:nth-child(even) {
+  background-color: rgba(198, 198, 197, .5) !important;
 }
 
 @media (min-width: 993px) and (max-width: 1200px) {
