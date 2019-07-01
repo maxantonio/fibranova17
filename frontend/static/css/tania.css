@@ -259,7 +259,6 @@ input, button, select, textarea {
 
 .sec-title h2.text-center::after {
     left: 37%;
-    display: none;
 }
 
 .accordion .panel {
