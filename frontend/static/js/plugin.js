@@ -197,12 +197,12 @@ jQuery(document).ready(function($){
 			closeQuickView( sliderFinalWidth, maxQuickWidth);
 		}
 	});
-	$(document).keyup(function(event){
-		//check if user has pressed 'Esc'
-    	if(event.which=='27'){
-			closeQuickView( sliderFinalWidth, maxQuickWidth);
-		}
-	});
+	// $(document).keyup(function(event){
+	// 	//check if user has pressed 'Esc'
+    // 	if(event.which=='27'){
+	// 		closeQuickView( sliderFinalWidth, maxQuickWidth);
+	// 	}
+	// });
 
 	//quick view slider implementation
 	$('.cd-quick-view').on('click', '.cd-slider-navigation a', function(){
