@@ -26,7 +26,7 @@ def perfil_nosotros(request):
 
 
 def presencia_geografica(request):
-    context = {'title': 'Presencia Geografica'}
+    context = {'title': 'Presencia Geográfica'}
     return render(request, 'frontend/perfil/presencia_geografica.html', context)
 
 
@@ -50,7 +50,7 @@ def reportes_trimestrales(request):
             'anno': 2019,
             'tri_1T': {
                 'fecha': '1T',
-                'reporte': 'http://www.http://fibra-nova.com/es/wp-content/uploads/2019/04/Press-Release-FNOVA-1T19.pdfalpek.com/pdf/2018/Alpek-1T18.pdf',
+                'reporte': 'http://fibra-nova.com/es/wp-content/uploads/2019/04/Press-Release-FNOVA-1T19.pdf',
                 'sific': 'http://fibra-nova.com/es/wp-content/uploads/2019/04/fibraxbrl_FNOVA_2019-1.pdf',
                 'conferencia': 'http://fibra-nova.com/es/wp-content/uploads/2019/04/Sala-21507-30-de-April-Conferencia-en-Resultados-Fibra-Nova.mp3',
             },
@@ -95,8 +95,8 @@ def reportes_trimestrales(request):
             },
             'tri_4T': {
                 'fecha': '4T',
-                'reporte': 'http://fibra-nova.com/es/wp-content/uploads/2019/04/fibraxbrl_FNOVA_2018-4D.pdf',
-                'sific': 'http://fibra-nova.com/es/wp-content/uploads/2019/02/fibraxbrl_FNOVA_2018-4.pdf',
+                'reporte': 'http://fibra-nova.com/es/wp-content/uploads/2019/05/Press-Release-FNOVA-4T18.pdf',
+                'sific': 'http://fibra-nova.com/es/wp-content/uploads/2019/04/fibraxbrl_FNOVA_2018-4D.pdf',
                 'conferencia': 'http://fibra-nova.com/es/wp-content/uploads/2019/03/Sala-21507-05-de-March-Conferencia-en-Resultados-Fibra-Nova.mp3',
             }
         },
@@ -181,7 +181,7 @@ def directivos(request):
 
 
 def comites(request):
-    context = {'title': 'Comites'}
+    context = {'title': 'Comités'}
     return render(request, 'frontend/gobierno/comites.html', context)
 
 
@@ -201,7 +201,7 @@ def asambleas(request):
 
 
 def codigo_etica(request):
-    context = {'title': 'Código de etica'}
+    context = {'title': 'Código de Ética'}
     return render(request, 'frontend/gobierno/codigo-etica.html', context)
 
 
