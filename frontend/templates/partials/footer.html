@@ -36,7 +36,7 @@
                             <div class="widget-content">
                                 <ul class="list">
                                     <li><a href="{% url 'frontend:perfil-historia' %}">Historia</a></li>
-                                    <li><a href="{% url 'frontend:portafolio' %}">Portafolio</a></li>
+                                    <li><a href="{% url 'frontend:portafolio' tab='todos' %}">Portafolio</a></li>
                                     {#                                    <li><a href="{% url '' %}">Inversionistas</a></li>#}
                                     <li><a href="{% url 'frontend:inversionistas-eventos-relevantes' %}">Eventos
                                         Relevantes</a></li>
@@ -88,7 +88,8 @@
                                     </li>
                                     {#                                    <li><span class="icon flaticon-phone-call"></span>+880 1723 801 729</li>#}
                                     <li><span class="icon flaticon-envelope"></span><a class="tc-white"
-                                            href="mailto:lpinon@fibra-nova.com">lpinon@fibra-nova.com</a></li>
+                                                                                       href="mailto:lpinon@fibra-nova.com">lpinon@fibra-nova.com</a>
+                                    </li>
                                 </ul>
                                 <div class="emailed-form">
                                     <form method="post" action="{% url 'frontend:suscribir' %}">

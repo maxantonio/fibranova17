@@ -14,8 +14,9 @@ def contacto(request):
     return render(request, 'frontend/contacto.html', context)
 
 
-def portafolio(request):
-    context = {'title': 'Portafolio'}
+def portafolio(request, tab):
+    context = {'title': 'Portafolio',
+               'tab': tab}
     return render(request, 'frontend/portafolio.html', context)
 
 
