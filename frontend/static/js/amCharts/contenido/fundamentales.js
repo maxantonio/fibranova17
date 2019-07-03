@@ -59,7 +59,7 @@ var chart = AmCharts.makeChart("chart_situacion", {
             "size": 15
         },
         {
-            "text": "Millones de pesos mexicanos",
+            "text": "Miles de pesos mexicanos",
             "size": 12
         }
     ],
@@ -203,9 +203,9 @@ if (locale == "es") {
  Indicadores de operación
  ===============================*/
 if (locale == "es") {
-    var io_abr = "Vigencia promedio del contrato (años)";
+    var io_abr = "ABR (m2)";
 } else {
-    var io_abr = "Vigencia promedio del contrato (años)";
+    var io_abr = "ABR (m2)";
 }
 
 /*==============================
@@ -241,7 +241,7 @@ var configFundamentales = {
                 "size": 15
             },
             {
-                "text": "Millones de pesos mexicanos",
+                "text": "Miles de pesos mexicanos",
                 "size": 12
             }
         ],
@@ -371,7 +371,7 @@ var configFundamentales = {
                 "size": 15
             },
             {
-                "text": "Millones de pesos mexicanos",
+                "text": "Miles de pesos mexicanos",
                 "size": 12
             }
         ],
@@ -511,7 +511,7 @@ var configFundamentales = {
     g3: {
         "titles": [
             {
-                "text": "Indicadores de operación",
+                "text": "Indicadores Operativos",
                 "size": 15
             },
             // {
@@ -639,7 +639,7 @@ var configFundamentales = {
         "guides": [],
         "valueAxes": [
             {
-                "unit": "%",
+                "unit": "$",
                 "unitPosition": "left",
                 "id": "ValueAxis-1",
                 "position": "left",
