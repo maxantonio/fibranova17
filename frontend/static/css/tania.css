@@ -454,6 +454,17 @@ table tbody tr:nth-child(even) {
     overflow: hidden;
 }
 
+.fact-counter .column .inner {
+    min-height: 175px;
+}
+
+.theme-btn.btn-style-one, .theme-btn.btn-style-one:focus, .theme-btn.btn-style-one:visited {
+    color: white;
+}
+
+.page-title h1 {
+    font-size: 65px;
+}
 
 /* 100% Image Width on Smaller Screens */
 @media only screen and (max-width: 700px) {
@@ -497,6 +508,10 @@ table tbody tr:nth-child(even) {
 @media (max-width: 499px) {
     .testimonial-block-four .inner-box {
         min-height: 900px;
+    }
+
+    .page-title h1 {
+        font-size: 36px;
     }
 
     #text1, #text2 {
