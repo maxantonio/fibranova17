@@ -26,7 +26,7 @@ def perfil_nosotros(request):
 
 
 def presencia_geografica(request):
-    context = {'title': 'Presencia Geografica'}
+    context = {'title': 'Presencia Geográfica'}
     return render(request, 'frontend/perfil/presencia_geografica.html', context)
 
 
