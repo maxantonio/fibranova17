@@ -514,10 +514,10 @@ var configFundamentales = {
                 "text": "Indicadores Operativos",
                 "size": 15
             },
-            // {
-            //     "text": "Millones de pesos mexicanos",
-            //     "size": 12
-            // }
+            {
+              "text": "(m2)",
+              "size": 12
+            }
         ],
         "type": "serial",
         "theme": "light",
