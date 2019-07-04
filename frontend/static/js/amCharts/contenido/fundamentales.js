@@ -59,7 +59,7 @@ var chart = AmCharts.makeChart("chart_situacion", {
             "size": 15
         },
         {
-            "text": "Miles de pesos mexicanos",
+            "text": "(Miles de pesos mexicanos)",
             "size": 12
         }
     ],
@@ -241,7 +241,7 @@ var configFundamentales = {
                 "size": 15
             },
             {
-                "text": "Miles de pesos mexicanos",
+                "text": "(Miles de pesos mexicanos)",
                 "size": 12
             }
         ],
@@ -371,7 +371,7 @@ var configFundamentales = {
                 "size": 15
             },
             {
-                "text": "Miles de pesos mexicanos",
+                "text": "(Miles de pesos mexicanos)",
                 "size": 12
             }
         ],

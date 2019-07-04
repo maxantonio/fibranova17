@@ -13,7 +13,7 @@
                         </figure>
                         <div class="content">
                             <div class="icon-box"><img src="{% static 'images/contenido/icono3.png' %}" alt=""></div>
-                            <h3><a href="{% url 'frontend:portafolio' tab='manufactura' %}">Portafolio Comercial</a></h3>
+                            <h3><a href="{% url 'frontend:portafolio' tab='oficinas' %}">Portafolio Comercial</a></h3>
                             <div class="text">
                                 <p>65 propiedades</p>
                                 <p>23,431 m<sup>2</sup></p>
@@ -66,7 +66,7 @@
                             <div class="icon-box">
                                 <img src="{% static 'images/contenido/icono1.png' %}" alt="">
                             </div>
-                            <h3><a href="#">Portafolio Industrial</a></h3>
+                            <h3><a href="{% url 'frontend:portafolio' tab='manufactura' %}">Portafolio Industrial</a></h3>
                             <div class="text">
                                 <p>11 propiedades</p>
                                 <p>167,456 m<sup>2</sup></p>
