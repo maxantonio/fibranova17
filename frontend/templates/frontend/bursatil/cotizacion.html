@@ -1,13 +1,26 @@
 {% extends 'layouts/base.html' %}
-
+{% load static %}
 {% block content %}
     <section class="default-section">
         <div class="auto-container">
             <div class="row clearfix">
                 <h1>{{ title }}</h1>
+                <div id="chartdiv3" class="mt-5 mb-3" style="width:100%; min-height:600px;"></div>
 
             </div>
             <br><br>
         </div>
     </section>
+{% endblock %}
+{% block otherscripts %}
+    <script src="{% static 'js/amCharts/amcharts.js' %}"></script>
+    <script src="{% static 'js/amCharts/serial.js' %}"></script>
+    <script src="{% static 'js/amCharts/amstock.js' %}"></script>
+    <script src="{% static 'js/jquery-ui-1.11.0.min.js' %}"></script>
+    <script src="{% static 'js/amCharts/themes/iredge.js' %}"></script>
+    <script src="{% static 'js/amCharts/contenido/dashboard.js' %}?v=1.0.2"></script>
+{% endblock %}
+{% block otherstyles %}
+    <link rel="stylesheet" href="{% static 'css/jquery-ui.css' %}">
+    <link rel="stylesheet" href="{% static 'css/amcharts.css' %}?v=1.0.1">
 {% endblock %}

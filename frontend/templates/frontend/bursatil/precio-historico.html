@@ -1,12 +1,43 @@
 {% extends 'layouts/base.html' %}
-
+{% load static %}
 {% block content %}
     <section class="default-section">
         <div class="auto-container">
             <div class="row clearfix">
                 <h1>{{ title }}</h1>
+<br/>
+                <div class="col-md-12 text-justify">
+                    <div id="precios-historicos">
+                        <br>
+                        <div class="table-responsive">
+                            <table class="table key_value_responsive table-striped table-bordered" id="datatable">
+                                <thead>
+                                <tr>
+                                    <th style="width:80px">Fecha</th>
+                                    <th>Cierre</th>
+                                    <th>Apertura</th>
+                                    <th>Máximo</th>
+                                    <th>Mínimo</th>
+                                    <th>Volumen</th>
+                                </tr>
+                                </thead>
+                                <tbody id="tbody_ph">
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <small>* Precios ajustados por distribuciones</small>
+                </div>
             </div>
             <br><br>
         </div>
     </section>
+{% endblock %}
+{% block otherscripts %}
+    <script src="{% static 'js/bootstrap-datatables/jquery.dataTables.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap-datatables/dataTables.bootstrap4.min.js' %}"></script>
+    <script src="{% static 'js/historicos.js' %}"></script>
+{% endblock %}
+{% block otherstyles %}
+    <link rel="stylesheet" href="{% static 'css/dataTables.bootstrap4.min.css' %}"/>
 {% endblock %}

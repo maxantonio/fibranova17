@@ -165,13 +165,13 @@ def distribuciones(request):
 # END INVERSIONISTA
 
 # BURSATIL
-# def cotizacion(request):
-#     context = {'title': 'Cotización'}
-#     return render(request, 'frontend/bursatil/cotizacion.html', context)
-#
-# def precio_historico(request):
-#     context = {'title': 'Precio Historico'}
-#     return render(request, 'frontend/bursatil/precio-historico.html', context)
+def cotizacion(request):
+    context = {'title': 'Cotización'}
+    return render(request, 'frontend/bursatil/cotizacion.html', context)
+
+def precio_historico(request):
+    context = {'title': 'Precio Historico'}
+    return render(request, 'frontend/bursatil/precio-historico.html', context)
 
 # END BURSATIL
 
