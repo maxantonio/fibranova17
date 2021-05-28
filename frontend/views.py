@@ -3,7 +3,7 @@ from django.shortcuts import render, redirect
 from django.views.decorators.http import require_POST
 from django.template import loader
 
-
+urlbase = 'http://fibra-nova.com/es/wp-content/uploads'
 def index(request):
     context = {'title': 'Index'}
     return render(request, 'frontend/index.html', context)
@@ -51,9 +51,9 @@ def reportes_trimestrales(request):
             'anno': 2019,
             'tri_1T': {
                 'fecha': '1T',
-                'reporte': 'http://fibra-nova.com/es/wp-content/uploads/2019/04/Press-Release-FNOVA-1T19.pdf',
-                'sific': 'http://fibra-nova.com/es/wp-content/uploads/2019/04/fibraxbrl_FNOVA_2019-1.pdf',
-                'conferencia': 'http://fibra-nova.com/es/wp-content/uploads/2019/04/Sala-21507-30-de-April-Conferencia-en-Resultados-Fibra-Nova.mp3',
+                'reporte': '/2019/04/Press-Release-FNOVA-1T19.pdf',
+                'sific': '/2019/04/fibraxbrl_FNOVA_2019-1.pdf',
+                'conferencia': '/2019/04/Sala-21507-30-de-April-Conferencia-en-Resultados-Fibra-Nova.mp3',
             },
             'tri_2T': {
                 'fecha': '2T',
@@ -78,27 +78,27 @@ def reportes_trimestrales(request):
             'anno': 2018,
             'tri_1T': {
                 'fecha': '1T',
-                'reporte': 'http://fibra-nova.com/es/wp-content/uploads/2018/07/Press-Release-FNOVA-1T18.pdf',
-                'sific': 'http://fibra-nova.com/es/wp-content/uploads/2018/05/fibraxbrl_FNOVA_2018-1.pdf',
-                'conferencia': 'http://fibra-nova.com/es/wp-content/uploads/2018/05/Sala-21507-03-de-May-Conferencia-en-Resultados-Fibra-Nova.mp3',
+                'reporte': '/2018/07/Press-Release-FNOVA-1T18.pdf',
+                'sific': '/2018/05/fibraxbrl_FNOVA_2018-1.pdf',
+                'conferencia': '/2018/05/Sala-21507-03-de-May-Conferencia-en-Resultados-Fibra-Nova.mp3',
             },
             'tri_2T': {
                 'fecha': '2T',
-                'reporte': 'http://fibra-nova.com/es/wp-content/uploads/2018/07/Press-Release-FNOVA-2T18.pdf',
-                'sific': 'http://fibra-nova.com/es/wp-content/uploads/2018/07/ifrsxbrl_FNOVA_2018-2.pdf',
-                'conferencia': 'http://fibra-nova.com/es/wp-content/uploads/2018/07/Sala-21507-27-de-July-Conferencia-en-Resultados-Fibra-Nova.mp3',
+                'reporte': '/2018/07/Press-Release-FNOVA-2T18.pdf',
+                'sific': '/2018/07/ifrsxbrl_FNOVA_2018-2.pdf',
+                'conferencia': '/2018/07/Sala-21507-27-de-July-Conferencia-en-Resultados-Fibra-Nova.mp3',
             },
             'tri_3T': {
                 'fecha': '3T',
-                'reporte': 'http://fibra-nova.com/es/wp-content/uploads/2018/10/Press-Release-FNOVA-3T18-1.pdf',
-                'sific': 'http://fibra-nova.com/es/wp-content/uploads/2018/10/fibraxbrl_FNOVA_2018-3.pdf',
-                'conferencia': 'http://fibra-nova.com/es/wp-content/uploads/2018/10/Sala-21507-30-de-October-Conferencia-en-Resultados-Fibra-Nova.mp3',
+                'reporte': '/2018/10/Press-Release-FNOVA-3T18-1.pdf',
+                'sific': '/2018/10/fibraxbrl_FNOVA_2018-3.pdf',
+                'conferencia': '/2018/10/Sala-21507-30-de-October-Conferencia-en-Resultados-Fibra-Nova.mp3',
             },
             'tri_4T': {
                 'fecha': '4T',
-                'reporte': 'http://fibra-nova.com/es/wp-content/uploads/2019/05/Press-Release-FNOVA-4T18.pdf',
-                'sific': 'http://fibra-nova.com/es/wp-content/uploads/2019/04/fibraxbrl_FNOVA_2018-4D.pdf',
-                'conferencia': 'http://fibra-nova.com/es/wp-content/uploads/2019/03/Sala-21507-05-de-March-Conferencia-en-Resultados-Fibra-Nova.mp3',
+                'reporte': '/2019/05/Press-Release-FNOVA-4T18.pdf',
+                'sific': '/2019/04/fibraxbrl_FNOVA_2018-4D.pdf',
+                'conferencia': '/2019/03/Sala-21507-05-de-March-Conferencia-en-Resultados-Fibra-Nova.mp3',
             }
         },
         {
@@ -117,28 +117,30 @@ def reportes_trimestrales(request):
             },
             'tri_3T': {
                 'fecha': '3T',
-                'reporte': 'http://fibra-nova.com/es/wp-content/uploads/2018/02/Press-Release-FNOVA-3T17.pdf',
-                'sific': 'http://fibra-nova.com/es/wp-content/uploads/2018/02/fibraxbrl_FNOVA_2017-3.pdf',
+                'reporte': '/2018/02/Press-Release-FNOVA-3T17.pdf',
+                'sific': '/2018/02/fibraxbrl_FNOVA_2017-3.pdf',
                 'conferencia': '',
             },
             'tri_4T': {
                 'fecha': '4T',
-                'reporte': 'http://fibra-nova.com/es/wp-content/uploads/2018/02/Press-Release-FNOVA-4T17.pdf',
-                'sific': 'http://fibra-nova.com/es/wp-content/uploads/2018/05/fibraxbrl_FNOVA_2017-4D.pdf',
-                'conferencia': 'http://fibra-nova.com/es/wp-content/uploads/2018/03/Sala-21507-28-de-February-Conferencia-en-Resultados-Fibra-Nova.mp3',
+                'reporte': '/2018/02/Press-Release-FNOVA-4T17.pdf',
+                'sific': '/2018/05/fibraxbrl_FNOVA_2017-4D.pdf',
+                'conferencia': '/2018/03/Sala-21507-28-de-February-Conferencia-en-Resultados-Fibra-Nova.mp3',
             }
         }
     ]
 
     context = {'title': 'Reportes Trimestrales',
                'annos': annos,
-               'info': info
+               'info': info,
+               'urlbase':urlbase
                }
     return render(request, 'frontend/inversionistas/reportes-trimestrales.html', context)
 
 
 def reportes_anuales(request):
-    context = {'title': 'Reportes Anuales'}
+    context = {'title': 'Reportes Anuales',
+               'urlbase':urlbase}
     return render(request, 'frontend/inversionistas/reportes-anuales.html', context)
 
 
@@ -162,7 +164,7 @@ def distribuciones(request):
     return render(request, 'frontend/inversionistas/distribuciones.html', context)
 
 
-# END INVERSIONISTA
+# END INVERSIONISTAmail@curucredit.com
 
 # BURSATIL
 def cotizacion(request):
