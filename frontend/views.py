@@ -12,6 +12,15 @@ def index(request):
 def contacto(request):
     context = {'title': 'Contacto'}
     return render(request, 'frontend/contacto.html', context)
+def noticias(request):
+    context = {'title': 'Noticias'}
+    return render(request, 'frontend/noticias.html', context)
+
+def noticia(request,no):
+    context = {'title': 'Noticia'}
+    url = 'frontend/noticias/{0}.html'.format(no)
+    print(url)
+    return render(request,url , context)
 
 
 def portafolio(request, tab):

@@ -7,6 +7,9 @@ app_name = 'frontend'
 urlpatterns = [
     path('', views.index, name='index'),
     path('contacto/', views.contacto, name='contacto'),
+    path('noticias/', views.noticias, name='noticias'),
+    path('noticia/<no>', views.noticia, name='noticia'),
+
     path('portafolio/<str:tab>/', views.portafolio, name='portafolio'),
     path('perfil/nosotros', views.perfil_nosotros, name='perfil-nosotros'),
     path('perfil/presencia-geografica', views.presencia_geografica, name='perfil-presencia-geografica'),
