@@ -22,6 +22,7 @@ urlpatterns = [
     path('inversionistas/faqs', views.faqs, name='inversionistas-faqs'),
     path('bursatil/cotizacion', views.cotizacion, name='bursatil-cotizacion'),
     path('bursatil/precio-historico', views.precio_historico, name='bursatil-precio-historico'),
+    path('bursatil/calculadora', views.calculadora, name='bursatil-calculadora'),
     path('bursatil/distribuciones', views.distribuciones, name='inversionistas-distribuciones'),
     path('bursatil/directivos', views.directivos, name='gobierno-directivos'),
     path('bursatil/comites', views.comites, name='gobierno-comites'),

@@ -184,6 +184,9 @@ def precio_historico(request):
     context = {'title': 'Precio Historico'}
     return render(request, 'frontend/bursatil/precio-historico.html', context)
 
+def calculadora(request):
+    context = {'title':'Calculadora de Rendimientos'}
+    return render(request,'frontend/bursatil/calculadora.html',context)
 # END BURSATIL
 
 # GOBIERNO
