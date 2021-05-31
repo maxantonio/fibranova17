@@ -669,3 +669,11 @@ footer a{
     -ms-flex-pack: center!important;
     justify-content: center!important;
 }
+.ph-5{
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+.ph-50{
+    padding-left:50px;
+    padding-right: 50px;
+}
