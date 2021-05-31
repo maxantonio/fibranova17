@@ -7,6 +7,9 @@ app_name = 'frontend'
 urlpatterns = [
     path('', views.index, name='index'),
     path('contacto/', views.contacto, name='contacto'),
+    path('noticias/', views.noticias, name='noticias'),
+    path('noticia/<no>', views.noticia, name='noticia'),
+
     path('portafolio/<str:tab>/', views.portafolio, name='portafolio'),
     path('perfil/nosotros', views.perfil_nosotros, name='perfil-nosotros'),
     path('perfil/presencia-geografica', views.presencia_geografica, name='perfil-presencia-geografica'),
@@ -19,6 +22,7 @@ urlpatterns = [
     path('inversionistas/faqs', views.faqs, name='inversionistas-faqs'),
     path('bursatil/cotizacion', views.cotizacion, name='bursatil-cotizacion'),
     path('bursatil/precio-historico', views.precio_historico, name='bursatil-precio-historico'),
+    path('bursatil/calculadora', views.calculadora, name='bursatil-calculadora'),
     path('bursatil/distribuciones', views.distribuciones, name='inversionistas-distribuciones'),
     path('bursatil/directivos', views.directivos, name='gobierno-directivos'),
     path('bursatil/comites', views.comites, name='gobierno-comites'),

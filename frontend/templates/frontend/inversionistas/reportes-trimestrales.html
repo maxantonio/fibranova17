@@ -36,13 +36,13 @@
                                             <td class="text-center">{{ item.tri_1T.fecha }}</td>
                                             <td class="text-center">
                                                 {% if item.tri_1T.reporte %}
-                                                    <a href="{{ item.tri_1T.reporte }}" target="_blank"><i
+                                                    <a href="{{ urlbase }}{{ item.tri_1T.reporte }}" target="_blank"><i
                                                             class="fa fa-file-pdf-o"></i></a>
                                                 {% endif %}
                                             </td>
                                             <td class="text-center">
                                                 {% if item.tri_1T.reporte %}
-                                                    <a href="{{ item.tri_1T.sific }}" target="_blank"><i
+                                                    <a href="{{ urlbase }}{{ item.tri_1T.sific }}" target="_blank"><i
                                                             class="fa fa-file-pdf-o"></i></a>
                                                 {% endif %}
                                             </td>

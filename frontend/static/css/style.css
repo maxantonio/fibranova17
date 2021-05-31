@@ -4008,6 +4008,7 @@ img{
 	background-image:  url(../images/background/parallax-4.jpg);
 	background-attachment:  fixed;
 	background-repeat:  no-repeat;
+	background-size: cover;
 }
 
 .page-title h1{
