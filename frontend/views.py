@@ -3,7 +3,7 @@ from django.shortcuts import render, redirect
 from django.views.decorators.http import require_POST
 from django.template import loader
 
-urlbase = 'http://fibra-nova.com/es/wp-content/uploads'
+urlbase = 'http://cdn.investorcloud.net/FNOVA'
 def index(request):
     context = {'title': 'Index'}
     return render(request, 'frontend/index.html', context)
@@ -54,60 +54,114 @@ def estrategia(request):
 
 # INVERSIONISTAS
 def reportes_trimestrales(request):
-    annos = ['2019', '2018', '2017']
+    annos = ['2021', '2020', '2019', '2018', '2017']
     info = [
+{
+    'anno': 2021,
+    'tri_1T': {
+        'fecha': '1T',
+        'reporte': '/InformacionFinanciera/ReportesTrimestrales/2021-1T21.pdf',
+        'sific': '/InformacionFinanciera/ReportesTrimestrales/2021-1T21-BMV.pdf',
+        'conferencia': '/InformacionFinanciera/ReportesTrimestrales/2021-1T21-CC.mp3',
+    },
+    'tri_2T': {
+        'fecha': '2T',
+        'reporte': '',
+        'sific': '',
+        'conferencia': '',
+    },
+    'tri_3T': {
+        'fecha': '3T',
+        'reporte': '',
+        'sific': '',
+        'conferencia': '',
+    },
+    'tri_4T': {
+        'fecha': '4T',
+        'reporte': '',
+        'sific': '',
+        'conferencia': '',
+    }
+},
+{
+    'anno': 2020,
+    'tri_1T': {
+        'fecha': '1T',
+        'reporte': '/InformacionFinanciera/ReportesTrimestrales/2020-1T20.pdf',
+        'sific': '/InformacionFinanciera/ReportesTrimestrales/2020-1T20-BMV.pdf',
+        'conferencia': '/InformacionFinanciera/ReportesTrimestrales/2020-1T20-CC.wav',
+    },
+    'tri_2T': {
+        'fecha': '2T',
+        'reporte': '/InformacionFinanciera/ReportesTrimestrales/2020-2T20.pdf',
+        'sific': '/InformacionFinanciera/ReportesTrimestrales/2020-2T20-BMV.pdf',
+        'conferencia': '/InformacionFinanciera/ReportesTrimestrales/2020-2T20-CC.wav',
+    },
+    'tri_3T': {
+        'fecha': '3T',
+        'reporte': '/InformacionFinanciera/ReportesTrimestrales/2020-3T20.pdf',
+        'sific': '/InformacionFinanciera/ReportesTrimestrales/2020-3T20-BMV.pdf',
+        'conferencia': '/InformacionFinanciera/ReportesTrimestrales/2020-3T20-CC.mp3',
+    },
+    'tri_4T': {
+        'fecha': '4T',
+        'reporte': '/InformacionFinanciera/ReportesTrimestrales/2020-4T20.pdf',
+        'sific': '/InformacionFinanciera/ReportesTrimestrales/2020-4T20-BMV.pdf',
+        'conferencia': '/InformacionFinanciera/ReportesTrimestrales/2020-4T20-CC.mp3',
+    }
+},
         {
             'anno': 2019,
             'tri_1T': {
                 'fecha': '1T',
-                'reporte': '/2019/04/Press-Release-FNOVA-1T19.pdf',
-                'sific': '/2019/04/fibraxbrl_FNOVA_2019-1.pdf',
-                'conferencia': '/2019/04/Sala-21507-30-de-April-Conferencia-en-Resultados-Fibra-Nova.mp3',
+                'reporte': '/InformacionFinanciera/ReportesTrimestrales/2019-1T19.pdf',
+                'sific': '/InformacionFinanciera/ReportesTrimestrales/2019-1T19-BMV.pdf',
+                'conferencia': '/InformacionFinanciera/ReportesTrimestrales/2019-1T19-CC.mp3',
             },
             'tri_2T': {
                 'fecha': '2T',
-                'reporte': '',
-                'sific': '',
-                'conferencia': '',
+                'reporte': '/InformacionFinanciera/ReportesTrimestrales/2019-2T19.pdf',
+                'sific': '/InformacionFinanciera/ReportesTrimestrales/2019-2T19-BMV.pdf',
+                'conferencia': '/InformacionFinanciera/ReportesTrimestrales/2019-2T19-CC.mp3',
             },
             'tri_3T': {
                 'fecha': '3T',
-                'reporte': '',
-                'sific': '',
-                'conferencia': '',
+                'reporte': '/InformacionFinanciera/ReportesTrimestrales/2019-3T19.pdf',
+                'sific': '/InformacionFinanciera/ReportesTrimestrales/2019-3T19-BMV.pdf',
+                'conferencia': '/InformacionFinanciera/ReportesTrimestrales/2019-3T19-CC.mp3',
             },
             'tri_4T': {
                 'fecha': '4T',
-                'reporte': '',
-                'sific': '',
-                'conferencia': '',
+                'reporte': '/InformacionFinanciera/ReportesTrimestrales/2019-4T19.pdf',
+                'sific': '/InformacionFinanciera/ReportesTrimestrales/2019-4T19-BMV.pdf',
+                'conferencia': '/InformacionFinanciera/ReportesTrimestrales/2019-4T19-CC.mp3',
             }
         },
         {
             'anno': 2018,
             'tri_1T': {
                 'fecha': '1T',
-                'reporte': '/2018/07/Press-Release-FNOVA-1T18.pdf',
-                'sific': '/2018/05/fibraxbrl_FNOVA_2018-1.pdf',
-                'conferencia': '/2018/05/Sala-21507-03-de-May-Conferencia-en-Resultados-Fibra-Nova.mp3',
+                'reporte': '/InformacionFinanciera/ReportesTrimestrales/2018-1T18.pdf',
+                'sific': '/InformacionFinanciera/ReportesTrimestrales/2018-1T18-BMV.pdf',
+                'conferencia': '/InformacionFinanciera/ReportesTrimestrales/2018-1T18-CC.mp3',
             },
             'tri_2T': {
                 'fecha': '2T',
-                'reporte': '/2018/07/Press-Release-FNOVA-2T18.pdf',
-                'sific': '/2018/07/ifrsxbrl_FNOVA_2018-2.pdf',
-                'conferencia': '/2018/07/Sala-21507-27-de-July-Conferencia-en-Resultados-Fibra-Nova.mp3',
+                'reporte': '/InformacionFinanciera/ReportesTrimestrales/2018-2T18.pdf',
+                'sific': '/InformacionFinanciera/ReportesTrimestrales/2018-2T18-BMV.pdf',
+                'conferencia': '/InformacionFinanciera/ReportesTrimestrales/2018-2T18-CC.mp3',
             },
             'tri_3T': {
                 'fecha': '3T',
-                'reporte': '/2018/10/Press-Release-FNOVA-3T18-1.pdf',
-                'sific': '/2018/10/fibraxbrl_FNOVA_2018-3.pdf',
-                'conferencia': '/2018/10/Sala-21507-30-de-October-Conferencia-en-Resultados-Fibra-Nova.mp3',
+                'reporte': '/InformacionFinanciera/ReportesTrimestrales/2018-3T18.pdf',
+                'sific': '/InformacionFinanciera/ReportesTrimestrales/2018-3T18-BMV.pdf',
+                'conferencia': '/InformacionFinanciera/ReportesTrimestrales/2018-3T18-CC.mp3',
             },
             'tri_4T': {
                 'fecha': '4T',
-                'reporte': '/2019/05/Press-Release-FNOVA-4T18.pdf',
-                'sific': '/2019/04/fibraxbrl_FNOVA_2018-4D.pdf',
-                'conferencia': '/2019/03/Sala-21507-05-de-March-Conferencia-en-Resultados-Fibra-Nova.mp3',
+                'reporte': '/InformacionFinanciera/ReportesTrimestrales/2018-4T18.pdf',
+                'sific': '/InformacionFinanciera/ReportesTrimestrales/2018-4T18-BMV.pdf',
+                'conferencia': '/InformacionFinanciera/ReportesTrimestrales/2018-4T18-CC.mp3',
             }
         },
         {
@@ -126,15 +180,15 @@ def reportes_trimestrales(request):
             },
             'tri_3T': {
                 'fecha': '3T',
-                'reporte': '/2018/02/Press-Release-FNOVA-3T17.pdf',
-                'sific': '/2018/02/fibraxbrl_FNOVA_2017-3.pdf',
+                'reporte': '/InformacionFinanciera/ReportesTrimestrales/2017-3T17.pdf',
+                'sific': '/InformacionFinanciera/ReportesTrimestrales/2017-3T17-BMV.pdf',
                 'conferencia': '',
             },
             'tri_4T': {
                 'fecha': '4T',
-                'reporte': '/2018/02/Press-Release-FNOVA-4T17.pdf',
-                'sific': '/2018/05/fibraxbrl_FNOVA_2017-4D.pdf',
-                'conferencia': '/2018/03/Sala-21507-28-de-February-Conferencia-en-Resultados-Fibra-Nova.mp3',
+                'reporte': '/InformacionFinanciera/ReportesTrimestrales/2017-4T17.pdf',
+                'sific': '/InformacionFinanciera/ReportesTrimestrales/2017-4T17-BMV.pdf',
+                'conferencia': '/InformacionFinanciera/ReportesTrimestrales/2017-4T17-CC.mp3',
             }
         }
     ]
