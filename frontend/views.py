@@ -213,7 +213,9 @@ def fundamentales(request):
 
 
 def eventos_relevantes(request):
-    context = {'title': 'Eventos Relevantes'}
+    context = {'title': 'Eventos Relevantes',
+               'urlbase':urlbase}
+
     return render(request, 'frontend/inversionistas/eventos-relevantes.html', context)
 
 
