@@ -5,7 +5,7 @@ from django.template import loader
 
 urlbase = 'http://cdn.investorcloud.net/FNOVA'
 def index(request):
-    context = {'title': 'Index'}
+    context = {'title': 'Index', 'urlbase':urlbase}
     return render(request, 'frontend/index.html', context)
 
 
@@ -220,12 +220,12 @@ def eventos_relevantes(request):
 
 
 def faqs(request):
-    context = {'title': 'FAQs'}
+    context = {'title': 'Preguntas Frecuentes'}
     return render(request, 'frontend/inversionistas/faqs.html', context)
 
 
 def distribuciones(request):
-    context = {'title': 'Distribuciones'}
+    context = {'title': 'Distribuciones', 'urlbase':urlbase}
     return render(request, 'frontend/inversionistas/distribuciones.html', context)
 
 
