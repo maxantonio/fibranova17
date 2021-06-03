@@ -304,6 +304,7 @@ def send_mail_contact(request):
     context = {'title': 'Inicio'}
     nombre = request.POST['username']
     email = request.POST['email']
+    telefono = request.POST['telefono']
     asunto = request.POST['subject']
     mensaje = request.POST['message']
     html_message = loader.render_to_string(
@@ -311,6 +312,7 @@ def send_mail_contact(request):
         {
             'nombre': nombre,
             'email': email,
+            'telefono': telefono,
             'asunto': asunto,
             'mensaje': mensaje,
         }
