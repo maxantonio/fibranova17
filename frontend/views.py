@@ -22,6 +22,10 @@ def noticia(request,no):
     print(url)
     return render(request,url , context)
 
+def indicadores_operativos(request):
+    context = {'title': 'Indicadores Operativo'
+               }
+    return render(request, 'frontend/indicadores.html', context)
 
 def portafolio(request, tab):
     context = {'title': 'Portafolio',

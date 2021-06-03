@@ -11,6 +11,8 @@ urlpatterns = [
     path('noticia/<no>', views.noticia, name='noticia'),
 
     path('portafolio/<str:tab>/', views.portafolio, name='portafolio'),
+    path('indicadores-operativos/', views.indicadores_operativos, name='indicadores-operativos'),
+
     path('perfil/nosotros', views.perfil_nosotros, name='perfil-nosotros'),
     path('perfil/presencia-geografica', views.presencia_geografica, name='perfil-presencia-geografica'),
     path('perfil/historia', views.historia, name='perfil-historia'),
