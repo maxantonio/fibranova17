@@ -10,6 +10,12 @@
     font-size: 36px !important;
 }
 
+.fnova-a {
+  color: #1F478D !important;
+  font-size: 19px;
+}
+
+
 .chartdiv {
     width: 100%;
     height: 500px;
@@ -300,7 +306,7 @@ input, button, select, textarea {
     font-family: FontAwesome;
     font-size: 9px;
     color: #ffffff;
-    background-color: #3C5090;
+    background-color: #1F478D;
     border: 1px solid #1f478d;
     text-align: center;
     width: 20px;
@@ -314,7 +320,7 @@ input, button, select, textarea {
 .accordion .panel .panel--heading a {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
-    color: #3C5090;
+    color: #1F478D;
     font-weight: 700;
     line-height: 20px;
     text-transform: capitalize;
@@ -676,4 +682,13 @@ footer a{
 .ph-50{
     padding-left:50px;
     padding-right: 50px;
+}
+.m-2{
+    margin: 1.2rem;
+}
+.p-2{
+    padding: 1.2rem;
+}
+.p-3{
+    padding: 2rem;
 }

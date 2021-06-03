@@ -1,5 +1,5 @@
 {% extends 'layouts/base.html' %}
-
+{% load static %}
 {% block content %}
     <section class="default-section">
         <div class="auto-container">
@@ -21,7 +21,7 @@
                     <li>Otros factores que nuestro Comité Técnico pueda considerar como importantes</li>
                 </ul>
 
-                <table class="table table-bordered table-hover">
+                <table class="table table-bordered table-hover makeDataTatble">
                     <thead>
                     <tr>
                         <th class="text-center">Aviso a Tenedores</th>
@@ -212,4 +212,10 @@
             <br><br>
         </div>
     </section>
+{% endblock %}
+{% block otherstyles %}
+    <link href="{% static 'css/dataTables.bootstrap4.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/dataTables.bootstrap.css' %}" rel="stylesheet">
+    <link href="{% static 'css/jquery.dataTables.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/datatable-ajustes.css' %}" rel="stylesheet">
 {% endblock %}

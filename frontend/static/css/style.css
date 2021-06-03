@@ -4017,7 +4017,7 @@ img{
 	font-weight:700;
 	color: #ffffff;
 	line-height:1.5em;
-	text-transform:capitalize;
+	/*text-transform:capitalize;*/
 }
 
 .page-info{
