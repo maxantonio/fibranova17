@@ -7,6 +7,10 @@
                 <p>De acuerdo con la Ley del Impuesto sobre la renta, una FIBRA debe distribuir, cuando menos de forma anual, al menos el 95%
                   de su resultado fiscal, calculado conforme a la misma ley, considerando ingresos acumulables
                   generados durante el ejercicio fiscal y restando las deducciones autorizadas a la utilidad (se debe restar la pérdida de ejercicios fiscales previos pendiente de ser amortizada).</p>
+
+               <div id="chart_distribuciones" style="width: 100%;height: 400px">
+
+               </div>
                 <p>El Comité Técnico determinará las condiciones de entrega de las Distribuciones en efectivo, teniendo en cuenta
                     factores como:</p>
                 <ul class="list3">
@@ -212,6 +216,11 @@
             <br><br>
         </div>
     </section>
+{% endblock %}
+{% block otherscripts %}
+    <script src="{% static 'js/amCharts/amcharts.js' %}"></script>
+    <script src="{% static 'js/amCharts/serial.js' %}"></script>
+    <script src="{% static 'js/amCharts/contenido/distribuciones.js' %}"></script>
 {% endblock %}
 {% block otherstyles %}
     <link href="{% static 'css/dataTables.bootstrap4.min.css' %}" rel="stylesheet">
