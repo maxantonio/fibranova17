@@ -262,7 +262,7 @@ def auditor_externo(request):
 
 
 def prospectos_suplementos(request):
-    context = {'title': 'Prospectos y Suplementos'}
+    context = {'title': 'Prospectos y Suplementos', 'urlbase':urlbase}
     return render(request, 'frontend/gobierno/prospectos-suplementos.html', context)
 
 
