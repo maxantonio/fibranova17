@@ -696,3 +696,7 @@ footer a{
 .title{
     font-weight: bold;
 }
+
+.amChartsInputField.hasDatepicker{
+    border: 1px solid gray;
+}
