@@ -267,12 +267,12 @@ def prospectos_suplementos(request):
 
 
 def asambleas(request):
-    context = {'title': 'Asambleas'}
+    context = {'title': 'Asambleas', 'urlbase':urlbase}
     return render(request, 'frontend/gobierno/asambleas.html', context)
 
 
 def codigo_etica(request):
-    context = {'title': 'Código de Ética'}
+    context = {'title': 'Código de Ética', 'urlbase':urlbase}
     return render(request, 'frontend/gobierno/codigo-etica.html', context)
 
 
