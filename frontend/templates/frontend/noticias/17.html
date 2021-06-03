@@ -1,0 +1,22 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="container" style="margin-top: 10px;padding-top: 30px; padding-bottom: 50px">
+        <div class="row">
+            <div class="col-12 col-sm-4 mb-3 mb-sm-0">
+                <img class="w-100" src="{% static 'images/noticias/17.jpg' %}" alt="Noticia 17">
+            </div>
+            <div class="col-12 col-sm-8">
+                <h2 class="text portada11">Desarrollo inmobiliario de Fibra Nova en Querétaro</h2>
+                <br>
+                <p>El complejo de oficinas en la ciudad de Querétaro, es el último desarrollo inmobiliario
+                  de un conjunto de tres propiedades en una de las plazas más dinámicas del país.
+                  Dicho complejo comprende un total de 40,905 metros cuadrados de superficie de construcción.</p>
+                  <br>
+                  <iframe src="https://player.vimeo.com/video/353623778" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                  <p><a href="https://vimeo.com/353623778"></a></p>
+            </div>
+        </div>
+    </div>
+{% endblock %}
