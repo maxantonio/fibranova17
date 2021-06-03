@@ -230,7 +230,7 @@ def faqs(request):
 
 def distribuciones(request):
     context = {'title': 'Distribuciones', 'urlbase':urlbase}
-    return render(request, 'frontend/inversionistas/distribuciones.html', context)
+    return render(request, 'frontend/bursatil/distribuciones.html', context)
 
 
 # END INVERSIONISTAmail@curucredit.com
@@ -247,6 +247,10 @@ def precio_historico(request):
 def calculadora(request):
     context = {'title':'Calculadora de Rendimientos'}
     return render(request,'frontend/bursatil/calculadora.html',context)
+
+def cobertura_analistas(request):
+    context = {'title':'Cobertura de Analistas'}
+    return render(request,'frontend/bursatil/cobertura-analistas.html',context)
 # END BURSATIL
 
 # GOBIERNO

@@ -22,10 +22,12 @@ urlpatterns = [
     path('inversionistas/fundamentales', views.fundamentales, name='inversionistas-fundamentales'),
     path('inversionistas/eventos-relevantes', views.eventos_relevantes, name='inversionistas-eventos-relevantes'),
     path('inversionistas/faqs', views.faqs, name='inversionistas-faqs'),
+    path('bursatil/distribuciones', views.distribuciones, name='bursatil-distribuciones'),
     path('bursatil/cotizacion', views.cotizacion, name='bursatil-cotizacion'),
     path('bursatil/precio-historico', views.precio_historico, name='bursatil-precio-historico'),
     path('bursatil/calculadora', views.calculadora, name='bursatil-calculadora'),
-    path('bursatil/distribuciones', views.distribuciones, name='inversionistas-distribuciones'),
+    path('bursatil/cobertura-analistas', views.cobertura_analistas, name='bursatil-cobertura-analistas'),
+
     path('bursatil/directivos', views.directivos, name='gobierno-directivos'),
     path('bursatil/comites', views.comites, name='gobierno-comites'),
     path('bursatil/auditor-externo', views.auditor_externo, name='gobierno-auditor-externo'),

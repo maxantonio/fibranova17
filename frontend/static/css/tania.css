@@ -677,3 +677,12 @@ footer a{
     padding-left:50px;
     padding-right: 50px;
 }
+.m-2{
+    margin: 1.2rem;
+}
+.p-2{
+    padding: 1.2rem;
+}
+.p-3{
+    padding: 2rem;
+}
