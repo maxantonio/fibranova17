@@ -683,6 +683,9 @@ footer a{
     padding-left:50px;
     padding-right: 50px;
 }
+.mt-2{
+    margin-top: 1.2rem;
+}
 .m-2{
     margin: 1.2rem;
 }
@@ -691,4 +694,15 @@ footer a{
 }
 .p-3{
     padding: 2rem;
+}
+.chartpie{
+    width: 100%;
+    height: 260px;
+}
+.title{
+    font-weight: bold;
+}
+
+.amChartsInputField.hasDatepicker{
+    border: 1px solid gray;
 }

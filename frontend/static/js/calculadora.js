@@ -212,7 +212,7 @@ function calcularInversion(cbis, sd, ed) {
             jsonpCallback:"calculaPrecio1",
             success: function (data) {
                 var cierre_i = data.intradia.price;
-                var cant = parseInt(cbis / cierre_i);
+                var cant = parseInt(cbis);
                 var div_recibido = calcularDistribuciones(cbis, sd, ed, cant);
                 var monto = (cant * cierre_i).toFixed(2);
                 $("#precio_i").html("$" + WithCommas2(cierre_i));

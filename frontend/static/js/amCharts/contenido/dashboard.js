@@ -1,4 +1,5 @@
 var loaded = 0;
+var locale = "es";
 var ipc = [];
 var precios = [];
 var frmex = [];
@@ -291,6 +292,10 @@ function createStockChart() {
         periodSelector.fromText = "From:";
         periodSelector.toText = "To:";
         periodSelector.periodsText = "Range:";
+    }else{
+        periodSelector.fromText = "Desde:";
+        periodSelector.toText = "Hasta:";
+        periodSelector.periodsText = "Rango:";
     }
     if (locale == "es") {
         periodSelector.periods = [{
@@ -334,6 +339,10 @@ function createStockChart() {
     if (locale == "en") {
         dataSetSelector.selectText = "Select:";
         dataSetSelector.compareText = "Compare:"
+    }else{
+        dataSetSelector.selectText = "Seleccionar:";
+        dataSetSelector.compareText = "Comparar:"
+
     }
 
     chart.dataSetSelector = dataSetSelector;
