@@ -13,11 +13,11 @@ def contacto(request):
     context = {'title': 'Contacto'}
     return render(request, 'frontend/contacto.html', context)
 def noticias(request):
-    context = {'title': 'Noticias'}
+    context = {'title': 'Noticias', 'urlbase':urlbase}
     return render(request, 'frontend/noticias.html', context)
 
 def noticia(request,no):
-    context = {'title': 'Noticia'}
+    context = {'title': 'Noticia', 'urlbase':urlbase}
     url = 'frontend/noticias/{0}.html'.format(no)
     print(url)
     return render(request,url , context)
