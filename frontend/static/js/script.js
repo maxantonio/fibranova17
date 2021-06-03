@@ -502,6 +502,9 @@
 
 
     }
+    if($(".makeDataTatble").length){
+        $(".makeDataTatble").dataTable();
+    }
     ;
 
 

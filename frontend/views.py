@@ -22,6 +22,10 @@ def noticia(request,no):
     print(url)
     return render(request,url , context)
 
+def indicadores_operativos(request):
+    context = {'title': 'Indicadores Operativo'
+               }
+    return render(request, 'frontend/indicadores.html', context)
 
 def portafolio(request, tab):
     context = {'title': 'Portafolio',
@@ -226,7 +230,7 @@ def faqs(request):
 
 def distribuciones(request):
     context = {'title': 'Distribuciones', 'urlbase':urlbase}
-    return render(request, 'frontend/inversionistas/distribuciones.html', context)
+    return render(request, 'frontend/bursatil/distribuciones.html', context)
 
 
 # END INVERSIONISTAmail@curucredit.com
@@ -243,6 +247,10 @@ def precio_historico(request):
 def calculadora(request):
     context = {'title':'Calculadora de Rendimientos'}
     return render(request,'frontend/bursatil/calculadora.html',context)
+
+def cobertura_analistas(request):
+    context = {'title':'Cobertura de Analistas'}
+    return render(request,'frontend/bursatil/cobertura-analistas.html',context)
 # END BURSATIL
 
 # GOBIERNO

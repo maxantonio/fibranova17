@@ -1,0 +1,37 @@
+.dataTables_paginate a{
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: #d9d9d9;
+    border-image: none;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    cursor: pointer;
+    outline: 0 none;
+    padding: 4px 8px;
+}
+.dataTables_filter{
+    float: right;
+    width: 50%;
+    margin-bottom: 5px;
+}
+.dataTables_length{
+    float: left;
+    width: 50%;
+    margin-bottom: 5px;
+}
+div.dataTables_filter input {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    display: inline-block;
+    margin-left: 0.5em;
+}
+div.dataTables_paginate {
+    margin: 9px;
+}
+
+.publicaciones input, .publicaciones select,.publicaciones input[type="date"]:focus, .publicaciones input[type="email"]:focus, .publicaciones input[type="number"]:focus, .publicaciones input[type="password"]:focus, .publicaciones input[type="search"]:focus, .publicaciones input[type="tel"]:focus, .publicaciones input[type="text"]:focus, .publicaciones input[type="url"]:focus, .publicaciones select:focus, .publicaciones textarea:focus input:focus, .publicaciones input:active{
+    background-color: white !important;
+    color: black !important;
+}

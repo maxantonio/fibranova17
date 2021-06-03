@@ -6,7 +6,14 @@
         <li><a href="{% url 'frontend:perfil-estrategia' %}">Estrategia</a></li>
     </ul>
 </li>
-<li><a href="{% url 'frontend:portafolio' tab='todos' %}">Portafolio</a></li>
+<li class="dropdown"><a href="#">Portafolio</a>
+    <ul>
+        <li><a href="{% url 'frontend:portafolio' tab='todos' %}">Propiedades</a></li>
+        <li><a href="{% url 'frontend:indicadores-operativos' %}">Indicadores Operativos</a></li>
+
+    </ul>
+</li>
+
 <li><a href="{% url 'frontend:noticias'%}">Noticias</a></li>
 <li class="dropdown"><a href="#">Inversionistas</a>
     <ul>
@@ -15,8 +22,7 @@
         <li><a href="{% url 'frontend:inversionistas-fundamentales' %}">Fundamentales</a></li>
         <li><a href="{% url 'frontend:inversionistas-eventos-relevantes' %}">Eventos Relevantes</a></li>
         <li><a href="{% url 'frontend:inversionistas-faqs' %}">Preguntas Frecuentes</a></li>
-        <li><a href="{% url 'frontend:inversionistas-distribuciones' %}">Distribuciones</a></li>
-        <li><a href="{% url 'frontend:gobierno-prospectos-suplementos' %}">Prospectos y Suplementos</a></li>
+        <li><a href="{% url 'frontend:gobierno-prospectos-suplementos' %}">Prospectos <span style="text-transform: lowercase">y</span> Suplementos</a></li>
     </ul>
 </li>
 {#<li class="dropdown"><a href="#">Información Bursátil</a>#}
@@ -37,9 +43,11 @@
 </li>
 <li class="dropdown"><a href="#">Información<br> Bursátil</a>
     <ul>
+        <li><a href="{% url 'frontend:bursatil-distribuciones' %}">Distribuciones</a></li>
         <li><a href="{% url 'frontend:bursatil-cotizacion' %}">Comportamiento de la acción</a></li>
         <li><a href="{% url 'frontend:bursatil-precio-historico' %}">Precios Historicos</a></li>
         <li><a href="{% url 'frontend:bursatil-calculadora' %}">Calculadora de rendimientos</a></li>
+        <li><a href="{% url 'frontend:bursatil-cobertura-analistas' %}">Cobertura de Analistas</a></li>
 
     </ul>
 </li>
