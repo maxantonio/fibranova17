@@ -22,32 +22,64 @@ var chart = AmCharts.makeChart( "chart_distribuciones", {
     "dataProvider": [
         {
         "trimestre": "4T17",
-        "precio": 23.5,
-        "distribucion": 0.3
+        "Precio": 19.50,
+        "Distribución": 0.1990
     }, {
         "trimestre": "1T18",
-        "precio": 26.2,
-        "distribucion": 0.5
+        "Precio": 19.50,
+        "Distribución": 0.3673
     }, {
         "trimestre": "2T18",
-        "precio": 30.1,
-        "distribucion": 0.9
+        "Precio": 19.50,
+        "Distribución": 0.3737
     }, {
         "trimestre": "3T18",
-        "precio": 29.5,
-        "distribucion": 0.1
+        "Precio": 19.50,
+        "Distribución": 0.3814
     }, {
         "trimestre": "4T18",
-        "precio": 30.6,
-        "distribucion": 0.2,
-        "dashLengthLine": 5
+        "Precio": 19.50,
+        "Distribución": 0.3913
     }, {
         "trimestre": "1T19",
-        "precio": 34.1,
-        "distribucion": 0.9,
+        "Precio": 19.50,
+        "Distribución": 0.3941
+    }, {
+        "trimestre": "2T19",
+        "Precio": 19.50,
+        "Distribución": 0.3980
+    }, {
+        "trimestre": "3T19",
+        "Precio": 19.50,
+        "Distribución": 0.4167
+    }, {
+        "trimestre": "4T19",
+        "Precio": 19.60,
+        "Distribución": 0.4193
+    }, {
+        "trimestre": "1T20",
+        "Precio": 19.50,
+        "Distribución": 0.4333
+    }, {
+        "trimestre": "2T20",
+        "Precio": 18.99,
+        "Distribución": 0.4411
+    }, {
+        "trimestre": "3T20",
+        "Precio": 18.30,
+        "Distribución": 0.4695
+    }, {
+        "trimestre": "4T20",
+        "Precio": 18.50,
+        "Distribución": 0.4680,
+        "dashLengthLine": 5
+    }, {
+        "trimestre": "1T21",
+        "Precio": 21.90,
+        "Distribución": 0.4623,
         "dashLengthColumn": 5,
         "alpha": 0.2,
-        "additional": "(projection)"
+        "additional": ""
     } ],
     "valueAxes": [ {
         "axisAlpha": 0,
@@ -63,15 +95,15 @@ var chart = AmCharts.makeChart( "chart_distribuciones", {
     "startDuration": 1,
     "graphs": [ {
         "alphaField": "alpha",
-        "balloonText": "<span style='font-size:12px;'>[[title]] in [[category]]:<br><span style='font-size:20px;'>[[value]]</span> [[additional]]</span>",
+        "balloonText": "<span style='font-size:12px;'>[[title]] en el [[category]]:<br><span style='font-size:20px;'>[[value]]</span> [[additional]]</span>",
         "fillAlphas": 1,
-        "title": "precio",
+        "title": "Precio",
         "type": "column",
-        "valueField": "precio",
+        "valueField": "Precio",
         "dashLengthField": "dashLengthColumn"
     }, {
         "id": "graph2",
-        "balloonText": "<span style='font-size:12px;'>[[title]] in [[category]]:<br><span style='font-size:20px;'>[[value]]</span> [[additional]]</span>",
+        "balloonText": "<span style='font-size:12px;'>[[title]] en el [[category]]:<br><span style='font-size:20px;'>[[value]]</span> [[additional]]</span>",
         "bullet": "round",
         "lineThickness": 3,
         "bulletSize": 7,
@@ -81,8 +113,8 @@ var chart = AmCharts.makeChart( "chart_distribuciones", {
         "bulletBorderThickness": 3,
         "fillAlphas": 0,
         "lineAlpha": 1,
-        "title": "distribucion",
-        "valueField": "distribucion",
+        "title": "Distribución",
+        "valueField": "Distribución",
         "dashLengthField": "dashLengthLine",
         "valueAxis": "lineAxis"
 

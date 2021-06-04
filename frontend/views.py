@@ -13,22 +13,22 @@ def contacto(request):
     context = {'title': 'Contacto'}
     return render(request, 'frontend/contacto.html', context)
 def noticias(request):
-    context = {'title': 'Noticias'}
+    context = {'title': 'Noticias', 'urlbase':urlbase}
     return render(request, 'frontend/noticias.html', context)
 
 def noticia(request,no):
-    context = {'title': 'Noticia'}
+    context = {'title': 'Noticia', 'urlbase':urlbase}
     url = 'frontend/noticias/{0}.html'.format(no)
     print(url)
     return render(request,url , context)
 
 def indicadores_operativos(request):
-    context = {'title': 'Indicadores Operativo'
+    context = {'title': 'Indicadores Operativos'
                }
     return render(request, 'frontend/indicadores.html', context)
 
 def portafolio(request, tab):
-    context = {'title': 'Portafolio',
+    context = {'title': 'Propiedades',
                'tab': tab}
     return render(request, 'frontend/portafolio.html', context)
 
@@ -275,12 +275,12 @@ def prospectos_suplementos(request):
 
 
 def asambleas(request):
-    context = {'title': 'Asambleas'}
+    context = {'title': 'Asambleas', 'urlbase':urlbase}
     return render(request, 'frontend/gobierno/asambleas.html', context)
 
 
 def codigo_etica(request):
-    context = {'title': 'Código de Ética'}
+    context = {'title': 'Código de Ética', 'urlbase':urlbase}
     return render(request, 'frontend/gobierno/codigo-etica.html', context)
 
 
@@ -312,6 +312,7 @@ def send_mail_contact(request):
     context = {'title': 'Inicio'}
     nombre = request.POST['username']
     email = request.POST['email']
+    telefono = request.POST['telefono']
     asunto = request.POST['subject']
     mensaje = request.POST['message']
     html_message = loader.render_to_string(
@@ -319,6 +320,7 @@ def send_mail_contact(request):
         {
             'nombre': nombre,
             'email': email,
+            'telefono': telefono,
             'asunto': asunto,
             'mensaje': mensaje,
         }

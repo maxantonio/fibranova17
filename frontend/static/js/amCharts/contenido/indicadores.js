@@ -7,19 +7,25 @@ var chart = AmCharts.makeChart( "pie_1", {
     },
     "dataProvider": [{
         "country": "Industrial",
-        "litres": 201.1
+        "litres": 59
     }, {
-        "country": "Oficinas",
-        "litres": 165.8
+        "country": "Educativo",
+        "litres": 16
     }, {
         "country": "Comercio",
-        "litres": 139.9
+        "litres": 6
+    }, {
+        "country": "Logística",
+        "litres": 7
+    }, {
+        "country": "Oficinas",
+        "litres": 13
     }],
     "valueField": "litres",
     "titleField": "country",
     // "labelsEnabled":false,
     "labelText":"[[percents]]%",
-    "labelRadius":-30,
+    "labelRadius":-40,
     "baseColor":"#1F478D",
     "color":"#fff",
     "balloon":{
@@ -36,21 +42,33 @@ var chart = AmCharts.makeChart( "pie_2", {
         valueText : '' //or \n if you want new lines
     },
     "dataProvider": [ {
-        "country": "Industrial",
+        "country": "Chih",
 
-        "litres": 201.1
+        "litres": 56
     }, {
-        "country": "Oficinas",
-        "litres": 165.8
+        "country": "Mich",
+        "litres": 14
     }, {
-        "country": "Comercio",
-        "litres": 139.9
+        "country": "Jal",
+        "litres": 6
+    }, {
+        "country": "Qro",
+        "litres": 11
+    }, {
+        "country": "NL",
+        "litres": 4
+    }, {
+        "country": "Tamps",
+        "litres": 4
+    }, {
+        "country": "Otros",
+        "litres": 5
     }],
     "valueField": "litres",
     "titleField": "country",
     // "labelsEnabled":false,
     "labelText":"[[percents]]%",
-    "labelRadius":-30,
+    "labelRadius":-40,
     "baseColor":"#1F478D",
     "color":"#fff",
     "balloon":{
@@ -67,21 +85,18 @@ var chart = AmCharts.makeChart( "pie_3", {
         valueText : '' //or \n if you want new lines
     },
     "dataProvider": [ {
-        "country": "Industrial",
+        "country": "Ocupado",
 
-        "litres": 201.1
+        "litres": 100
     }, {
-        "country": "Oficinas",
-        "litres": 165.8
-    }, {
-        "country": "Comercio",
-        "litres": 139.9
+        "country": "Disponible",
+        "litres": 0
     }],
     "valueField": "litres",
     "titleField": "country",
     // "labelsEnabled":false,
     "labelText":"[[percents]]%",
-    "labelRadius":-30,
+    "labelRadius":-90,
     "baseColor":"#1F478D",
     "color":"#fff",
     "balloon":{
@@ -98,21 +113,18 @@ var chart = AmCharts.makeChart( "pie_4", {
         valueText : '' //or \n if you want new lines
     },
     "dataProvider": [ {
-        "country": "Industrial",
+        "country": "MXN",
 
-        "litres": 201.1
+        "litres": 57
     }, {
-        "country": "Oficinas",
-        "litres": 165.8
-    }, {
-        "country": "Comercio",
-        "litres": 139.9
+        "country": "USD",
+        "litres": 43
     }],
     "valueField": "litres",
     "titleField": "country",
     // "labelsEnabled":false,
     "labelText":"[[percents]]%",
-    "labelRadius":-30,
+    "labelRadius":-40,
     "baseColor":"#1F478D",
     "color":"#fff",
     "balloon":{
