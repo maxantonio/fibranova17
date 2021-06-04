@@ -6,7 +6,7 @@ var chart = AmCharts.makeChart( "chart_distribuciones", {
     "marginLeft": 30,
     "legend": {
         "useGraphSettings": true,
-        "valueAlign": "left",
+        "align": "center",
     },
     "marginRight": 8,
     "marginTop": 10,
@@ -83,7 +83,9 @@ var chart = AmCharts.makeChart( "chart_distribuciones", {
     } ],
     "valueAxes": [ {
         "axisAlpha": 0,
-        "position": "left"
+        "position": "left",
+        "id":"barAxis",
+        "minimum":12
     },
         {
             "id": "lineAxis",
@@ -100,7 +102,8 @@ var chart = AmCharts.makeChart( "chart_distribuciones", {
         "title": "Precio",
         "type": "column",
         "valueField": "Precio",
-        "dashLengthField": "dashLengthColumn"
+        "dashLengthField": "dashLengthColumn",
+        "valueAxis":"barAxis"
     }, {
         "id": "graph2",
         "balloonText": "<span style='font-size:12px;'>[[title]] en el [[category]]:<br><span style='font-size:20px;'>[[value]]</span> [[additional]]</span>",

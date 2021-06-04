@@ -24,13 +24,15 @@ var chart = AmCharts.makeChart( "pie_1", {
     "valueField": "litres",
     "titleField": "country",
     // "labelsEnabled":false,
-    "labelText":"[[percents]]%",
+    "labelText":"[[value]]%",
     "labelRadius":-40,
     "baseColor":"#1F478D",
     "color":"#fff",
     "balloon":{
         "fixedPosition":true
-    }
+    }   ,
+    balloonText:"[[title]]:[[value]]%"
+
 
 } );
 
@@ -67,13 +69,14 @@ var chart = AmCharts.makeChart( "pie_2", {
     "valueField": "litres",
     "titleField": "country",
     // "labelsEnabled":false,
-    "labelText":"[[percents]]%",
+    "labelText":"[[value]]%",
     "labelRadius":-40,
     "baseColor":"#1F478D",
     "color":"#fff",
     "balloon":{
         "fixedPosition":true
-    }
+    },
+    balloonText:"[[title]]:[[value]]%"
 
 } );
 
@@ -82,7 +85,8 @@ var chart = AmCharts.makeChart( "pie_3", {
     "theme": "none",
     // "colors":["#1F478D","#666","#ddd"],
     "legend": {
-        valueText : '' //or \n if you want new lines
+        valueText :'\n', //or \n if you want new lines
+        maxColumns:1
     },
     "dataProvider": [ {
         "country": "Ocupado",
@@ -95,13 +99,14 @@ var chart = AmCharts.makeChart( "pie_3", {
     "valueField": "litres",
     "titleField": "country",
     // "labelsEnabled":false,
-    "labelText":"[[percents]]%",
+    "labelText":"[[value]]%",
     "labelRadius":-90,
     "baseColor":"#1F478D",
     "color":"#fff",
     "balloon":{
         "fixedPosition":true
-    }
+    },   balloonText:"[[title]]:[[value]]%"
+
 
 } );
 
@@ -110,7 +115,8 @@ var chart = AmCharts.makeChart( "pie_4", {
     "theme": "none",
     // "colors":["#1F478D","#666","#ddd"],
     "legend": {
-        valueText : '' //or \n if you want new lines
+        valueText : '\n', //or \n if you want new lines
+        maxColumns:1
     },
     "dataProvider": [ {
         "country": "MXN",
@@ -123,12 +129,13 @@ var chart = AmCharts.makeChart( "pie_4", {
     "valueField": "litres",
     "titleField": "country",
     // "labelsEnabled":false,
-    "labelText":"[[percents]]%",
+    "labelText":"[[value]]%",
     "labelRadius":-40,
     "baseColor":"#1F478D",
     "color":"#fff",
     "balloon":{
         "fixedPosition":true
-    }
+    },    balloonText:"[[title]]:[[value]]%"
+
 
 } );
