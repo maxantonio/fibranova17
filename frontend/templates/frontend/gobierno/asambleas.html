@@ -1,11 +1,11 @@
 {% extends 'layouts/base.html' %}
-
+{% load static %}
 {% block content %}
 <section class="default-section">
     <div class="auto-container">
         <div class="row clearfix">
-            <table id="table1" class="table table-responsive table-hover">
-                <thead></thead>
+            <table id="table1" class="table table-responsive table-hover makeDataTatble">
+                <thead><tr><th></th><th>Asambleas</th></tr></thead>
                 <tbody>
                   <tr>
                       <td class="td-tab-1">
@@ -66,5 +66,12 @@
                 </tbody>
             </table>
         </div>
+    </div>
 </section>
+{% endblock %}
+{% block otherstyles %}
+    <link href="{% static 'css/dataTables.bootstrap4.min.css' %}?v=1.0.1" rel="stylesheet">
+    <link href="{% static 'css/dataTables.bootstrap.css' %}" rel="stylesheet">
+    <link href="{% static 'css/jquery.dataTables.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/datatable-ajustes.css' %}" rel="stylesheet">
 {% endblock %}

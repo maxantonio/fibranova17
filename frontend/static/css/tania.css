@@ -317,7 +317,6 @@ input, button, select, textarea {
     color: #3C5090;
     font-weight: 700;
     line-height: 20px;
-    text-transform: capitalize;
     position: relative;
     display: block;
 }
@@ -699,4 +698,7 @@ footer a{
 
 .amChartsInputField.hasDatepicker{
     border: 1px solid gray;
+}
+.dataTables_filter input{
+    padding: 0px!important;
 }

@@ -194,22 +194,9 @@ function createStockChart() {
     dataSet3.dataProvider = frmex_fill;
     dataSet3.categoryField = "date";
 
-    var dataSet4 = new AmCharts.DataSet();
-    dataSet4.title = ticker_symbol + " Close*";
-    if (locale == "en") {
-        dataSet4.title = ticker_symbol + " Close*";
-    }
-    dataSet4.fieldMappings = [{
-        fromField: "value",
-        toField: "value"
-    }, {
-        fromField: "volume",
-        toField: "volume"
-    }];
-    dataSet4.dataProvider = ajustado_fill;
-    dataSet4.categoryField = "date";
+
     // set data sets to the chart
-    chart.dataSets = [dataSet4, dataSet1, dataSet3, dataSet2];
+    chart.dataSets = [ dataSet1, dataSet3, dataSet2];
 
     var panelsSettings = new AmCharts.PanelsSettings();
     panelsSettings.marginLeft = 10;
