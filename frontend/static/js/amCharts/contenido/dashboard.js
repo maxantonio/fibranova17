@@ -203,7 +203,7 @@ function createStockChart() {
     panelsSettings.marginRight = 10;
 
     chart.panelsSettings = panelsSettings;
-
+    chart.colors = ["#1F478D","#1F478D"]
     // PANELS ///////////////////////////////////////////
     // first stock panel
     var stockPanel1 = new AmCharts.StockPanel();
@@ -222,12 +222,12 @@ function createStockChart() {
     graph1.compareField = "value";
     graph1.bullet = "round";
     graph1.hideBulletsCount = 32;
-    graph1.bulletBorderColor = "#f9f9f9";
+    graph1.bulletBorderColor = "#1F478D";
     graph1.bulletBorderAlpha = 1;
     graph1.balloonText = "[[title]]: <b>[[value]]</b>";
     graph1.compareGraphBalloonText = "[[title]]:<b>[[value]]</b>";
     graph1.compareGraphBullet = "round";
-    graph1.compareGraphBulletBorderColor = "#f9f9f9";
+    graph1.compareGraphBulletBorderColor = "#1F478D";
     graph1.compareGraphBulletBorderAlpha = 1;
     stockPanel1.addStockGraph(graph1);
 
