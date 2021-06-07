@@ -70,7 +70,7 @@ var chart = AmCharts.makeChart( "pie_2", {
     "titleField": "country",
     // "labelsEnabled":false,
     "labelText":"[[value]]%",
-    "labelRadius":-40,
+    "labelRadius":-20,
     "baseColor":"#1F478D",
     "color":"#fff",
     "balloon":{
