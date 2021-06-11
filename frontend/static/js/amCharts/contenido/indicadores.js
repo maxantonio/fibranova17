@@ -86,7 +86,8 @@ var chart = AmCharts.makeChart( "pie_3", {
     // "colors":["#1F478D","#666","#ddd"],
     "legend": {
         valueText :'\n', //or \n if you want new lines
-        maxColumns:1
+        maxColumns:1,
+        "align":"center"
     },
     "dataProvider": [ {
         "country": "Ocupado",
@@ -116,7 +117,8 @@ var chart = AmCharts.makeChart( "pie_4", {
     // "colors":["#1F478D","#666","#ddd"],
     "legend": {
         valueText : '\n', //or \n if you want new lines
-        maxColumns:1
+        maxColumns:1,
+        "align":"center"
     },
     "dataProvider": [ {
         "country": "MXN",
