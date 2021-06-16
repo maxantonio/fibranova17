@@ -244,7 +244,6 @@ function createStockChart() {
         stockPanel2.title = "Volumen";
     else
         stockPanel2.title = "Volume";
-
     stockPanel2.percentHeight = 30;
     var graph2 = new AmCharts.StockGraph();
     graph2.valueField = "volume";
