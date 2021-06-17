@@ -59,6 +59,29 @@ font-family: 'Open Sans', sans-serif;*/
 	border:none;
 	outline:none;
 }
+/***
+
+====================================================================
+	Font Face COCOGOOSE
+====================================================================
+
+ ***/
+
+@font-face {
+	font-family: 'COCOGOOSE light';
+	src: url('../fonts/cocogoose/Cocogoose_Light.ttf');
+	font-weight: normal;
+	font-style: normal;
+	/*unicode-range: U+41-7E;*/
+}
+
+@font-face {
+	font-family: 'COCOGOOSE';
+	src: url('../fonts/cocogoose/Cocogoose_Light.ttf');
+	font-weight: normal;
+	font-style: normal;
+	/*unicode-range: U+41-7E;*/
+}
 
 /***
 
@@ -67,6 +90,8 @@ font-family: 'Open Sans', sans-serif;*/
 ====================================================================
 
  ***/
+
+
 
 body {
 	font-size:14px;
@@ -78,7 +103,7 @@ body {
 	background-repeat:no-repeat;
 	background-position:center top;
 	-webkit-font-smoothing: antialiased;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'COCOGOOSE light','Open Sans', sans-serif;
 }
 
 a{
@@ -98,7 +123,7 @@ h1,h2,h3,h4,h5,h6 {
 	margin:0px;
 	background:none;
 	line-height:1.4em;
-	font-family: 'PT Sans', sans-serif;
+	font-family: 'COCOGOOSE','PT Sans', sans-serif;
 }
 
 .no-padding{
@@ -106,14 +131,14 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 input,button,select,textarea{
-	font-family: 'PT Sans', sans-serif;
+	font-family: 'COCOGOOSE light','PT Sans', sans-serif;
 }
 
 p,
 .text{
 	position:relative;
 	line-height:1.8em;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'COCOGOOSE light','Open Sans', sans-serif;
 	font-size: 16px;
 }
 
@@ -617,7 +642,7 @@ ul,li{
 	font-size:16px;
 	font-weight:500;
 	display:inline-block;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'COCOGOOSE light','Open Sans', sans-serif;
 }
 
 .social-icon-three a{
@@ -2209,7 +2234,7 @@ img{
 	font-size: 16px;
 	line-height:1.6em;
 	color:rgba(0,0,0,0.75);
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'COCOGOOSE light','Open Sans', sans-serif;
 }
 
 /*Signature Section*/
@@ -2307,7 +2332,7 @@ img{
 	position:relative;
 	color:#919191;
 	font-size:15px;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'COCOGOOSE light','Open Sans', sans-serif;
 }
 
 /***
@@ -2377,7 +2402,7 @@ img{
 	position:relative;
 	font-weight: 700;
 	color: #ffffff;
-	font-family: 'PT Sans', sans-serif;
+	font-family: 'COCOGOOSE light','PT Sans', sans-serif;
 }
 
 .fact-counter .column .counter-title{
@@ -2484,7 +2509,7 @@ img{
 	font-size:18px;
 	line-height:1.8em;
 	margin-bottom:30px;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'COCOGOOSE light','Open Sans', sans-serif;
 }
 
 .testimonial-block .inner-box .author-box{
@@ -2535,7 +2560,7 @@ img{
 	position:relative;
 	font-size:16px;
 	color:#ffffff;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'COCOGOOSE light','Open Sans', sans-serif;
 }
 
 .fullwidth-section .testimonial-column .owl-nav{
@@ -3056,7 +3081,7 @@ img{
 	-webkit-transition:all 0.3s ease;
 	-ms-transition:all 0.3s ease;
 	-o-transition:all 0.3s ease;
-	font-family: 'PT Sans', sans-serif;
+	font-family: 'COCOGOOSE light','PT Sans', sans-serif;
 }
 
 .news-block .inner-box .lower-content .detail .arrow{
@@ -3393,7 +3418,7 @@ img{
 	-webkit-transition:all 500ms ease;
 	-ms-transition:all 500ms ease;
 	-o-transition:all 500ms ease;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'COCOGOOSE light','Open Sans', sans-serif;
 }
 
 .default-form .form-group input[type="text"]:focus,
@@ -4090,7 +4115,7 @@ img{
 	text-transform:uppercase;
 	border-right:1px solid #f2f2f2;
 	border-left:1px solid #f2f2f2;
-	font-family: 'PT Sans', sans-serif;
+	font-family:'COCOGOOSE light','PT Sans', sans-serif;
 }
 
 .page-info .share-icon a{
@@ -4213,7 +4238,7 @@ img{
 	-webkit-transition:all 0.3s ease;
 	-ms-transition:all 0.3s ease;
 	-o-transition:all 0.3s ease;
-	font-family: 'Hind', sans-serif;
+	font-family: 'COCOGOOSE light','Hind', sans-serif;
 }
 
 .team-member .inner-box .lower-box .designation:after{
@@ -4610,7 +4635,7 @@ margin-bottom: 10px;
 	color:#ffffff;
 	font-weight:400;
 	margin:5px 0px 5px;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'COCOGOOSE light','Open Sans', sans-serif;
 }
 
 .info-widget .inner .more-detail{
@@ -4690,7 +4715,7 @@ margin-bottom: 10px;
 	color:#222222;
 	font-size:18px;
 	margin-bottom:40px;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'COCOGOOSE light','Open Sans', sans-serif;
 }
 
 .services-single .inner-box .lower-content .two-column{
@@ -4817,7 +4842,7 @@ margin-bottom: 10px;
 	margin-bottom: 20px;
 	padding-left: 60px;
 	text-transform:capitalize;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'COCOGOOSE light','Open Sans', sans-serif;
 }
 
 .services-block-seven .inner-box h3 a{
@@ -4838,7 +4863,7 @@ margin-bottom: 10px;
 	font-size: 16px;
 	line-height:1.6em;
 	color:rgba(0,0,0,0.75);
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'COCOGOOSE light','Open Sans', sans-serif;
 }
 
 /* services block eight*/
@@ -5836,7 +5861,7 @@ margin-bottom: 10px;
 	color:#000000;
 	line-height:1.4em;
 	text-transform:capitalize;
-	font-family: 'PT Sans', sans-serif;
+	font-family: 'COCOGOOSE light','PT Sans', sans-serif;
 }
 
 .sidebar .popular-posts .post .text a{
@@ -5877,7 +5902,7 @@ margin-bottom: 10px;
 	-ms-transition:all 300ms ease;
 	-o-transition:all 300ms ease;
 	-moz-transition:all 300ms ease;
-	font-family: 'PT Sans', sans-serif;
+	font-family: 'COCOGOOSE light','PT Sans', sans-serif;
 }
 
 .sidebar .popular-tags a:hover{
@@ -6509,7 +6534,7 @@ margin-bottom: 10px;
 	font-size:15px;
 	width:100%;
 	display:inline-block;
-	font-family: 'PT Sans', sans-serif;
+	font-family:'COCOGOOSE light','PT Sans', sans-serif;
 }
 
 /***
