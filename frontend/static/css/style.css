@@ -70,7 +70,7 @@ font-family: 'Open Sans', sans-serif;*/
 @font-face {
 	font-family: 'COCOGOOSE light';
 	src: url('../fonts/cocogoose/Cocogoose_Light.ttf');
-	font-weight: normal;
+	font-weight: 200;
 	font-style: normal;
 	/*unicode-range: U+41-7E;*/
 }
@@ -78,7 +78,7 @@ font-family: 'Open Sans', sans-serif;*/
 @font-face {
 	font-family: 'COCOGOOSE';
 	src: url('../fonts/cocogoose/Cocogoose_Light.ttf');
-	font-weight: normal;
+	font-weight: 200;
 	font-style: normal;
 	/*unicode-range: U+41-7E;*/
 }
@@ -94,7 +94,7 @@ font-family: 'Open Sans', sans-serif;*/
 
 
 body {
-	font-size:14px;
+	font-size:12px;
 	color:#666666;
 	line-height:1.8em;
 	font-weight:400;
@@ -119,7 +119,7 @@ a:hover,a:focus,a:visited{
 
 h1,h2,h3,h4,h5,h6 {
 	position:relative;
-	font-weight:normal;
+	font-weight:200;
 	margin:0px;
 	background:none;
 	line-height:1.4em;
@@ -139,7 +139,7 @@ p,
 	position:relative;
 	line-height:1.8em;
 	font-family: 'COCOGOOSE light','Open Sans', sans-serif;
-	font-size: 16px;
+	font-size: 12px;
 }
 
 .row-10 {
@@ -311,7 +311,7 @@ ul,li{
 	position:relative;
 	color:#1F478D;
 	font-size:38px;
-	font-weight:600;
+	font-weight:400;
 	padding-bottom: 25px;
 	line-height:1.2em;
 	margin-bottom:10px;
@@ -323,7 +323,7 @@ ul,li{
 
 .sec-title .text{
 	position:relative;
-	font-size:18px;
+	font-size:16px;
 	color:rgba(0,0,0,0.80);
 }
 
@@ -2400,14 +2400,14 @@ img{
 
 .fact-counter .count-outer .count-text{
 	position:relative;
-	font-weight: 700;
+	font-weight: 400;
 	color: #ffffff;
 	font-family: 'COCOGOOSE light','PT Sans', sans-serif;
 }
 
 .fact-counter .column .counter-title{
 	position:relative;
-	font-size:16px;
+	font-size:14px;
 	font-weight:400;
 	color: #ffffff;
 	margin-top:10px;
@@ -3044,8 +3044,8 @@ img{
 
 .news-block .inner-box .lower-content h3{
 	position:relative;
-	font-size:20px;
-	font-weight:700;
+	font-size:16px;
+	font-weight:400;
 	margin-top:10px;
 	margin-bottom:10px;
 }
@@ -3901,7 +3901,7 @@ img{
 .testimonial-block-four .inner-box .text{
 	position:relative;
 	color:#000000;
-	font-size:20px;
+	font-size:18px;
 	margin-bottom:25px;
 	line-height:1.6em;
 	font-weight:300;
@@ -4392,7 +4392,7 @@ margin-bottom: 10px;
 
 .services-block-five .inner-box .lower-content .text{
 	position:relative;
-	font-size:15px;
+	font-size:14px;
 	line-height:1.7em;
 	margin-bottom:15px;
 	color:rgba(0,0,0,0.75);
@@ -4401,12 +4401,12 @@ margin-bottom: 10px;
 .services-block-five .inner-box .lower-content .detail{
 	position:relative;
 	color:#1F478D;
-	font-size:16px;
+	font-size:14px;
 }
 
 .services-block-five .inner-box .lower-content .detail .arrow{
 	font-size:14px;
-	font-weight:700;
+	font-weight:400;
 	margin-left:5px;
 }
 
@@ -4706,7 +4706,7 @@ margin-bottom: 10px;
 	position:relative;
 	color:#000000;
 	font-size:32px;
-	font-weight:600;
+	font-weight:400;
 	margin-bottom:12px;
 }
 
