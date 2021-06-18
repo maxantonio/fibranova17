@@ -46,7 +46,7 @@ ul li {
 }
 
 .testimonial-block-four .inner-box .text {
-    font-size: 16px !important;
+    font-size: 14px !important;
 }
 
 .testimonial-block-four .inner-box {
@@ -318,10 +318,10 @@ input, button, select, textarea {
 }
 
 .accordion .panel .panel--heading a {
-    font-family: 'Roboto', sans-serif;
+        font-family: 'COCOGOOSE light','Open Sans', sans-serif;
     font-size: 16px;
     color: #1F478D;
-    font-weight: 700;
+    font-weight: 600;
     line-height: 20px;
     position: relative;
     display: block;
@@ -536,10 +536,10 @@ footer a{
 /***************************
       Accordion
 ***************************/
-.accordion .acd-group .acd-heading:before { font-family: fontawesome; }
+.accordion .acd-group .acd-heading:before { font-family:FontAwesome;}
 .accordion .acd-group .acd-heading:before { cursor: pointer; position: absolute; top: 6px; right: 20px; display: block; padding: 3px 6px 2px; content: "\f105"; font-size: 22px; line-height: 38px; }
 .accordion .acd-group > .acd-heading > span { margin-right: 15px; }
-.accordion .acd-heading {   transition: 0.5s ; font-weight: 500; position: relative; padding: 20px 0; color: #1F478D; line-height: normal; cursor: pointer; background-color: transparent; margin-bottom: 0px; display: block; font-family:  sans-serif; text-transform: uppercase; border-radius: 3px;  }
+.accordion .acd-heading {   transition: 0.5s ; font-weight: 500; position: relative; padding: 20px 0; color: #1F478D; line-height: normal; cursor: pointer; background-color: transparent; margin-bottom: 0px; display: block; font-family:'COCOGOOSE light','Open Sans', sans-serif; text-transform: uppercase; border-radius: 3px;  }
 .acd-des { padding: 0 20px 20px 0; }
 .accordion .acd-group.acd-active .acd-heading, .accordion .acd-group .acd-heading:hover { color: #1F478D; }
 .accordion .acd-group.acd-active .acd-heading:before { content: "\f107"; }
