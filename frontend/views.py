@@ -4,54 +4,61 @@ from django.views.decorators.http import require_POST
 from django.template import loader
 
 urlbase = 'http://cdn.investorcloud.net/FNOVA'
+
+
 def index(request):
-    context = {'title': 'Index', 'urlbase':urlbase}
-    return render(request, 'frontend/index.html', context)
+    context = {'title': 'Index', 'urlbase': urlbase}
+    return render(request, f'frontend/{request.LANGUAGE_CODE}/index.html', context)
 
 
 def contacto(request):
     context = {'title': 'Contacto'}
-    return render(request, 'frontend/contacto.html', context)
-def noticias(request):
-    context = {'title': 'Noticias', 'urlbase':urlbase}
-    return render(request, 'frontend/noticias.html', context)
+    return render(request, f'frontend/{request.LANGUAGE_CODE}/contacto.html', context)
 
-def noticia(request,no):
-    context = {'title': 'Noticia', 'urlbase':urlbase}
+
+def noticias(request):
+    context = {'title': 'Noticias', 'urlbase': urlbase}
+    return render(request, f'frontend/{request.LANGUAGE_CODE}/noticias.html', context)
+
+
+def noticia(request, no):
+    context = {'title': 'Noticia', 'urlbase': urlbase}
     url = 'frontend/noticias/{0}.html'.format(no)
     print(url)
-    return render(request,url , context)
+    return render(request, url, context)
+
 
 def indicadores_operativos(request):
     context = {'title': 'Indicadores Operativos'
                }
-    return render(request, 'frontend/indicadores.html', context)
+    return render(request, f'frontend/{request.LANGUAGE_CODE}/indicadores.html', context)
+
 
 def portafolio(request, tab):
     context = {'title': 'Propiedades',
                'tab': tab}
-    return render(request, 'frontend/portafolio.html', context)
+    return render(request, f'frontend/{request.LANGUAGE_CODE}/portafolio.html', context)
 
 
 # PERFIL
 def perfil_nosotros(request):
     context = {'title': 'Nosotros'}
-    return render(request, 'frontend/perfil/nosotros.html', context)
+    return render(request, f'frontend/{request.LANGUAGE_CODE}/perfil/nosotros.html', context)
 
 
 def presencia_geografica(request):
     context = {'title': 'Presencia Geográfica'}
-    return render(request, 'frontend/perfil/presencia_geografica.html', context)
+    return render(request, f'frontend/{request.LANGUAGE_CODE}/perfil/presencia_geografica.html', context)
 
 
 def historia(request):
     context = {'title': 'Historia'}
-    return render(request, 'frontend/perfil/historia.html', context)
+    return render(request, f'frontend/{request.LANGUAGE_CODE}/perfil/historia.html', context)
 
 
 def estrategia(request):
     context = {'title': 'Estrategia'}
-    return render(request, 'frontend/perfil/estrategia.html', context)
+    return render(request, f'frontend/{request.LANGUAGE_CODE}/perfil/estrategia.html', context)
 
 
 # END PERFIL
@@ -60,60 +67,60 @@ def estrategia(request):
 def reportes_trimestrales(request):
     annos = ['2021', '2020', '2019', '2018', '2017']
     info = [
-{
-    'anno': 2021,
-    'tri_1T': {
-        'fecha': '1T',
-        'reporte': '/InformacionFinanciera/ReportesTrimestrales/2021-1T21.pdf',
-        'sific': '/InformacionFinanciera/ReportesTrimestrales/2021-1T21-BMV.pdf',
-        'conferencia': '/InformacionFinanciera/ReportesTrimestrales/2021-1T21-CC.mp3',
-    },
-    'tri_2T': {
-        'fecha': '2T',
-        'reporte': '',
-        'sific': '',
-        'conferencia': '',
-    },
-    'tri_3T': {
-        'fecha': '3T',
-        'reporte': '',
-        'sific': '',
-        'conferencia': '',
-    },
-    'tri_4T': {
-        'fecha': '4T',
-        'reporte': '',
-        'sific': '',
-        'conferencia': '',
-    }
-},
-{
-    'anno': 2020,
-    'tri_1T': {
-        'fecha': '1T',
-        'reporte': '/InformacionFinanciera/ReportesTrimestrales/2020-1T20.pdf',
-        'sific': '/InformacionFinanciera/ReportesTrimestrales/2020-1T20-BMV.pdf',
-        'conferencia': '/InformacionFinanciera/ReportesTrimestrales/2020-1T20-CC.wav',
-    },
-    'tri_2T': {
-        'fecha': '2T',
-        'reporte': '/InformacionFinanciera/ReportesTrimestrales/2020-2T20.pdf',
-        'sific': '/InformacionFinanciera/ReportesTrimestrales/2020-2T20-BMV.pdf',
-        'conferencia': '/InformacionFinanciera/ReportesTrimestrales/2020-2T20-CC.wav',
-    },
-    'tri_3T': {
-        'fecha': '3T',
-        'reporte': '/InformacionFinanciera/ReportesTrimestrales/2020-3T20.pdf',
-        'sific': '/InformacionFinanciera/ReportesTrimestrales/2020-3T20-BMV.pdf',
-        'conferencia': '/InformacionFinanciera/ReportesTrimestrales/2020-3T20-CC.mp3',
-    },
-    'tri_4T': {
-        'fecha': '4T',
-        'reporte': '/InformacionFinanciera/ReportesTrimestrales/2020-4T20.pdf',
-        'sific': '/InformacionFinanciera/ReportesTrimestrales/2020-4T20-BMV.pdf',
-        'conferencia': '/InformacionFinanciera/ReportesTrimestrales/2020-4T20-CC.mp3',
-    }
-},
+        {
+            'anno': 2021,
+            'tri_1T': {
+                'fecha': '1T',
+                'reporte': '/InformacionFinanciera/ReportesTrimestrales/2021-1T21.pdf',
+                'sific': '/InformacionFinanciera/ReportesTrimestrales/2021-1T21-BMV.pdf',
+                'conferencia': '/InformacionFinanciera/ReportesTrimestrales/2021-1T21-CC.mp3',
+            },
+            'tri_2T': {
+                'fecha': '2T',
+                'reporte': '',
+                'sific': '',
+                'conferencia': '',
+            },
+            'tri_3T': {
+                'fecha': '3T',
+                'reporte': '',
+                'sific': '',
+                'conferencia': '',
+            },
+            'tri_4T': {
+                'fecha': '4T',
+                'reporte': '',
+                'sific': '',
+                'conferencia': '',
+            }
+        },
+        {
+            'anno': 2020,
+            'tri_1T': {
+                'fecha': '1T',
+                'reporte': '/InformacionFinanciera/ReportesTrimestrales/2020-1T20.pdf',
+                'sific': '/InformacionFinanciera/ReportesTrimestrales/2020-1T20-BMV.pdf',
+                'conferencia': '/InformacionFinanciera/ReportesTrimestrales/2020-1T20-CC.wav',
+            },
+            'tri_2T': {
+                'fecha': '2T',
+                'reporte': '/InformacionFinanciera/ReportesTrimestrales/2020-2T20.pdf',
+                'sific': '/InformacionFinanciera/ReportesTrimestrales/2020-2T20-BMV.pdf',
+                'conferencia': '/InformacionFinanciera/ReportesTrimestrales/2020-2T20-CC.wav',
+            },
+            'tri_3T': {
+                'fecha': '3T',
+                'reporte': '/InformacionFinanciera/ReportesTrimestrales/2020-3T20.pdf',
+                'sific': '/InformacionFinanciera/ReportesTrimestrales/2020-3T20-BMV.pdf',
+                'conferencia': '/InformacionFinanciera/ReportesTrimestrales/2020-3T20-CC.mp3',
+            },
+            'tri_4T': {
+                'fecha': '4T',
+                'reporte': '/InformacionFinanciera/ReportesTrimestrales/2020-4T20.pdf',
+                'sific': '/InformacionFinanciera/ReportesTrimestrales/2020-4T20-BMV.pdf',
+                'conferencia': '/InformacionFinanciera/ReportesTrimestrales/2020-4T20-CC.mp3',
+            }
+        },
         {
             'anno': 2019,
             'tri_1T': {
@@ -200,37 +207,37 @@ def reportes_trimestrales(request):
     context = {'title': 'Reportes Trimestrales',
                'annos': annos,
                'info': info,
-               'urlbase':urlbase
+               'urlbase': urlbase
                }
-    return render(request, 'frontend/inversionistas/reportes-trimestrales.html', context)
+    return render(request, f'frontend/{request.LANGUAGE_CODE}/inversionistas/reportes-trimestrales.html', context)
 
 
 def reportes_anuales(request):
     context = {'title': 'Reportes Anuales',
-               'urlbase':urlbase}
-    return render(request, 'frontend/inversionistas/reportes-anuales.html', context)
+               'urlbase': urlbase}
+    return render(request, f'frontend/{request.LANGUAGE_CODE}/inversionistas/reportes-anuales.html', context)
 
 
 def fundamentales(request):
     context = {'title': 'Fundamentales'}
-    return render(request, 'frontend/inversionistas/fundamentales.html', context)
+    return render(request, f'frontend/{request.LANGUAGE_CODE}/inversionistas/fundamentales.html', context)
 
 
 def eventos_relevantes(request):
     context = {'title': 'Eventos Relevantes',
-               'urlbase':urlbase}
+               'urlbase': urlbase}
 
-    return render(request, 'frontend/inversionistas/eventos-relevantes.html', context)
+    return render(request, f'frontend/{request.LANGUAGE_CODE}/inversionistas/eventos-relevantes.html', context)
 
 
 def faqs(request):
     context = {'title': 'Preguntas Frecuentes'}
-    return render(request, 'frontend/inversionistas/faqs.html', context)
+    return render(request, f'frontend/{request.LANGUAGE_CODE}/inversionistas/faqs.html', context)
 
 
 def distribuciones(request):
-    context = {'title': 'Distribuciones', 'urlbase':urlbase}
-    return render(request, 'frontend/bursatil/distribuciones.html', context)
+    context = {'title': 'Distribuciones', 'urlbase': urlbase}
+    return render(request, f'frontend/{request.LANGUAGE_CODE}/bursatil/distribuciones.html', context)
 
 
 # END INVERSIONISTAmail@curucredit.com
@@ -238,50 +245,55 @@ def distribuciones(request):
 # BURSATIL
 def cotizacion(request):
     context = {'title': 'Cotización'}
-    return render(request, 'frontend/bursatil/cotizacion.html', context)
+    return render(request, f'frontend/{request.LANGUAGE_CODE}/bursatil/cotizacion.html', context)
+
 
 def precio_historico(request):
     context = {'title': 'Precio Historico'}
-    return render(request, 'frontend/bursatil/precio-historico.html', context)
+    return render(request, f'frontend/{request.LANGUAGE_CODE}/bursatil/precio-historico.html', context)
+
 
 def calculadora(request):
-    context = {'title':'Calculadora de Rendimientos'}
-    return render(request,'frontend/bursatil/calculadora.html',context)
+    context = {'title': 'Calculadora de Rendimientos'}
+    return render(request, f'frontend/{request.LANGUAGE_CODE}/bursatil/calculadora.html', context)
+
 
 def cobertura_analistas(request):
-    context = {'title':'Cobertura de Analistas'}
-    return render(request,'frontend/bursatil/cobertura-analistas.html',context)
+    context = {'title': 'Cobertura de Analistas'}
+    return render(request, f'frontend/{request.LANGUAGE_CODE}/bursatil/cobertura-analistas.html', context)
+
+
 # END BURSATIL
 
 # GOBIERNO
 def directivos(request):
     context = {'title': 'Directivos'}
-    return render(request, 'frontend/gobierno/directivos.html', context)
+    return render(request, f'frontend/{request.LANGUAGE_CODE}/gobierno/directivos.html', context)
 
 
 def comites(request):
     context = {'title': 'Comités'}
-    return render(request, 'frontend/gobierno/comites.html', context)
+    return render(request, f'frontend/{request.LANGUAGE_CODE}/gobierno/comites.html', context)
 
 
 def auditor_externo(request):
     context = {'title': 'Auditor Externo'}
-    return render(request, 'frontend/gobierno/auditor-externo.html', context)
+    return render(request, f'frontend/{request.LANGUAGE_CODE}/gobierno/auditor-externo.html', context)
 
 
 def prospectos_suplementos(request):
-    context = {'title': 'Prospectos y Suplementos', 'urlbase':urlbase}
-    return render(request, 'frontend/gobierno/prospectos-suplementos.html', context)
+    context = {'title': 'Prospectos y Suplementos', 'urlbase': urlbase}
+    return render(request, f'frontend/{request.LANGUAGE_CODE}/gobierno/prospectos-suplementos.html', context)
 
 
 def asambleas(request):
-    context = {'title': 'Asambleas', 'urlbase':urlbase}
-    return render(request, 'frontend/gobierno/asambleas.html', context)
+    context = {'title': 'Asambleas', 'urlbase': urlbase}
+    return render(request, f'frontend/{request.LANGUAGE_CODE}/gobierno/asambleas.html', context)
 
 
 def codigo_etica(request):
-    context = {'title': 'Código de Ética', 'urlbase':urlbase}
-    return render(request, 'frontend/gobierno/codigo-etica.html', context)
+    context = {'title': 'Código de Ética', 'urlbase': urlbase}
+    return render(request, f'frontend/{request.LANGUAGE_CODE}/gobierno/codigo-etica.html', context)
 
 
 # END GOBIERNO
@@ -291,7 +303,7 @@ def suscribir(request):
     context = {'title': 'Inicio'}
     email = request.POST['email']
     html_message = loader.render_to_string(
-        'frontend/emails/suscribirse.html',
+        'frontend/es/emails/suscribirse.html',
         {
             'email': email,
         }
@@ -316,7 +328,7 @@ def send_mail_contact(request):
     asunto = request.POST['subject']
     mensaje = request.POST['message']
     html_message = loader.render_to_string(
-        'frontend/emails/send_mail.html',
+        'frontend/es/emails/send_mail.html',
         {
             'nombre': nombre,
             'email': email,

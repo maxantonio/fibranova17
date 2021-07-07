@@ -1,3 +1,5 @@
+{% load change_languaje %}
+
 <li class="current dropdown"><a href="#">Perfil</a>
     <ul>
         <li><a href="{% url 'frontend:perfil-nosotros' %}">Nosotros</a></li>
@@ -10,11 +12,10 @@
     <ul>
         <li><a href="{% url 'frontend:portafolio' tab='todos' %}">Propiedades</a></li>
         <li><a href="{% url 'frontend:indicadores-operativos' %}">Indicadores Operativos</a></li>
-
     </ul>
 </li>
 
-<li><a href="{% url 'frontend:noticias'%}">Noticias</a></li>
+<li><a href="{% url 'frontend:noticias' %}">Noticias</a></li>
 <li class="dropdown"><a href="#">Inversionistas</a>
     <ul>
         <li><a href="{% url 'frontend:inversionistas-reportes-trimestrales' %}">Reportes Trimestrales</a></li>
@@ -22,7 +23,8 @@
         <li><a href="{% url 'frontend:inversionistas-fundamentales' %}">Fundamentales</a></li>
         <li><a href="{% url 'frontend:inversionistas-eventos-relevantes' %}">Eventos Relevantes</a></li>
         <li><a href="{% url 'frontend:inversionistas-faqs' %}">Preguntas Frecuentes</a></li>
-        <li><a href="{% url 'frontend:gobierno-prospectos-suplementos' %}">Prospectos <span style="text-transform: lowercase">y</span> Suplementos</a></li>
+        <li><a href="{% url 'frontend:gobierno-prospectos-suplementos' %}">Prospectos <span
+                style="text-transform: lowercase">y</span> Suplementos</a></li>
     </ul>
 </li>
 {#<li class="dropdown"><a href="#">Información Bursátil</a>#}
@@ -38,17 +40,33 @@
         <li><a href="{% url 'frontend:gobierno-comites' %}">Comités</a></li>
         <li><a href="{% url 'frontend:gobierno-auditor-externo' %}">Auditor Externo</a></li>
         <li><a href="{% url 'frontend:gobierno-asambleas' %}">Asambleas</a></li>
-        <li><a href="{% url 'frontend:gobierno-codigo-etica' %}">Código <span style="text-transform: lowercase">d</span>e ética</a></li>
+        <li><a href="{% url 'frontend:gobierno-codigo-etica' %}">Código <span style="text-transform: lowercase">d</span>e
+            ética</a></li>
     </ul>
 </li>
 <li class="dropdown"><a href="#">Información<br> Bursátil</a>
     <ul>
         <li><a href="{% url 'frontend:bursatil-distribuciones' %}">Distribuciones</a></li>
-        <li><a href="{% url 'frontend:bursatil-cotizacion' %}">Comportamiento <span style="text-transform: lowercase">d</span>e <span style="text-transform: lowercase">l</span>a acción</a></li>
+        <li><a href="{% url 'frontend:bursatil-cotizacion' %}">Comportamiento <span
+                style="text-transform: lowercase">d</span>e <span style="text-transform: lowercase">l</span>a acción</a>
+        </li>
         <li><a href="{% url 'frontend:bursatil-precio-historico' %}">Precios Historicos</a></li>
-        <li><a href="{% url 'frontend:bursatil-calculadora' %}">Calculadora <span style="text-transform: lowercase">d</span>e rendimientos</a></li>
-        <li><a href="{% url 'frontend:bursatil-cobertura-analistas' %}">Cobertura <span style="text-transform: lowercase">d</span>e Analistas</a></li>
+        <li><a href="{% url 'frontend:bursatil-calculadora' %}">Calculadora <span
+                style="text-transform: lowercase">d</span>e rendimientos</a></li>
+        <li><a href="{% url 'frontend:bursatil-cobertura-analistas' %}">Cobertura <span
+                style="text-transform: lowercase">d</span>e Analistas</a></li>
 
     </ul>
 </li>
 <li><a href="{% url 'frontend:contacto' %}">Contacto</a></li>
+{% if request.LANGUAGE_CODE == 'en' %}
+    <li class="nav-item nav-item-anim-icon">
+        <a class="nav-link pl-0" href="{% change_lang 'es' %}">
+            ES</a>
+    </li>
+{% else %}
+    <li class="nav-item nav-item-anim-icon">
+        <a class="nav-link pl-0" href="{% change_lang 'en' %}">
+            EN</a>
+    </li>
+{% endif %}

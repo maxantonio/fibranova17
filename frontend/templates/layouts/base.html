@@ -105,7 +105,7 @@
     </header>
     <!--End Main Header -->
 
-    {% if request.path == '/' %}
+    {% if request.path == '/' or request.path == '/en/' %}
         <!--Main Slider-->
         {% include 'partials/slider.html' %}
         <!--End Main Slider-->
