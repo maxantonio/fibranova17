@@ -758,6 +758,66 @@ a.index-social-link {
 
 }
 
+/*    RESULTADO TRIMESTRALES  */
+.quarterly-results .header {
+    background: #042156;
+}
+.quarterly-results .header h2 {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+.quarterly-results>div>.text>.text {
+    padding: 25px;
+}
+.eqicon{
+    font-family: FontAwesome;
+}
+.quarterly-results .eqicon-trigger:before {
+    content: "\f106";
+}
+.quarterly-results .collapsed .eqicon-trigger:before {
+    content: "\f107";
+}
+
+
+
+.result-line {
+    padding: 10px 0;
+    line-height: 1;
+}
+.box.quarterly-results .toggle-wrapper>.text {
+    border: 1px solid #ccc;
+}
+.quarterly-results .toggle-wrapper>.text>.text+.text {
+    border-top: 1px solid #ccc;
+}
+.result-line+.result-line {
+    border-top: 1px dotted #ccc;
+}
+.quarterly-results .header {
+    background: #042156;
+    color: #fff;
+    padding: 15px 25px;
+    position: relative;
+}
+.box.quarterly-results+.box.quarterly-results {
+    margin-top: 25px;
+}
+.header .eqicon-trigger {
+    color: #fff;
+}
+.quarterly-results .header .eqicon-trigger {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    color: #fff;
+}
+
 .pt-5,.py-5{padding-top:3rem!important}
 .p-5{padding:3rem!important}
 .d-flex{display:-webkit-box!important;display:-ms-flexbox!important;display:flex!important}
