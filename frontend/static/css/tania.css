@@ -670,10 +670,7 @@ footer a{
     align-items: center;
     transition: all 0.2s;
 }
-.justify-content-center {
-    -ms-flex-pack: center!important;
-    justify-content: center!important;
-}
+
 .ph-5{
     padding-left: 3rem;
     padding-right: 3rem;
@@ -708,3 +705,59 @@ footer a{
 .dataTables_filter input{
     padding: 0px!important;
 }
+
+.justify-content-center {
+    -webkit-box-pack: center!important;
+    -ms-flex-pack: center!important;
+    justify-content: center!important;
+}
+.align-items-center {
+    -webkit-box-align: center!important;
+    -ms-flex-align: center!important;
+    align-items: center!important;
+}
+.preguntas-finales h1 {
+    font-size: 48px;
+    margin-bottom: 8px;
+}
+.panel-group.accordion-style-03 .panel {
+    padding-left: 32px;
+    padding-right: 32px;
+    margin-bottom: 22px !important;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+.boton-info1 span {
+    color: #232323;
+    font-size: 20px;
+}
+.texto-redes {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    width: 100%;
+}
+.texto-redes h2 {
+    /*font-size: var(--fs-title-section-h2);*/
+    color: #FFFF;
+}
+a.index-social-link {
+    margin-right: 30px;
+    padding: 10px;
+    color: #FFFFFF;
+}
+.auto-container2{
+    position:static;
+    max-width:1300px;
+    padding:0px 15px;
+    margin:0 auto;
+}
+.sp-two-half{
+    padding: 40px 0 0px;
+
+}
+
+.pt-5,.py-5{padding-top:3rem!important}
+.p-5{padding:3rem!important}
+.d-flex{display:-webkit-box!important;display:-ms-flexbox!important;display:flex!important}

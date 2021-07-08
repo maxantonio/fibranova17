@@ -1,5 +1,92 @@
 {% load static %}
+<div class="theme-bg pt-5">
+<section class="">
+    <div class="container-fluid container-relative">
+        <div class="row align-items-center justify-content-center preguntas-finales d-flex">
+            <div class="col-12 col-lg-6 col-md-10 p-5">
+                <div class="p-5">
+                <h1 class="mt-5 mt-lg-0 alt-font font-weight-500 letter-spacing-minus-1px margin-4-half-rem-bottom md-margin-4-rem-bottom lg-margin-2-half-rem-bottom md-w-100 texto-cenizo">
+                    ¿Más información?
+                </h1>
+                <div class="panel-group accordion-event accordion-style-03 margin-4-rem-bottom lg-margin-2-rem-bottom">
+                    <!-- start accordion item -->
+                    <div class="panel bg-white box-shadow-small border-radius-5px wow animate__fadeInUp"
+                         data-wow-delay="0.4s">
+                        <div class="panel-heading">
+                            <a class="accordion-toggle" href="{% url 'frontend:perfil-nosotros' %}" aria-expanded="false">
+                                <div class="boton-info1">
+                                    <span>Conoce más de Fibra Nova </span>
+                                    <i class="indicator fa fa-angle-right text-tussock icon-extra-small"></i>
+                                </div>
+                            </a>
+                        </div>
 
+                    </div>
+
+                    <!-- start accordion item -->
+                    <div class="panel bg-white box-shadow-small border-radius-5px wow animate__fadeInUp"
+                         data-wow-delay="0.6s">
+                        <div class="panel-heading">
+                            <a class="accordion-toggle collapsed" href="{% url 'frontend:portafolio' tab='manufactura' %}"
+                               aria-expanded="false">
+                                <div class="boton-info1">
+                                    <span>Conoce más del portafolio</span>
+                                    <i class="indicator fa fa-angle-right text-tussock icon-extra-small"></i>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+                    <!-- end accordion item -->
+                    <!-- start accordion item -->
+                    <div class="panel bg-white box-shadow-small border-radius-5px wow animate__fadeInUp"
+                         data-wow-delay="0.6s">
+                        <div class="panel-heading">
+                            <a class="accordion-toggle collapsed" href="{% url 'frontend:inversionistas-faqs' %}"
+                               aria-expanded="false">
+                                <div class="boton-info1">
+                                    <span>Conoce cómo invertir</span>
+                                    <i class="indicator fa fa-angle-right text-tussock icon-extra-small"></i>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+                    <!-- end accordion item -->
+                </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 offset-xl-1 col-md-10 wow animate__fadeInRight position-relative"
+                 style="visibility: visible; animation-name: fadeInRight;">
+                <div class="outside-box-right position-relative index-box">
+                    <img src="{% static 'images/main-slider/slider2.jpg' %}" class="overflow-hidden"
+                         data-no-retina="">
+                    <div class="texto-redes mt-2">
+                        <h2>Síguenos en nuestras redes sociales </h2>
+                        <div class="mt-2">
+                        <a target="_blank" class="index-social-link" href="https://twitter.com/NovaFibra">
+                            <i class="fa fa-twitter fa-3x"></i>
+                        </a>
+                        <a target="_blank" class="index-social-link" href="https://www.facebook.com/Fibras-NOVA-993241107528482/">
+                            <i class="fa fa-facebook fa-3x"></i>
+                        </a>
+                        <a target="_blank" class="index-social-link"
+                           href="https://www.instagram.com/fibranova17/">
+                            <i class="fa fa-instagram fa-3x"></i>
+                        </a>
+                        <a target="_blank" class="index-social-link"
+                           href="https://www.linkedin.com/company/fibra-nova17/?originalSubdomain=mx">
+                            <i class="fa fa-linkedin fa-3x"></i>
+                        </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+</div>
 <footer class="main-footer">
 
     <div class="ph-50">

@@ -9,6 +9,25 @@
                 <div class="services-block-three">
                     <div class="inner-box">
                         <figure class="image">
+                            <img src="{% static 'images/contenido/industrial.jpg' %}" alt=""/>
+                        </figure>
+                        <div class="content">
+                            <div class="icon-box">
+                                <img src="{% static 'images/contenido/icono1.png' %}" alt="">
+                            </div>
+                            <h3><a href="{% url 'frontend:portafolio' tab='manufactura' %}">Portafolio Industrial</a></h3>
+                            <div class="text">
+                                <p>17 propiedades</p>
+                                <p>245,011 m<sup>2</sup></p>
+                                <p>Ocupación del 100%</p>
+                                <p>6.0 años de vigencia de contratos promedio </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="services-block-three">
+                    <div class="inner-box">
+                        <figure class="image">
                             <img src="{% static 'images/contenido/oficina.jpg' %}" alt=""/>
                         </figure>
                         <div class="content">
@@ -60,25 +79,6 @@
                 <div class="services-block-three">
                     <div class="inner-box">
                         <figure class="image">
-                            <img src="{% static 'images/contenido/industrial.jpg' %}" alt=""/>
-                        </figure>
-                        <div class="content">
-                            <div class="icon-box">
-                                <img src="{% static 'images/contenido/icono1.png' %}" alt="">
-                            </div>
-                            <h3><a href="{% url 'frontend:portafolio' tab='manufactura' %}">Portafolio Industrial</a></h3>
-                            <div class="text">
-                                <p>17 propiedades</p>
-                                <p>245,011 m<sup>2</sup></p>
-                                <p>Ocupación del 100%</p>
-                                <p>6.0 años de vigencia de contratos promedio </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="services-block-three">
-                    <div class="inner-box">
-                        <figure class="image">
                             <img src="{% static 'images/contenido/comercial.jpg' %}" alt=""/>
                         </figure>
                         <div class="content">
@@ -98,11 +98,11 @@
     </section>
 
     <!--Fun Facts Section-->
-    <section class="fact-counter-section sp-two"
+    <section class="fact-counter-section sp-two-half"
              style="background-image:url({% static 'images/background/parallax-3.jpg' %});">
         <div class="auto-container">
             <!--Sec Title-->
-            <div class="sec-title light centered">
+            <div class="sec-title light centered wow fadeInUp"  data-wow-duration="1.5s" >
                 <h2>FIBRA NOVA EN NÚMEROS (1T21)</h2>
             </div>
             <div class="fact-counter">
@@ -162,13 +162,13 @@
     <section class="news-section sp-two grey-bg">
         <div class="auto-container">
             <!--Sec Title-->
-            <div class="sec-title">
+            <div class="sec-title wow fadeInUpBig"  data-wow-duration="1.5s" >
                 <h2>Eventos Destacados</h2>
             </div>
             <div class="row clearfix">
 
                 <!--News Block-->
-                <div class="news-block col-md-4 col-sm-6 col-xs-12">
+                <div class="news-block col-md-4 col-sm-6 col-xs-12  wow fadeInUpBig">
                     <div class="inner-box">
                         <div class="image">
                             <a target="_blank"
@@ -195,7 +195,7 @@
                 </div>
 
                 <!--News Block-->
-                <div class="news-block col-md-4 col-sm-6 col-xs-12">
+                <div class="news-block col-md-4 col-sm-6 col-xs-12  wow fadeInRightBig">
                     <div class="inner-box">
                         <div class="image">
                             <a target="_blank"
@@ -218,7 +218,7 @@
                 </div>
 
                 <!--News Block-->
-                <div class="news-block col-md-4 col-sm-6 col-xs-12">
+                <div class="news-block col-md-4 col-sm-6 col-xs-12  wow fadeInLeftBig">
                     <div class="inner-box">
                         <div class="image">
                             <a target="_blank"
@@ -248,7 +248,7 @@
 
     <section class="clients-section theme-bg">
         <div class="auto-container">
-            <div class="sec-title" style="margin-bottom: 20px;">
+            <div class="sec-title wow fadeInLeftBig" style="margin-bottom: 20px;">
                 <h2>Principales Inquilinos</h2>
             </div>
             <ul class="sponsors-carousel owl-carousel owl-theme">
@@ -325,6 +325,29 @@
                     </figure>
                 </li>
             </ul>
+        </div>
+    </section>
+    <section class="map-section mt-5">
+        <div class="auto-container mt-5 p-5">
+            <div class="sec-title" style="margin-bottom: 20px;">
+                <h2>¿En donde tiene propiedades Fibra Nova?</h2>
+            </div>
+            <div class="row d-flex align-items-center">
+                <div class="col-md-5">
+                    <h3>Proyectos ubicados en zonas con un alto potencial de crecimiento económico y demográfico en 40 ciudades de 19 entidades federativas</h3>
+                    <br><br>
+                    <div class="btns-wrap">
+                        <a href="{% url 'frontend:perfil-presencia-geografica' %}" class="theme-btn btn-style-one"> Conocer más</a>
+                    </div>
+
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-5 col-11 mt-5 mt-md-0">
+                    <div class="wow fadeInRight" data-wow-duration="1.5s">
+                        <img src="{% static 'images/contenido/mapa.png' %}" alt="">
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     <div class="row clearfix">
