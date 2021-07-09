@@ -21,6 +21,8 @@ urlpatterns = [
     path('inversionistas/reportes-anuales', views.reportes_anuales, name='inversionistas-reportes-anuales'),
     path('inversionistas/fundamentales', views.fundamentales, name='inversionistas-fundamentales'),
     path('inversionistas/eventos-relevantes', views.eventos_relevantes, name='inversionistas-eventos-relevantes'),
+    path('inversionistas/como-invertir', views.como_invertir, name='como-invertir'),
+    path('esg', views.esg, name='ESG'),
     path('inversionistas/faqs', views.faqs, name='inversionistas-faqs'),
     path('bursatil/distribuciones', views.distribuciones, name='bursatil-distribuciones'),
     path('bursatil/cotizacion', views.cotizacion, name='bursatil-cotizacion'),
@@ -36,5 +38,7 @@ urlpatterns = [
     path('bursatil/codigo-etica', views.codigo_etica, name='gobierno-codigo-etica'),
     path('suscribir/', views.suscribir, name='suscribir'),
     path('send-mail-contact/', views.send_mail_contact, name='send-mail-contact'),
+    path('send-mail-inversion/', views.send_mail_inversion, name='send-mail-inversion'),
+    path('send-mail-inmobiliarios/', views.send_mail_inmobiliarios, name='send-mail-inmobiliarios'),
 
 ]

@@ -459,9 +459,7 @@ table tbody tr:nth-child(even) {
     overflow: hidden;
 }
 
-.fact-counter .column .inner {
-    min-height: 175px;
-}
+
 
 .theme-btn.btn-style-one, .theme-btn.btn-style-one:focus, .theme-btn.btn-style-one:visited {
     color: white;
@@ -749,7 +747,7 @@ a.index-social-link {
 }
 .auto-container2{
     position:static;
-    max-width:1300px;
+    max-width:1350px;
     padding:0px 15px;
     margin:0 auto;
 }

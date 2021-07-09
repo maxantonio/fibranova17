@@ -124,22 +124,25 @@
                         <div class="panel-heading bg-primary p-2">
                            Rendimiento final
                         </div>
+                        
                         <div class="panel-body ">
-                            <div class="col-md-4">
-                                <div class="form-group"><label for="rendimiento_t">RENDIMIENTO TOTAL:</label>
-                                    <div class="value" id="rendimiento_t">0</div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group"><label for="rendimiento_t">RENDIMIENTO TOTAL:</label>
+                                        <div class="value" id="rendimiento_t">0</div>
+                                    </div><br/>
+                                    <div class="form-group"><label for="rendimiento_tp">RENDIMIENTO TOTAL:</label>
+                                        <div class="value" id="rendimiento_tp">0</div>
+                                    </div><br/>
+                                    <div class="form-group"><label for="rendimiento_a">RENDIMIENTO ANUALIZADO:</label>
+                                        <div class="value" id="rendimiento_a">0</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <img src="{% static 'images/contenido/chart.png' %}" alt="">
                                 </div>
                             </div>
-                            <div class="col-md-4">
-                                <div class="form-group"><label for="rendimiento_tp">RENDIMIENTO TOTAL:</label>
-                                    <div class="value" id="rendimiento_tp">0</div>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="form-group"><label for="rendimiento_a">RENDIMIENTO ANUALIZADO:</label>
-                                    <div class="value" id="rendimiento_a">0</div>
-                                </div>
-                            </div>
+                           
                         </div>
 
                     </div>

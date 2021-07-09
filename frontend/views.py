@@ -222,11 +222,14 @@ def fundamentales(request):
     context = {'title': 'Fundamentales'}
     return render(request, f'frontend/{request.LANGUAGE_CODE}/inversionistas/fundamentales.html', context)
 
+def como_invertir(request):
+    context = {'title': '¿Cómo invertir en Fibra Nova?',
+               'urlbase': urlbase}
+    return render(request, f'frontend/{request.LANGUAGE_CODE}/inversionistas/como-invertir.html', context)
 
 def eventos_relevantes(request):
     context = {'title': 'Eventos Relevantes',
                'urlbase': urlbase}
-
     return render(request, f'frontend/{request.LANGUAGE_CODE}/inversionistas/eventos-relevantes.html', context)
 
 
@@ -296,6 +299,10 @@ def codigo_etica(request):
     return render(request, f'frontend/{request.LANGUAGE_CODE}/gobierno/codigo-etica.html', context)
 
 
+def esg(request):
+    context = {'title': 'ESG', 'urlbase': urlbase}
+    return render(request, f'frontend/{request.LANGUAGE_CODE}/gobierno/ESG.html', context)
+
 # END GOBIERNO
 
 @require_POST
@@ -343,6 +350,62 @@ def send_mail_contact(request):
         '',
         'no-reply@fibranova.com',
         ['it@irstrat.com'],
+        html_message=html_message
+    )
+    return redirect('frontend:index')
+
+@require_POST
+def send_mail_inmobiliarios(request):
+    context = {'title': 'Inicio'}
+    nombre = request.POST['username']
+    email = request.POST['email']
+    telefono = request.POST['telefono']
+    asunto = request.POST['subject']
+    mensaje = request.POST['message']
+    html_message = loader.render_to_string(
+        'frontend/es/emails/send_mail.html',
+        {
+            'nombre': nombre,
+            'email': email,
+            'telefono': telefono,
+            'asunto': asunto,
+            'mensaje': mensaje,
+        }
+    )
+
+    send_mail(
+        'Usuario '+nombre+' desea contactar sobre Asuntos Inmobiliarios (FibraNova)',
+        '',
+        'no-reply@fibranova.com',
+        ['investor@fibra-nova.com'],
+        html_message=html_message
+    )
+    return redirect('frontend:index')
+
+@require_POST
+def send_mail_inversion(request):
+    context = {'title': 'Inicio'}
+    nombre = request.POST['username']
+    email = request.POST['email']
+    telefono = request.POST['telefono']
+    asunto = request.POST['subject']
+    mensaje = request.POST['message']
+    html_message = loader.render_to_string(
+        'frontend/es/emails/send_mail.html',
+        {
+            'nombre': nombre,
+            'email': email,
+            'telefono': telefono,
+            'asunto': asunto,
+            'mensaje': mensaje,
+        }
+    )
+
+    send_mail(
+        'Usuario '+nombre+' desea contactar sobre  Inversión (FibraNova)',
+        '',
+        'no-reply@fibranova.com',
+        ['lpinon@fibra-nova.com'],
         html_message=html_message
     )
     return redirect('frontend:index')
