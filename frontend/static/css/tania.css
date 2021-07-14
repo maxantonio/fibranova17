@@ -11,8 +11,8 @@
 }
 
 .fnova-a {
-  color: #1F478D !important;
-  font-size: 19px;
+    color: #1F478D !important;
+    font-size: 19px;
 }
 
 
@@ -318,7 +318,7 @@ input, button, select, textarea {
 }
 
 .accordion .panel .panel--heading a {
-        font-family: 'COCOGOOSE light','Open Sans', sans-serif;
+    font-family: 'COCOGOOSE light', 'Open Sans', sans-serif;
     font-size: 16px;
     color: #1F478D;
     font-weight: 600;
@@ -460,7 +460,6 @@ table tbody tr:nth-child(even) {
 }
 
 
-
 .theme-btn.btn-style-one, .theme-btn.btn-style-one:focus, .theme-btn.btn-style-one:visited {
     color: white;
 }
@@ -469,7 +468,7 @@ table tbody tr:nth-child(even) {
     font-size: 65px;
 }
 
-footer a{
+footer a {
     color: #ffffff !important;
 }
 
@@ -534,60 +533,206 @@ footer a{
 /***************************
       Accordion
 ***************************/
-.accordion .acd-group .acd-heading:before { font-family:FontAwesome;}
-.accordion .acd-group .acd-heading:before { cursor: pointer; position: absolute; top: 6px; right: 20px; display: block; padding: 3px 6px 2px; content: "\f105"; font-size: 22px; line-height: 38px; }
-.accordion .acd-group > .acd-heading > span { margin-right: 15px; }
-.accordion .acd-heading {   transition: 0.5s ; font-weight: 500; position: relative; padding: 20px 0; color: #1F478D; line-height: normal; cursor: pointer; background-color: transparent; margin-bottom: 0px; display: block; font-family:'COCOGOOSE light','Open Sans', sans-serif; text-transform: uppercase; border-radius: 3px;  }
-.acd-des { padding: 0 20px 20px 0; }
-.accordion .acd-group.acd-active .acd-heading, .accordion .acd-group .acd-heading:hover { color: #1F478D; }
-.accordion .acd-group.acd-active .acd-heading:before { content: "\f107"; }
-.accordion .acd-group.acd-active .acd-heading span { color: #fff; }
+.accordion .acd-group .acd-heading:before {
+    font-family: FontAwesome;
+}
+
+.accordion .acd-group .acd-heading:before {
+    cursor: pointer;
+    position: absolute;
+    top: 6px;
+    right: 20px;
+    display: block;
+    padding: 3px 6px 2px;
+    content: "\f105";
+    font-size: 22px;
+    line-height: 38px;
+}
+
+.accordion .acd-group > .acd-heading > span {
+    margin-right: 15px;
+}
+
+.accordion .acd-heading {
+    transition: 0.5s;
+    font-weight: 500;
+    position: relative;
+    padding: 20px 0;
+    color: #1F478D;
+    line-height: normal;
+    cursor: pointer;
+    background-color: transparent;
+    margin-bottom: 0px;
+    display: block;
+    font-family: 'COCOGOOSE light', 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    border-radius: 3px;
+}
+
+.acd-des {
+    padding: 0 20px 20px 0;
+}
+
+.accordion .acd-group.acd-active .acd-heading, .accordion .acd-group .acd-heading:hover {
+    color: #1F478D;
+}
+
+.accordion .acd-group.acd-active .acd-heading:before {
+    content: "\f107";
+}
+
+.accordion .acd-group.acd-active .acd-heading span {
+    color: #fff;
+}
 
 /*plus-icon*/
-.accordion.plus-icon .acd-group.acd-active .acd-heading:before { content: "\f068"; font-size: 14px; }
-.accordion.plus-icon .acd-group .acd-heading:before { content: "\f067"; font-size: 14px; }
+.accordion.plus-icon .acd-group.acd-active .acd-heading:before {
+    content: "\f068";
+    font-size: 14px;
+}
+
+.accordion.plus-icon .acd-group .acd-heading:before {
+    content: "\f067";
+    font-size: 14px;
+}
 
 /*plus-icon round*/
-.accordion.plus-icon.round .acd-group.acd-active .acd-heading:before { content: "\f056"; font-size: 14px; }
-.accordion.plus-icon.round .acd-group .acd-heading:before { content: "\f055"; font-size: 14px; }
+.accordion.plus-icon.round .acd-group.acd-active .acd-heading:before {
+    content: "\f056";
+    font-size: 14px;
+}
+
+.accordion.plus-icon.round .acd-group .acd-heading:before {
+    content: "\f055";
+    font-size: 14px;
+}
 
 /*gray*/
-.accordion.gray .acd-heading { background-color: #1F478D; }
-.accordion.gray .acd-heading  { margin-bottom: 20px; padding: 20px 30px; }
-.accordion.gray .acd-des { padding: 0 30px 20px; }
-.accordion.gray .acd-group.acd-active .acd-heading, .accordion.gray .acd-group .acd-heading:hover { color: #fff; background: #1F478D; }
+.accordion.gray .acd-heading {
+    background-color: #1F478D;
+}
+
+.accordion.gray .acd-heading {
+    margin-bottom: 20px;
+    padding: 20px 30px;
+}
+
+.accordion.gray .acd-des {
+    padding: 0 30px 20px;
+}
+
+.accordion.gray .acd-group.acd-active .acd-heading, .accordion.gray .acd-group .acd-heading:hover {
+    color: #fff;
+    background: #1F478D;
+}
 
 /*shadow*/
-.accordion.shadow .acd-heading { box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1); background: #ffffff; }
-.accordion.shadow .acd-heading  { margin-bottom: 20px; padding: 20px 30px; }
-.accordion.shadow .acd-des  { padding: 0 30px 20px; }
-.accordion.shadow .acd-group.acd-active .acd-heading, .accordion.shadow .acd-group .acd-heading:hover { color: #fff; background: #1F478D; }
+.accordion.shadow .acd-heading {
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    background: #ffffff;
+}
+
+.accordion.shadow .acd-heading {
+    margin-bottom: 20px;
+    padding: 20px 30px;
+}
+
+.accordion.shadow .acd-des {
+    padding: 0 30px 20px;
+}
+
+.accordion.shadow .acd-group.acd-active .acd-heading, .accordion.shadow .acd-group .acd-heading:hover {
+    color: #fff;
+    background: #1F478D;
+}
 
 
 /*border*/
-.accordion.accordion-border .acd-heading { background: transparent; border:1px solid #eeeeee; box-shadow: none; }
-.accordion.accordion-border .acd-heading  { margin-bottom: 20px; padding: 20px 30px; }
-.accordion.accordion-border .acd-des  { padding: 0 30px 20px; }
-.accordion.accordion-border .acd-group.acd-active .acd-heading, .accordion.accordion-border .acd-group .acd-heading:hover { color: #fff; background: #1F478D; }
+.accordion.accordion-border .acd-heading {
+    background: transparent;
+    border: 1px solid #eeeeee;
+    box-shadow: none;
+}
+
+.accordion.accordion-border .acd-heading {
+    margin-bottom: 20px;
+    padding: 20px 30px;
+}
+
+.accordion.accordion-border .acd-des {
+    padding: 0 30px 20px;
+}
+
+.accordion.accordion-border .acd-group.acd-active .acd-heading, .accordion.accordion-border .acd-group .acd-heading:hover {
+    color: #fff;
+    background: #1F478D;
+}
 
 /* Accordion Simple */
-.accordion.animated .acd-group .acd-heading { box-shadow: none; border:none; font-size: 18px; margin-bottom: 0; color:#1F478D; text-transform: inherit; font-weight: 700; padding: 20px 0px 0; }
-.accordion.animated .acd-group.acd-active .acd-heading { font-size: 28px; color: #1F478D; margin-bottom: 20px; background: none !important;}
-.accordion.animated .acd-group .acd-heading:hover{background: none !important; color: #1F478D;}
-.accordion.animated .acd-group .acd-heading::before { display: none; }
-.accordion.animated .acd-group .acd-des { padding: 0 30px 20px; }
+.accordion.animated .acd-group .acd-heading {
+    box-shadow: none;
+    border: none;
+    font-size: 18px;
+    margin-bottom: 0;
+    color: #1F478D;
+    text-transform: inherit;
+    font-weight: 700;
+    padding: 20px 0px 0;
+}
 
-.accordion.animated.dark-bg .acd-group.acd-active .acd-heading { color: #ffffff; }
-.accordion.animated.dark-bg .acd-group .acd-heading:hover { color: #ffffff; }
+.accordion.animated .acd-group.acd-active .acd-heading {
+    font-size: 28px;
+    color: #1F478D;
+    margin-bottom: 20px;
+    background: none !important;
+}
+
+.accordion.animated .acd-group .acd-heading:hover {
+    background: none !important;
+    color: #1F478D;
+}
+
+.accordion.animated .acd-group .acd-heading::before {
+    display: none;
+}
+
+.accordion.animated .acd-group .acd-des {
+    padding: 0 30px 20px;
+}
+
+.accordion.animated.dark-bg .acd-group.acd-active .acd-heading {
+    color: #ffffff;
+}
+
+.accordion.animated.dark-bg .acd-group .acd-heading:hover {
+    color: #ffffff;
+}
 
 /* No border radius*/
-.accordion.no-radius .acd-heading{ border-radius: 0; }
+.accordion.no-radius .acd-heading {
+    border-radius: 0;
+}
 
 /*bootstrap accordion*/
-#accordion .card { margin-bottom: 10px; }
-#accordion .card .card-header  { box-shadow: none; border-bottom: 0; }
-#accordion .card .card-header button { color: #1F478D; font-weight: 500; padding: 0; text-decoration: none; }
-#accordion .card .card-header button.collapsed { color: #1F478D; }
+#accordion .card {
+    margin-bottom: 10px;
+}
+
+#accordion .card .card-header {
+    box-shadow: none;
+    border-bottom: 0;
+}
+
+#accordion .card .card-header button {
+    color: #1F478D;
+    font-weight: 500;
+    padding: 0;
+    text-decoration: none;
+}
+
+#accordion .card .card-header button.collapsed {
+    color: #1F478D;
+}
 
 #noticias .accordion.shadow .acd-heading {
     box-shadow: none;
@@ -669,55 +814,66 @@ footer a{
     transition: all 0.2s;
 }
 
-.ph-5{
+.ph-5 {
     padding-left: 3rem;
     padding-right: 3rem;
 }
-.ph-50{
-    padding-left:50px;
+
+.ph-50 {
+    padding-left: 50px;
     padding-right: 50px;
 }
-.mt-2{
+
+.mt-2 {
     margin-top: 1.2rem;
 }
-.m-2{
+
+.m-2 {
     margin: 1.2rem;
 }
-.p-2{
+
+.p-2 {
     padding: 1.2rem;
 }
-.p-3{
+
+.p-3 {
     padding: 2rem;
 }
-.chartpie{
+
+.chartpie {
     width: 100%;
     height: 360px;
 }
-.title{
+
+.title {
     font-weight: bold;
 }
 
-.amChartsInputField.hasDatepicker{
+.amChartsInputField.hasDatepicker {
     border: 1px solid gray;
 }
-.dataTables_filter input{
-    padding: 0px!important;
+
+.dataTables_filter input {
+    padding: 0px !important;
 }
 
 .justify-content-center {
-    -webkit-box-pack: center!important;
-    -ms-flex-pack: center!important;
-    justify-content: center!important;
+    -webkit-box-pack: center !important;
+    -ms-flex-pack: center !important;
+    justify-content: center !important;
 }
+
 .align-items-center {
-    -webkit-box-align: center!important;
-    -ms-flex-align: center!important;
-    align-items: center!important;
+    -webkit-box-align: center !important;
+    -ms-flex-align: center !important;
+    align-items: center !important;
 }
+
 .preguntas-finales h1 {
     font-size: 48px;
     margin-bottom: 8px;
 }
+
 .panel-group.accordion-style-03 .panel {
     padding-left: 32px;
     padding-right: 32px;
@@ -725,10 +881,12 @@ footer a{
     border-radius: 5px;
     border: 1px solid black;
 }
+
 .boton-info1 span {
     color: #232323;
     font-size: 20px;
 }
+
 .texto-redes {
     position: absolute;
     top: 50%;
@@ -736,22 +894,26 @@ footer a{
     text-align: center;
     width: 100%;
 }
+
 .texto-redes h2 {
     /*font-size: var(--fs-title-section-h2);*/
     color: #FFFF;
 }
+
 a.index-social-link {
     margin-right: 30px;
     padding: 10px;
     color: #FFFFFF;
 }
-.auto-container2{
-    position:static;
-    max-width:1350px;
-    padding:0px 15px;
-    margin:0 auto;
+
+.auto-container2 {
+    position: static;
+    max-width: 1350px;
+    padding: 0px 15px;
+    margin: 0 auto;
 }
-.sp-two-half{
+
+.sp-two-half {
     padding: 40px 0 0px;
 
 }
@@ -760,51 +922,62 @@ a.index-social-link {
 .quarterly-results .header {
     background: #042156;
 }
+
 .quarterly-results .header h2 {
     margin: 0;
     padding: 0;
     color: #fff;
 }
-.quarterly-results>div>.text>.text {
+
+.quarterly-results > div > .text > .text {
     padding: 25px;
 }
-.eqicon{
+
+.eqicon {
     font-family: FontAwesome;
 }
+
 .quarterly-results .eqicon-trigger:before {
     content: "\f106";
 }
+
 .quarterly-results .collapsed .eqicon-trigger:before {
     content: "\f107";
 }
-
 
 
 .result-line {
     padding: 10px 0;
     line-height: 1;
 }
-.box.quarterly-results .toggle-wrapper>.text {
+
+.box.quarterly-results .toggle-wrapper > .text {
     border: 1px solid #ccc;
 }
-.quarterly-results .toggle-wrapper>.text>.text+.text {
+
+.quarterly-results .toggle-wrapper > .text > .text + .text {
     border-top: 1px solid #ccc;
 }
-.result-line+.result-line {
+
+.result-line + .result-line {
     border-top: 1px dotted #ccc;
 }
+
 .quarterly-results .header {
     background: #042156;
     color: #fff;
     padding: 15px 25px;
     position: relative;
 }
-.box.quarterly-results+.box.quarterly-results {
+
+.box.quarterly-results + .box.quarterly-results {
     margin-top: 25px;
 }
+
 .header .eqicon-trigger {
     color: #fff;
 }
+
 .quarterly-results .header .eqicon-trigger {
     position: absolute;
     top: 50%;
@@ -816,6 +989,55 @@ a.index-social-link {
     color: #fff;
 }
 
-.pt-5,.py-5{padding-top:3rem!important}
-.p-5{padding:3rem!important}
-.d-flex{display:-webkit-box!important;display:-ms-flexbox!important;display:flex!important}
+.pt-5, .py-5 {
+    padding-top: 3rem !important
+}
+
+.p-5 {
+    padding: 3rem !important
+}
+
+.d-flex {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important
+}
+
+.hover-black {
+    overflow: hidden;
+}
+
+.bg-black-opacity {
+    background-image: linear-gradient(to bottom right, #020202e6, #020202e6);
+    opacity: .95;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    justify-content: center;
+    color: white;
+}
+
+.team-member-details {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 100%;
+    transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    -webkit-transition-duration: 0.3s;
+    -ms-transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+    -moz-transition-timing-function: ease-in-out;
+    -webkit-transition-timing-function: ease-in-out;
+    -ms-transition-timing-function: ease-in-out;
+    cursor: pointer;
+}
+
+.hover-black:hover .team-member-details {
+    top: 0;
+}
+
+.datos p {
+    color: white !important;
+}
