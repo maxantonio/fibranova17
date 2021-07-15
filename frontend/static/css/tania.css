@@ -225,7 +225,7 @@ input, button, select, textarea {
 }
 
 .gallery-item .lower-content {
-    min-height: 320px;
+    min-height: 250px;
 }
 
 .nosotros .row {
