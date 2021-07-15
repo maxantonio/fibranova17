@@ -1008,8 +1008,8 @@ a.index-social-link {
 }
 
 .bg-black-opacity {
-    background-image: linear-gradient(to bottom right, #020202e6, #020202e6);
-    opacity: .95;
+    background-image: linear-gradient(to bottom right, #0033A0, #0033A0);
+    opacity: .80;
     display: flex;
     align-items: center;
     padding: 15px;
