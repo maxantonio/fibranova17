@@ -16,7 +16,7 @@
                     <div id="g1" class="hidden" data-divG="chart_situacion">
                         <h3>Situación Financiera (Ps. miles)</h3>
                         <div class="contentTable">
-                            <table class="table table-bordered table-hover">
+                            <table id="table1" class="table table-bordered table-hover">
                                 <thead class="thead-pink">
                                 <tr>
                                     <th class="col-md-4"></th>
@@ -85,15 +85,18 @@
                                 </tr>
                                 </tbody>
                             </table>
+                            <div class="text-right">
+                                <button id="btn1" class="float-right">Exportar</button>
+                            </div>
                         </div>
-
+                        <br>
                         <div id="chart_situacion" class="char-fundamentales chartdiv"></div>
                     </div>
 
                     <div id="g2" class="hidden" data-divG="chart_resultados">
                         <h3>Estado de Resultados (Ps. miles)</h3>
                         <div class="contentTable">
-                            <table class="table table-bordered table-hover">
+                            <table id="table2" class="table table-bordered table-hover">
                                 <thead class="thead-pink">
                                 <tr>
                                     <th class="col-md-4"></th>
@@ -203,15 +206,18 @@
                                 </tr>
                                 </tbody>
                             </table>
+                            <div class="text-right">
+                                <button id="btn2" class="float-right">Exportar</button>
+                            </div>
                         </div>
-
+                        <br>
                         <div id="chart_resultados" class="char-fundamentales chartdiv"></div>
                     </div>
 
                     <div id="g3" class="hidden" data-divG="chart_operativos">
                         <h3>Indicadores Operativos</h3>
                         <div class="contentTable">
-                            <table class="table table-bordered table-hover">
+                            <table id="table3" class="table table-bordered table-hover">
                                 <thead class="thead-pink">
                                 <tr>
                                     <th class="col-md-4"></th>
@@ -229,7 +235,7 @@
                                     <td>350,210</td>
                                     <td>342,737</td>
                                     <td>342,737</td>
-                                    <td>342,737 </td>
+                                    <td>342,737</td>
                                 </tr>
                                 <tr>
                                     <td>Tasa de Ocupación</td>
@@ -257,15 +263,18 @@
                                 </tr>
                                 </tbody>
                             </table>
+                            <div class="text-right">
+                                <button id="btn3" class="float-right">Exportar</button>
+                            </div>
                         </div>
-
+                        <br>
                         <div id="chart_operativos" class="char-fundamentales chartdiv"></div>
                     </div>
 
                     <div id="g4" class="hidden" data-divG="chart_efectivo">
                         <h3>Flujo de Efectivo (Ps. miles)</h3>
                         <div class="contentTable">
-                            <table class="table table-bordered table-hover">
+                            <table id="table4" class="table table-bordered table-hover">
                                 <thead class="thead-pink">
                                 <tr>
                                     <th class="col-md-4"></th>
@@ -313,8 +322,11 @@
                             </table>
                             <small>* Incluyendo los efectos del tipo de cambio
                             </small>
+                            <div class="text-right">
+                                <button id="btn4" class="float-right">Exportar</button>
+                            </div>
                         </div>
-
+                        <br>
                         <div id="chart_efectivo" class="char-fundamentales chartdiv"></div>
                     </div>
 
@@ -329,4 +341,47 @@
     <script src="{% static 'js/amCharts/amcharts.js' %}"></script>
     <script src="{% static 'js/amCharts/serial.js' %}"></script>
     <script src="{% static 'js/amCharts/contenido/fundamentales.js' %}"></script>
+    <script src="{% static 'js/jquery.table2excel.min.js' %}"></script>
+
+    <script !src="">
+        $("#btn1").click(function () {
+            $("#table1").table2excel({
+                // exclude CSS class
+                name: "Situación Financiera",
+                filename: "SituacionFinanciera", //do not include extension
+                fileext: ".xls", // file extension
+                preserveColors: true
+            });
+        });
+
+        $("#btn2").click(function () {
+            $("#table2").table2excel({
+                // exclude CSS class
+                name: "Estado de Resultados",
+                filename: "EstadoResultados", //do not include extension
+                fileext: ".xls", // file extension
+                preserveColors: true
+            });
+        });
+
+        $("#btn3").click(function () {
+            $("#table3").table2excel({
+                // exclude CSS class
+                name: "Indicadores Operativos",
+                filename: "IndicadoresOperativos", //do not include extension
+                fileext: ".xls", // file extension
+                preserveColors: true
+            });
+        });
+
+        $("#btn4").click(function () {
+            $("#table4").table2excel({
+                // exclude CSS class
+                name: "Flujo de Efectivo",
+                filename: "FlujoEfectivo", //do not include extension
+                fileext: ".xls", // file extension
+                preserveColors: true
+            });
+        });
+    </script>
 {% endblock %}

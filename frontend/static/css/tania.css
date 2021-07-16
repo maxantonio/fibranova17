@@ -1041,3 +1041,10 @@ a.index-social-link {
 .datos p {
     color: white !important;
 }
+
+#btn1, #btn2, #btn3, #btn4 {
+    background: #054677;
+    padding: 5px 10px;
+    font-size: 15px;
+    color: white;
+}
