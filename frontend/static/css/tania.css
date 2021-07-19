@@ -1048,3 +1048,25 @@ a.index-social-link {
     font-size: 15px;
     color: white;
 }
+
+.page-title {
+    background-image: none;
+}
+
+.amctitle {
+    font-family: Verdana;
+    font-size: 15px;
+    opacity: 1;
+    text-anchor: middle;
+    transform: translate(437, 20);
+    font-weight: bold;
+}
+
+span.month, span.year {
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+th.datepicker-switch {
+    cursor: pointer;
+}

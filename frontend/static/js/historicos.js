@@ -4,38 +4,39 @@
 var precios = [];
 
 $.ajax({
-    url:'https://hkpy.irstrat.com/intradia/history/170?start=2018-08-23',
+    url: 'https://hkpy.irstrat.com/intradia/history/170?start=2018-08-23',
     async: true,
     dataType: 'jsonp',
     // jsonpCallback: 'Callback',
     contentType: "application/json",
-    success: function(json) {
+    success: function (json) {
         precios = json.precios;
         llenarTabla(precios);
+        llenarTabla2(precios);
     }
 });
 
 function llenarTabla(precios) {
     var datos = [];
-    for(var i=1; i < precios.length;i++){
-      volume=numberWithCommas(precios[i].volume);
-      if (volume == 0 ||precios[i].open == 0.0 ||precios[i].close == 0.0 || precios[i].low == 0.0) {
-          continue;
-      }
-    datos.push([precios[i].date,parseFloat(precios[i].close).toFixed(2),parseFloat(precios[i].open).toFixed(2),parseFloat(precios[i].hight).toFixed(2),parseFloat(precios[i].low).toFixed(2),volume]);
+    for (var i = 1; i < precios.length; i++) {
+        volume = numberWithCommas(precios[i].volume);
+        if (volume == 0 || precios[i].open == 0.0 || precios[i].close == 0.0 || precios[i].low == 0.0) {
+            continue;
+        }
+        datos.push([precios[i].date, parseFloat(precios[i].close).toFixed(2), parseFloat(precios[i].open).toFixed(2), parseFloat(precios[i].hight).toFixed(2), parseFloat(precios[i].low).toFixed(2), volume]);
     }
 
-    if (locale =="es") {
+    if (locale == "es") {
         $('#datatable').dataTable({
             destroy: true,
             "aaData": datos,
             "aaSorting": [[0, "desc"]],
-            "columnDefs":[{"orderable":false,"targets":0},
-                {"orderable":false,"targets":1},
-                {"orderable":false,"targets":2},
-                {"orderable":false,"targets":3},
-                {"orderable":false,"targets":4},
-                {"orderable":false,"targets":5}
+            "columnDefs": [{"orderable": false, "targets": 0},
+                {"orderable": false, "targets": 1},
+                {"orderable": false, "targets": 2},
+                {"orderable": false, "targets": 3},
+                {"orderable": false, "targets": 4},
+                {"orderable": false, "targets": 5}
             ],
             "oLanguage": {
                 "sProcessing": "Procesando...",
@@ -57,7 +58,7 @@ function llenarTabla(precios) {
             "bProcessing": true,
             "sDom": "<'row'<'col-sm-4'l><'col-sm-8'f>r>t<'row'<'col-sm-4 ie-col-8'i><'col-sm-8 ie-col-8'p>>",
             "sPaginationType": "full",
-            'createdRow': function(row, data, dataIndex) {
+            'createdRow': function (row, data, dataIndex) {
                 $('td:eq(0)', row).css('min-width', '80px');
                 $('td:eq(0)', row).attr("data-content", 'Fecha');
                 $('td:eq(1)', row).attr("data-content", 'Cierre');
@@ -68,8 +69,7 @@ function llenarTabla(precios) {
 
             }
         });
-    }
-    else{
+    } else {
         $('#datatable').dataTable({
             destroy: true,
             "aaData": datos,
@@ -77,8 +77,30 @@ function llenarTabla(precios) {
             "sDom": "<'row'<'col-sm-4'l><'col-sm-8'f>r>t<'row'<'col-sm-4'i><'col-sm-8'p>>",
             "sPaginationType": "full",
         });
-    };
+    }
+    ;
 }
+
+function llenarTabla2(precios) {
+    var datos = [];
+    for (var i = 1; i < precios.length; i++) {
+        volume = numberWithCommas(precios[i].volume);
+        if (volume == 0 || precios[i].open == 0.0 || precios[i].close == 0.0 || precios[i].low == 0.0) {
+            continue;
+        }
+        var tr = $('<tr>\n' +
+            '                            <td>' + precios[i].date + '</td>\n' +
+            '                            <td>' + parseFloat(precios[i].close).toFixed(2) + '</td>' +
+            '                            <td>' + parseFloat(precios[i].open).toFixed(2) + '</td>' +
+            '                            <td>' + parseFloat(precios[i].hight).toFixed(2) + '</td>' +
+            '                            <td>' + parseFloat(precios[i].low).toFixed(2) + '</td>' +
+            '                            <td>' + volume + '</td>' +
+            '                        </tr>');
+
+        $('#exportar tbody').append(tr);
+    }
+}
+
 function numberWithCommas(x) {
     return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 }

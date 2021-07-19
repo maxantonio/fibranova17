@@ -203,9 +203,9 @@ if (locale == "es") {
  Indicadores de operación
  ===============================*/
 if (locale == "es") {
-    var io_abr = "ABR (m2)";
+    var io_abr = "ABR (m<sup>2</sup>)";
 } else {
-    var io_abr = "ABR (m2)";
+    var io_abr = "ABR (m<sup>2</sup>)";
 }
 
 /*==============================
@@ -535,7 +535,7 @@ var configFundamentales = {
                 "fillAlphas": 1,
                 "id": "AmGraph-1",
                 "lineAlpha": 0.2,
-                "title": io_abr,
+                "title": "ABR (m2)",
                 "type": "column",
                 "valueField": "io_abr"
             }

@@ -5,7 +5,7 @@
         <div class="auto-container">
             <div class="row clearfix">
                 <h1>{{ title }}</h1>
-<br/>
+                <br/>
                 <div class="col-md-12 text-justify">
                     <div id="precios-historicos">
                         <br>
@@ -27,6 +27,24 @@
                         </div>
                     </div>
                     <small>* Precios ajustados por distribuciones</small>
+
+                    <table class="table key_value_responsive table-striped table-bordered hidden" id="exportar">
+                        <thead>
+                        <tr>
+                            <th style="width:80px">Fecha</th>
+                            <th>Cierre</th>
+                            <th>Apertura</th>
+                            <th>Máximo</th>
+                            <th>Mínimo</th>
+                            <th>Volumen</th>
+                        </tr>
+                        </thead>
+                        <tbody id="tbody_ph">
+                        </tbody>
+                    </table>
+                    <div class="text-right">
+                        <button id="btn1" class="float-right">Exportar</button>
+                    </div>
                 </div>
             </div>
             <br><br>
@@ -37,6 +55,19 @@
     <script src="{% static 'js/bootstrap-datatables/jquery.dataTables.min.js' %}"></script>
     <script src="{% static 'js/bootstrap-datatables/dataTables.bootstrap4.min.js' %}"></script>
     <script src="{% static 'js/historicos.js' %}"></script>
+    <script src="{% static 'js/jquery.table2excel.min.js' %}"></script>
+
+    <script>
+        $("#btn1").click(function () {
+            $("#exportar").table2excel({
+                // exclude CSS class
+                name: "Precio Historico",
+                filename: "PrecioHistorico", //do not include extension
+                fileext: ".xls", // file extension
+                preserveColors: true
+            });
+        });
+    </script>
 {% endblock %}
 {% block otherstyles %}
     <link rel="stylesheet" href="{% static 'css/dataTables.bootstrap4.min.css' %}"/>
