@@ -1,3 +1,4 @@
+from django.contrib.staticfiles.storage import staticfiles_storage
 from django.core.mail import send_mail
 from django.shortcuts import render, redirect
 from django.views.decorators.http import require_POST
@@ -12,52 +13,60 @@ def index(request):
 
 
 def contacto(request):
-    context = {'title': 'Contacto'}
+    header_img = staticfiles_storage.url('images/background/contacto.png')
+    context = {'title': 'Contacto', 'header_img': header_img}
     return render(request, f'frontend/{request.LANGUAGE_CODE}/contacto.html', context)
 
 
 def noticias(request):
-    context = {'title': 'Noticias', 'urlbase': urlbase}
+    header_img = staticfiles_storage.url('images/background/noticias.png')
+    context = {'title': 'Noticias', 'urlbase': urlbase, 'header_img': header_img}
     return render(request, f'frontend/{request.LANGUAGE_CODE}/noticias.html', context)
 
 
 def noticia(request, no):
-    context = {'title': 'Noticia', 'urlbase': urlbase}
+    header_img = staticfiles_storage.url('images/background/noticias.png')
+    context = {'title': 'Noticia', 'urlbase': urlbase, 'header_img': header_img}
     url = 'frontend/noticias/{0}.html'.format(no)
     print(url)
     return render(request, url, context)
 
 
 def indicadores_operativos(request):
-    context = {'title': 'Indicadores Operativos'
-               }
+    header_img = staticfiles_storage.url('images/background/indicadores_operativos.png')
+    context = {'title': 'Indicadores Operativos', 'header_img': header_img}
     return render(request, f'frontend/{request.LANGUAGE_CODE}/indicadores.html', context)
 
 
 def portafolio(request, tab):
+    header_img = staticfiles_storage.url('images/background/parallax-4.jpg')
     context = {'title': 'Propiedades',
-               'tab': tab}
+               'tab': tab, 'header_img': header_img}
     return render(request, f'frontend/{request.LANGUAGE_CODE}/portafolio.html', context)
 
 
 # PERFIL
 def perfil_nosotros(request):
-    context = {'title': 'Nosotros'}
+    header_img = staticfiles_storage.url('images/background/nosotros.png')
+    context = {'title': 'Nosotros', 'header_img': header_img}
     return render(request, f'frontend/{request.LANGUAGE_CODE}/perfil/nosotros.html', context)
 
 
 def presencia_geografica(request):
-    context = {'title': 'Presencia Geográfica'}
+    header_img = staticfiles_storage.url('images/background/presencia_geografica.png')
+    context = {'title': 'Presencia Geográfica', 'header_img': header_img}
     return render(request, f'frontend/{request.LANGUAGE_CODE}/perfil/presencia_geografica.html', context)
 
 
 def historia(request):
-    context = {'title': 'Historia'}
+    header_img = staticfiles_storage.url('images/background/historia.png')
+    context = {'title': 'Historia', 'header_img': header_img}
     return render(request, f'frontend/{request.LANGUAGE_CODE}/perfil/historia.html', context)
 
 
 def estrategia(request):
-    context = {'title': 'Estrategia'}
+    header_img = staticfiles_storage.url('images/background/estrategia.png')
+    context = {'title': 'Estrategia', 'header_img': header_img}
     return render(request, f'frontend/{request.LANGUAGE_CODE}/perfil/estrategia.html', context)
 
 
@@ -204,42 +213,51 @@ def reportes_trimestrales(request):
         }
     ]
 
+    header_img = staticfiles_storage.url('images/background/reportes_trimestrales.png')
     context = {'title': 'Reportes Trimestrales',
                'annos': annos,
                'info': info,
-               'urlbase': urlbase
+               'urlbase': urlbase,
+               'header_img': header_img
                }
     return render(request, f'frontend/{request.LANGUAGE_CODE}/inversionistas/reportes-trimestrales.html', context)
 
 
 def reportes_anuales(request):
-    context = {'title': 'Reportes Anuales',
-               'urlbase': urlbase}
+    header_img = staticfiles_storage.url('images/background/parallax-4.jpg')
+    context = {'title': 'Reportes Anuales', 'urlbase': urlbase, 'header_img': header_img}
     return render(request, f'frontend/{request.LANGUAGE_CODE}/inversionistas/reportes-anuales.html', context)
 
 
 def fundamentales(request):
-    context = {'title': 'Fundamentales'}
+    header_img = staticfiles_storage.url('images/background/fundamentos.png')
+    context = {'title': 'Fundamentales', 'header_img': header_img}
     return render(request, f'frontend/{request.LANGUAGE_CODE}/inversionistas/fundamentales.html', context)
 
+
 def como_invertir(request):
+    header_img = staticfiles_storage.url('images/background/como_invertir.png')
     context = {'title': '¿Cómo invertir en Fibra Nova?',
-               'urlbase': urlbase}
+               'urlbase': urlbase, 'header_img': header_img}
     return render(request, f'frontend/{request.LANGUAGE_CODE}/inversionistas/como-invertir.html', context)
 
+
 def eventos_relevantes(request):
+    header_img = staticfiles_storage.url('images/background/eventos_relevantes.png')
     context = {'title': 'Eventos Relevantes',
-               'urlbase': urlbase}
+               'urlbase': urlbase, 'header_img': header_img}
     return render(request, f'frontend/{request.LANGUAGE_CODE}/inversionistas/eventos-relevantes.html', context)
 
 
 def faqs(request):
-    context = {'title': 'Preguntas Frecuentes'}
+    header_img = staticfiles_storage.url('images/background/parallax-4.jpg')
+    context = {'title': 'Preguntas Frecuentes', 'header_img': header_img}
     return render(request, f'frontend/{request.LANGUAGE_CODE}/inversionistas/faqs.html', context)
 
 
 def distribuciones(request):
-    context = {'title': 'Distribuciones', 'urlbase': urlbase}
+    header_img = staticfiles_storage.url('images/background/distribuciones.png')
+    context = {'title': 'Distribuciones', 'urlbase': urlbase, 'header_img': header_img}
     return render(request, f'frontend/{request.LANGUAGE_CODE}/bursatil/distribuciones.html', context)
 
 
@@ -247,22 +265,26 @@ def distribuciones(request):
 
 # BURSATIL
 def cotizacion(request):
-    context = {'title': 'Cotización'}
+    header_img = staticfiles_storage.url('images/background/parallax-4.jpg')
+    context = {'title': 'Cotización', 'header_img': header_img}
     return render(request, f'frontend/{request.LANGUAGE_CODE}/bursatil/cotizacion.html', context)
 
 
 def precio_historico(request):
-    context = {'title': 'Precio Historico'}
+    header_img = staticfiles_storage.url('images/background/precios-historicos.png')
+    context = {'title': 'Precio Historico', 'header_img': header_img}
     return render(request, f'frontend/{request.LANGUAGE_CODE}/bursatil/precio-historico.html', context)
 
 
 def calculadora(request):
-    context = {'title': 'Calculadora de Rendimientos'}
+    header_img = staticfiles_storage.url('images/background/calculadora-rendimiento.png')
+    context = {'title': 'Calculadora de Rendimientos', 'header_img': header_img}
     return render(request, f'frontend/{request.LANGUAGE_CODE}/bursatil/calculadora.html', context)
 
 
 def cobertura_analistas(request):
-    context = {'title': 'Cobertura de Analistas'}
+    header_img = staticfiles_storage.url('images/background/coberturas-analstas.png')
+    context = {'title': 'Cobertura de Analistas', 'header_img': header_img}
     return render(request, f'frontend/{request.LANGUAGE_CODE}/bursatil/cobertura-analistas.html', context)
 
 
@@ -270,38 +292,46 @@ def cobertura_analistas(request):
 
 # GOBIERNO
 def directivos(request):
-    context = {'title': 'Directivos'}
+    header_img = staticfiles_storage.url('images/background/directivos.png')
+    context = {'title': 'Directivos', 'header_img': header_img}
     return render(request, f'frontend/{request.LANGUAGE_CODE}/gobierno/directivos.html', context)
 
 
 def comites(request):
-    context = {'title': 'Comités'}
+    header_img = staticfiles_storage.url('images/background/comites.png')
+    context = {'title': 'Comités', 'header_img': header_img}
     return render(request, f'frontend/{request.LANGUAGE_CODE}/gobierno/comites.html', context)
 
 
 def auditor_externo(request):
-    context = {'title': 'Auditor Externo'}
+    header_img = staticfiles_storage.url('images/background/auditor-externo.png')
+    context = {'title': 'Auditor Externo', 'header_img': header_img}
     return render(request, f'frontend/{request.LANGUAGE_CODE}/gobierno/auditor-externo.html', context)
 
 
 def prospectos_suplementos(request):
-    context = {'title': 'Prospectos y Suplementos', 'urlbase': urlbase}
+    header_img = staticfiles_storage.url('images/background/prospectos_suplementos.png')
+    context = {'title': 'Prospectos y Suplementos', 'urlbase': urlbase, 'header_img': header_img}
     return render(request, f'frontend/{request.LANGUAGE_CODE}/gobierno/prospectos-suplementos.html', context)
 
 
 def asambleas(request):
-    context = {'title': 'Asambleas', 'urlbase': urlbase}
+    header_img = staticfiles_storage.url('images/background/asamblea.png')
+    context = {'title': 'Asambleas', 'urlbase': urlbase, 'header_img': header_img}
     return render(request, f'frontend/{request.LANGUAGE_CODE}/gobierno/asambleas.html', context)
 
 
 def codigo_etica(request):
-    context = {'title': 'Código de Ética', 'urlbase': urlbase}
+    header_img = staticfiles_storage.url('images/background/codigo-etica.png')
+    context = {'title': 'Código de Ética', 'urlbase': urlbase, 'header_img': header_img}
     return render(request, f'frontend/{request.LANGUAGE_CODE}/gobierno/codigo-etica.html', context)
 
 
 def esg(request):
-    context = {'title': 'ESG', 'urlbase': urlbase}
+    header_img = staticfiles_storage.url('images/background/parallax-4.jpg')
+    context = {'title': 'ESG', 'urlbase': urlbase, 'header_img': header_img}
     return render(request, f'frontend/{request.LANGUAGE_CODE}/gobierno/ESG.html', context)
+
 
 # END GOBIERNO
 
@@ -354,6 +384,7 @@ def send_mail_contact(request):
     )
     return redirect('frontend:index')
 
+
 @require_POST
 def send_mail_inmobiliarios(request):
     context = {'title': 'Inicio'}
@@ -374,13 +405,14 @@ def send_mail_inmobiliarios(request):
     )
 
     send_mail(
-        'Usuario '+nombre+' desea contactar sobre Asuntos Inmobiliarios (FibraNova)',
+        'Usuario ' + nombre + ' desea contactar sobre Asuntos Inmobiliarios (FibraNova)',
         '',
         'no-reply@fibranova.com',
         ['investor@fibra-nova.com'],
         html_message=html_message
     )
     return redirect('frontend:index')
+
 
 @require_POST
 def send_mail_inversion(request):
@@ -402,7 +434,7 @@ def send_mail_inversion(request):
     )
 
     send_mail(
-        'Usuario '+nombre+' desea contactar sobre  Inversión (FibraNova)',
+        'Usuario ' + nombre + ' desea contactar sobre  Inversión (FibraNova)',
         '',
         'no-reply@fibranova.com',
         ['lpinon@fibra-nova.com'],
