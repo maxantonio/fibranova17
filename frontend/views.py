@@ -39,7 +39,7 @@ def indicadores_operativos(request):
 
 
 def portafolio(request, tab):
-    header_img = staticfiles_storage.url('images/background/parallax-4.jpg')
+    header_img = staticfiles_storage.url('images/background/propiedades.png')
     context = {'title': 'Propiedades',
                'tab': tab, 'header_img': header_img}
     return render(request, f'frontend/{request.LANGUAGE_CODE}/portafolio.html', context)
@@ -250,7 +250,7 @@ def eventos_relevantes(request):
 
 
 def faqs(request):
-    header_img = staticfiles_storage.url('images/background/parallax-4.jpg')
+    header_img = staticfiles_storage.url('images/background/preguntas_frecuentes.png')
     context = {'title': 'Preguntas Frecuentes', 'header_img': header_img}
     return render(request, f'frontend/{request.LANGUAGE_CODE}/inversionistas/faqs.html', context)
 
@@ -265,7 +265,7 @@ def distribuciones(request):
 
 # BURSATIL
 def cotizacion(request):
-    header_img = staticfiles_storage.url('images/background/parallax-4.jpg')
+    header_img = staticfiles_storage.url('images/background/comportamiento-accion.png')
     context = {'title': 'Cotización', 'header_img': header_img}
     return render(request, f'frontend/{request.LANGUAGE_CODE}/bursatil/cotizacion.html', context)
 
@@ -328,7 +328,7 @@ def codigo_etica(request):
 
 
 def esg(request):
-    header_img = staticfiles_storage.url('images/background/parallax-4.jpg')
+    header_img = staticfiles_storage.url('images/background/esg.png')
     context = {'title': 'ESG', 'urlbase': urlbase, 'header_img': header_img}
     return render(request, f'frontend/{request.LANGUAGE_CODE}/gobierno/ESG.html', context)
 
