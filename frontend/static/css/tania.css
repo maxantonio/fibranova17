@@ -1084,3 +1084,71 @@ th.datepicker-switch {
     box-shadow: none;
     border: none;
 }
+
+/**/
+.index-graph-info {
+    width: 60%;
+}
+
+#index-graph p {
+    margin-bottom: 0 !important;
+    line-height: 15px;
+}
+
+#index-graph .index-graph-info {
+    max-width: 370px;
+    width: 370px;
+}
+
+.chart-info {
+    margin-bottom: 40px;
+}
+
+.chart-info p, .chart-legend p {
+    font-weight: bold;
+    color: #000000;
+}
+
+#index-graph p, #index-graph a {
+    color: #000000 !important;
+}
+
+/*.chart-info p, .chart-legend img {*/
+/*-webkit-filter: brightness(0) invert(1);*/
+/*filter: brightness(0) invert(1);*/
+/*}*/
+
+.chart-legend {
+    margin-bottom: 30px;
+}
+
+.bl-white {
+    border-left: 5px solid white;
+}
+
+.bl-gray {
+    border-left: 20px solid #7b868c;
+}
+
+.bl-blue {
+    border-left: 20px solid #194F90;
+}
+
+.bl-black {
+    border-left: 20px solid black;
+}
+
+.chart-legend-calc {
+    margin-top: 40px;
+}
+
+.chart-legend-calc p {
+    margin-left: 5px;
+}
+
+.chart-legend-calc .strong {
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+/**/
