@@ -1070,3 +1070,17 @@ span.month, span.year {
 th.datepicker-switch {
     cursor: pointer;
 }
+
+.paginado .acd-group {
+    display: none;
+}
+
+.paginado .acd-group.show {
+    display: block;
+}
+
+.accordion.paginado {
+    border-radius: unset;
+    box-shadow: none;
+    border: none;
+}
