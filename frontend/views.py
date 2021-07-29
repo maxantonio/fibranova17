@@ -272,7 +272,7 @@ def cotizacion(request):
 
 def precio_historico(request):
     header_img = staticfiles_storage.url('images/background/precios-historicos.png')
-    context = {'title': 'Precio Historico', 'header_img': header_img}
+    context = {'title': 'Precio Histórico', 'header_img': header_img}
     return render(request, f'frontend/{request.LANGUAGE_CODE}/bursatil/precio-historico.html', context)
 
 
