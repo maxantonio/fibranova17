@@ -27,8 +27,7 @@ def noticias(request):
 def noticia(request, no):
     header_img = staticfiles_storage.url('images/background/noticias.png')
     context = {'title': 'Noticia', 'urlbase': urlbase, 'header_img': header_img}
-    url = 'frontend/noticias/{0}.html'.format(no)
-    print(url)
+    url = f'frontend/{request.LANGUAGE_CODE}/noticias/{no}.html'
     return render(request, url, context)
 
 
