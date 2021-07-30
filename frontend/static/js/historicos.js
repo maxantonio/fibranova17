@@ -2,6 +2,9 @@
  * Created by Julio Cesar on 6/23/2015.
  */
 var precios = [];
+if(!$){
+    $=jQuery;
+}
 
 $.ajax({
     url: 'https://hkpy.irstrat.com/intradia/history/170?start=2018-08-23',
@@ -18,13 +21,19 @@ $.ajax({
 
 function llenarTabla(precios) {
     var datos = [];
+    var last = 0
+    var volume = 0;
     for (var i = 1; i < precios.length; i++) {
+        last = i
         volume = numberWithCommas(precios[i].volume);
         if (volume == 0 || precios[i].open == 0.0 || precios[i].close == 0.0 || precios[i].low == 0.0) {
             continue;
         }
         datos.push([precios[i].date, parseFloat(precios[i].close).toFixed(2), parseFloat(precios[i].open).toFixed(2), parseFloat(precios[i].hight).toFixed(2), parseFloat(precios[i].low).toFixed(2), volume]);
     }
+    datos.push([precios[last].date, parseFloat(precios[last].close).toFixed(2), parseFloat(precios[last].open).toFixed(2), parseFloat(precios[last].hight).toFixed(2), parseFloat(precios[last].low).toFixed(2), volume]);
+    datos.push(['2017-08-03', parseFloat(precios[last].close).toFixed(2), parseFloat(precios[last].open).toFixed(2), parseFloat(precios[last].hight).toFixed(2), parseFloat(precios[last].low).toFixed(2), volume]);
+
 
     if (locale == "es") {
         $('#datatable').dataTable({
