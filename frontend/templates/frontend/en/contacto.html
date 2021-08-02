@@ -1,0 +1,172 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+
+{% block content %}
+    <section class="default-section">
+        <div class="auto-container">
+            <div class="row clearfix">
+                <div class="col-sm-12 col-md-6">
+                    <div class="contact-info text-center wow fadeInUp" data-wow-duration="3s" data-wow-delay="0.2s">
+                        <h2>Asuntos Inmobiliarios </h2>
+                        <br/>
+                        <i class="fa fa-envelope font-36 mb-20 text-theme-colored"></i>
+                        <h3>Relación con Inversionistas</h3>
+                        <h4 class="text-gray"><a href="mailto:investor@fibra-nova.com">investor@fibra-nova.com</a></h4>
+                    </div>
+                    <div class="sec-title wow fadeInUp" data-wow-duration="3s" data-wow-delay="0.2s">
+                        <h2 class="text-center">Contáctanos </h2>
+                    </div>
+                    <div class="p-5 panel-body">
+                    <div class="contact-form default-form">
+                        <form action="{% url 'frontend:send-mail-inmobiliarios' %}" method="post">
+                            {% csrf_token %}
+                            <div class="row clearfix">
+                                <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                                    <div class="group-inner">
+                                        <input type="text" name="username" value="" placeholder="Nombre *">
+                                    </div>
+                                </div>
+
+                                <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                                    <div class="group-inner">
+                                        <input type="email" required name="email" value="" placeholder="Email *">
+                                    </div>
+                                </div>
+
+                                <div class="form-group col-md-12 col-sm-12 col-xs-12">
+                                    <div class="group-inner">
+                                        <input type="text" name="subject" placeholder="Asunto">
+                                    </div>
+                                </div>
+
+                                <div class="form-group col-md-12 col-sm-12 col-xs-12">
+                                    <div class="group-inner">
+                                        <input type="text" name="telefono" placeholder="Teléfono">
+                                    </div>
+                                </div>
+
+                                <div class="form-group col-md-12 col-sm-12 col-xs-12">
+                                    <div class="group-inner">
+                                        <textarea name="message" required placeholder="Mensaje *"></textarea>
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-12 col-sm-12 col-xs-12">
+                                    <button type="submit" class="theme-btn btn-style-one cp">Enviar</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-6">
+                    <div class="contact-info text-center wow fadeInUp" data-wow-duration="3s" data-wow-delay="0.2s">
+                        <h2>Sobre Inversión </h2>
+<br/>
+                        <i class="fa fa-envelope font-36 mb-20 text-theme-colored"></i>
+                        <h3>Luis Carlos Piñón</h3>
+                        <h4 class="text-gray"><a href="mailto:lpinon@fibra-nova.com">lpinon@fibra-nova.com</a></h4>
+                    </div>
+                    <div class="sec-title wow fadeInUp" data-wow-duration="3s" data-wow-delay="0.2s">
+                        <h2 class="text-center">Contáctanos </h2>
+                    </div>
+                    <div class="p-5 panel-body">
+                    <div class="contact-form default-form">
+                        <form action="{% url 'frontend:send-mail-inversion' %}" method="post">
+                            {% csrf_token %}
+                            <div class="row clearfix">
+                                <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                                    <div class="group-inner">
+                                        <input type="text" name="username" value="" placeholder="Nombre *">
+                                    </div>
+                                </div>
+
+                                <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                                    <div class="group-inner">
+                                        <input type="email" required name="email" value="" placeholder="Email *">
+                                    </div>
+                                </div>
+
+                                <div class="form-group col-md-12 col-sm-12 col-xs-12">
+                                    <div class="group-inner">
+                                        <input type="text" name="subject" placeholder="Asunto">
+                                    </div>
+                                </div>
+
+                                <div class="form-group col-md-12 col-sm-12 col-xs-12">
+                                    <div class="group-inner">
+                                        <input type="text" name="telefono" placeholder="Teléfono">
+                                    </div>
+                                </div>
+
+                                <div class="form-group col-md-12 col-sm-12 col-xs-12">
+                                    <div class="group-inner">
+                                        <textarea name="message" required placeholder="Mensaje *"></textarea>
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-12 col-sm-12 col-xs-12">
+                                    <button type="submit" class="theme-btn btn-style-one cp">Enviar</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <br><br><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Get in Touch -->
+    <section class="getintouch">
+        <!--<div class="auto-container">
+
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+                  <div class="sec-title">
+                      <h2 class="text-center">Contáctanos </h2>
+                  </div>
+                    <div class="contact-form default-form">
+                        <form action="{% url 'frontend:send-mail-contact' %}" method="post">
+                            {% csrf_token %}
+                            <div class="row clearfix">
+                                <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                                    <div class="group-inner">
+                                        <input type="text" name="username" value="" placeholder="Nombre *">
+                                    </div>
+                                </div>
+
+                                <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                                    <div class="group-inner">
+                                        <input type="email" required name="email" value="" placeholder="Email *">
+                                    </div>
+                                </div>
+
+                                <div class="form-group col-md-12 col-sm-12 col-xs-12">
+                                    <div class="group-inner">
+                                        <input type="text" name="subject" placeholder="Asunto">
+                                    </div>
+                                </div>
+
+                                <div class="form-group col-md-12 col-sm-12 col-xs-12">
+                                    <div class="group-inner">
+                                        <input type="text" name="telefono" placeholder="Teléfono">
+                                    </div>
+                                </div>
+
+                                <div class="form-group col-md-12 col-sm-12 col-xs-12">
+                                    <div class="group-inner">
+                                        <textarea name="message" required placeholder="Mensaje *"></textarea>
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-12 col-sm-12 col-xs-12">
+                                    <button type="submit" class="theme-btn btn-style-one cp">Enviar</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <br><br><br>
+                </div>
+            </div>
+        </div>-->
+    </section>
+{% endblock %}

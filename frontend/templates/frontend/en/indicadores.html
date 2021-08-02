@@ -1,0 +1,51 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+{% block content %}
+    <section class="work-section sp-one portafolio">
+        <div class="auto-container">
+
+
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="text-center title">Propiedades por Segmento</div>
+                    <div id="pie_1" class="chartpie"></div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="text-center title">Diversificación Geográfica</div>
+
+                    <div id="pie_2" class="chartpie"></div>
+
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="text-center title">Nivel de Ocupación</div>
+                    <div id="pie_3" class="chartpie">
+
+                    </div>
+
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="text-center title">Ingresos por Moneda</div>
+                    <div id="pie_4" class="chartpie"></div>
+                </div>
+            </div>
+            <div class="row text-center">
+              <br>
+                <img src="{% static 'images/grafico.png' %}" alt="" width="70%" class="mt-2 wow fadeInUpBig">
+            </div>
+        </div>
+    </section>
+{% endblock %}
+
+{% block otherscripts %}
+    <script src="{% static 'js/amCharts/amcharts.js' %}"></script>
+    <script src="{% static 'js/amCharts/pie.js' %}"></script>
+    <script src="{% static 'js/amCharts/contenido/indicadores.js' %}?v=1.02"></script>
+    <script type="text/javascript">
+
+        var tab = '{{ tab }}';
+        $(document).on('ready', function () {
+            $('a#' + tab).click();
+        });
+
+    </script>
+{% endblock %}

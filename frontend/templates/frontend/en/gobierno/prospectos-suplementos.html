@@ -1,0 +1,33 @@
+{% extends 'layouts/base.html' %}
+
+{% block content %}
+    <section class="default-section">
+        <div class="auto-container">
+            <div class="row clearfix">
+                <table class="table table-bordered">
+                    <thead>
+                    <tr>
+                        <th class="col-md-9 text-center">Documento</th>
+                        <th class="text-center">Archivo</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td class="text-center">Prospecto de Colocación</td>
+                        <td class="text-center"><a target="_blank" href="{{ urlbase }}/InformacionFinanciera/2017-FNOVA-Prospecto-Definitivo.pdf"><i class="fa fa-file-pdf-o fa-2x"></i></a></td>
+                    </tr>
+                    <tr>
+                        <td class="text-center">Aviso de Colocación</td>
+                        <td class="text-center"><a target="_blank" href="{{ urlbase }}/InformacionFinanciera/2017-Aviso-de-Oferta-Publica-Definitivo.pdf"><i class="fa fa-file-pdf-o fa-2x"></i></a></td>
+                    </tr>
+                    <tr>
+                        <td class="text-center">Contratos del Fideicomiso</td>
+                        <td class="text-center"><a target="_blank" href="{{ urlbase }}/InformacionFinanciera/2017-Contrato-de-Fideicomiso-Irrevocable-2870-Cotejado.pdf"><i class="fa fa-file-pdf-o fa-2x"></i></a></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <br><br>
+        </div>
+    </section>
+{% endblock %}

@@ -1,0 +1,25 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="container" style="margin-top: 10px;padding-top: 30px; padding-bottom: 50px">
+        <div class="row">
+            <div class="col-12 col-sm-4 mb-3 mb-sm-0">
+                <img class="w-100" src="{% static 'images/noticias/1.jpg' %}" alt="noticia 1">
+            </div>
+            <div class="col-12 col-sm-8">
+                <h2 class="fnova-a">Hakakai México inicia operaciones en Monterrey</h2>
+                <br>
+                <p>Hakkai, compañía japonesa, realizó una ceremonia de apertura de su primera
+                  planta de manufactura en México, ubicada en el Parque Aeropuerto en Apodaca,
+                  Nuevo León.</p>
+                  <br>
+                <p>Hakkai produce sensores y engranes para la industria automotriz, generando
+                  más de 300 empleos. Akihiko Seki, presidente de Hakkai México, expresó que
+                   seleccionaron el Estado de Nuevo León por su ubicación geográfica y su mano
+                   de obra calificada.</p>
+
+            </div>
+        </div>
+    </div>
+{% endblock %}
