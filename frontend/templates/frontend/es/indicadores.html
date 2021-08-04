@@ -28,9 +28,12 @@
                     <div id="pie_4" class="chartpie"></div>
                 </div>
             </div>
-            <div class="row text-center">
-              <br>
-                <img src="{% static 'images/grafico.png' %}" alt="" width="70%" class="mt-2 wow fadeInUpBig">
+            <div class="row text-center" style="margin-top: 50px;">
+                <div class="sec-title centered wow fadeInUp">
+                    <h2>Vencimientos de contratos de arrendamientos escalonados</h2>
+                </div>
+                <div id="chart_5" class="char-fundamentales chartdiv"></div>
+                {#                <img src="{% static 'images/grafico.png' %}" alt="" width="70%" class="mt-2 wow fadeInUpBig">#}
             </div>
         </div>
     </section>
@@ -38,6 +41,7 @@
 
 {% block otherscripts %}
     <script src="{% static 'js/amCharts/amcharts.js' %}"></script>
+    <script src="{% static 'js/amCharts/serial.js' %}"></script>
     <script src="{% static 'js/amCharts/pie.js' %}"></script>
     <script src="{% static 'js/amCharts/contenido/indicadores.js' %}?v=1.02"></script>
     <script type="text/javascript">
