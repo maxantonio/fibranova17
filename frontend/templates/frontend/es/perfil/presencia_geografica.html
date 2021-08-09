@@ -21,22 +21,25 @@
                         <ul class="sponsors-carousel owl-carousel owl-theme owl-dots-none owl-nav-none"
                             style="background-color: #1F478D;">
                             <li class="slide-item text-center" style="color: white;">
-                                <b> 19 {% trans 'Estados' %}</b>
+                                <b>{{ Presencia_entidades }} {% trans 'Estados' %}</b>
                             </li>
                             <li class="slide-item text-center" style="color: white; font-size:14px;">
-                                <b>100 {% trans 'Propiedades' %}</b>
+                                <b>{{ Total_propiedades }} {% trans 'Propiedades' %}</b>
                             </li>
                             <li class="slide-item text-center" style="color: white; font-size:14px;">
-                                <b> 372,793 m<sup>2</sup> de ABR</b>
+                                <b>
+                                    <script>
+                                        document.write(numberWithCommas('{{ Total_abr | safe }}'))</script>
+                                    m<sup>2</sup> de ABR</b>
                             </li>
                             <li class="slide-item text-center" style="color: white; font-size:14px;">
-                                <b>100% {% trans 'de Ocupación' %}</b>
+                                <b>{{ Ocupacion }}% {% trans 'de Ocupación' %}</b>
                             </li>
                             <li class="slide-item text-center" style="color: white; font-size:14px;">
-                                <b>Ps.648 mills. {% trans 'de Renta Anualizada' %}</b>
+                                <b>Ps.{{ Rentas_anualizadas }} mills. {% trans 'de Renta Anualizada' %}</b>
                             </li>
                             <li class="slide-item text-center" style="color: white; font-size:14px;">
-                                <b>6.2 {% trans 'Años de Vencimiento'%}</b>
+                                <b>{{ Annos_vencimiento }} {% trans 'Años de Vencimiento' %}</b>
                             </li>
                         </ul>
                     </div>
