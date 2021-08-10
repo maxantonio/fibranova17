@@ -7,19 +7,22 @@ var chart = AmCharts.makeChart("pie_1", {
     },
     "dataProvider": [{
         "country": "Industrial",
-        "litres": 59
+        "litres": 48
     }, {
         "country": "Educativo",
-        "litres": 16
+        "litres": 12
     }, {
         "country": "Comercio",
-        "litres": 6
+        "litres": 4
     }, {
         "country": "Logística",
-        "litres": 7
+        "litres": 5
     }, {
-        "country": "Oficinas",
-        "litres": 13
+        "country": "Centros Ingeniería",
+        "litres": 10
+    }, {
+        "country": "Agroindustrial",
+        "litres": 20
     }],
     "valueField": "litres",
     "titleField": "country",
@@ -47,25 +50,25 @@ var chart = AmCharts.makeChart("pie_2", {
     "dataProvider": [{
         "country": "Chih",
 
-        "litres": 56
+        "litres": 66
     }, {
         "country": "Mich",
-        "litres": 14
+        "litres": 10
     }, {
         "country": "Jal",
-        "litres": 6
+        "litres":5
     }, {
         "country": "Qro",
-        "litres": 11
+        "litres": 9
     }, {
         "country": "NL",
-        "litres": 4
+        "litres": 3
     }, {
         "country": "Tamps",
-        "litres": 4
+        "litres": 3
     }, {
         "country": "Otros",
-        "litres": 5
+        "litres": 4
     }],
     "valueField": "litres",
     "titleField": "country",
@@ -126,10 +129,10 @@ var chart = AmCharts.makeChart("pie_4", {
     "dataProvider": [{
         "country": "MXN",
 
-        "litres": 57
+        "litres": 44
     }, {
         "country": "USD",
-        "litres": 43
+        "litres": 56
     }],
     "valueField": "litres",
     "titleField": "country",
