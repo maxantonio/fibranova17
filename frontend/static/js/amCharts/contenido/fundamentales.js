@@ -548,7 +548,8 @@ var configFundamentales = {
                 "unitPosition": "left",
                 "id": "ValueAxis-1",
                 "position": "left",
-                "axisAlpha": 0
+                "axisAlpha": 0,
+                "minimum": 200000,
             }
         ], "legend": {
             "align": "center",
