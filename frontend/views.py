@@ -69,6 +69,12 @@ def estrategia(request):
     return render(request, f'frontend/{request.LANGUAGE_CODE}/perfil/estrategia.html', context)
 
 
+def video(request):
+    header_img = staticfiles_storage.url('images/background/estrategia.png')
+    context = {'title': 'Video Corporativo', 'header_img': header_img}
+    return render(request, f'frontend/{request.LANGUAGE_CODE}/perfil/video.html', context)
+
+
 # END PERFIL
 
 # INVERSIONISTAS
