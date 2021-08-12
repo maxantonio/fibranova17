@@ -77,10 +77,16 @@ var chart = AmCharts.makeChart( "chart_distribuciones", {
         "trimestre": "1T21",
         "Precio": 21.90,
         "Distribución": 0.4623,
+        "dashLengthLine": 5
+    }, {
+        "trimestre": "2T21",
+        "Precio": 20.6,
+        "Distribución": 0.4623,
         "dashLengthColumn": 5,
         "alpha": 0.2,
         "additional": ""
-    } ],
+    }
+   ],
     "valueAxes": [ {
         "axisAlpha": 0,
         "position": "left",

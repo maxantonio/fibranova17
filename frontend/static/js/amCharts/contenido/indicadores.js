@@ -243,8 +243,8 @@ var chart5 = AmCharts.makeChart("chart_5", {
         },
         {
             "year": "2025",
-            "sf_activo": 45914,
-            "sf_activo_d": "45,914",
+            "sf_activo": 71482,
+            "sf_activo_d": "71,482",
         },
         {
             "year": "2026",
@@ -253,8 +253,8 @@ var chart5 = AmCharts.makeChart("chart_5", {
         },
         {
             "year": "2027",
-            "sf_activo": 61189,
-            "sf_activo_d": "61,189",
+            "sf_activo": 61183,
+            "sf_activo_d": "61,183",
         },
         {
             "year": "2028",
@@ -275,6 +275,11 @@ var chart5 = AmCharts.makeChart("chart_5", {
             "year": "2031",
             "sf_activo": 38485,
             "sf_activo_d": "38,485",
+        },
+        {
+            "year": "2036",
+            "sf_activo": 172646,
+            "sf_activo_d": "172,646",
         }
     ],
     "export": {
