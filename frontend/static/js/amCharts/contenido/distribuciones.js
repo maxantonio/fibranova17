@@ -80,7 +80,7 @@ var chart = AmCharts.makeChart( "chart_distribuciones", {
         "dashLengthLine": 5
     }, {
         "trimestre": "2T21",
-        "Precio": 20.6,
+        "Precio": 21.0,
         "Distribución": 0.4623,
         "dashLengthColumn": 5,
         "alpha": 0.2,

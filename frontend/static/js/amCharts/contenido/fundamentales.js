@@ -658,9 +658,9 @@ var configFundamentales = {
           {
               "year": "2T21",
               "fe_operacion":  681459,
-              "fe_inversion": -672416,
-              "fe_financiamiento": 179530,
-              "fe_efectivo": -4024,
+              "fe_inversion": -967909,
+              "fe_financiamiento": 301459,
+              "fe_efectivo": 15009,
           },
             {
                 "year": "1T21",
