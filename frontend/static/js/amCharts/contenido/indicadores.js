@@ -189,7 +189,7 @@ var chart5 = AmCharts.makeChart("chart_5", {
             "fillAlphas": 1,
             "id": "AmGraph-1",
             "lineAlpha": 0.2,
-            // "title": sf_activo,
+            "title": "Renta anualizada",
             "type": "column",
             "valueField": "sf_activo",
             "labelText": "[[sf_activo_d]]"
@@ -207,14 +207,13 @@ var chart5 = AmCharts.makeChart("chart_5", {
             "labelsEnabled": false
         }
     ],
-    // "legend": {
-    //     "align": "center",
-    //     "position": "bottom",
-    //     "right": -4,
-    //
-    //     "color": "gray",
-    //     "textClickEnabled": true
-    // },
+    "legend": {
+        "align": "center",
+        "position": "bottom",
+        // "right": -4,
+        "color": "gray",
+        "textClickEnabled": true
+    },
     "allLabels": [],
     "balloon": {},
     "dataProvider": [
