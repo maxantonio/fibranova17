@@ -350,6 +350,76 @@
             </div>
         </div>
     </section>
-    <div class="row clearfix">
+
     <!--End Clients Section-->
+    <div id="myModal" class="modal">
+        <div class="modal-dialog modal-confirm modal-index" >
+            <div class="modal-content">
+                <div class="modal-header border-bottom-0">
+                    <h3 style="width: 100%;text-align: center"> </h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                  <div class="card">
+                      <div class="row justify-content-center">
+                          <div class="col-md-11 text-center">
+                              <h5>FIBRA NOVA LE INVITA A PARTICIPAR EN SU</h5>
+                              <h4 style="color: #5254ce">CONFERENCIA TELEFÓNICA</h4>
+                              <h5>DE RESULTADOS DEL</h5>
+                              <h4 style="color: #5254ce">TERCER TRIMESTRE DE 2021</h4>
+                          </div>
+                      </div>
+
+                    <div class="row">
+                        <div class="col-md-7">
+                            <p>
+                                <label for="">Fecha:</label>
+                                Jueves XX de octubre de 2021
+                            </p>
+                            <p>
+                                <label for="">Hora:</label>
+                                xx:xx a.m. (Hora del centro,México)<br/>
+                                <span class="ml-3">xx:xx a.m. (Hora del Este, N.Y.</span>
+                            </p>
+                            <p>
+                                <label>Números de marcación:</label><br/>
+                                EE. UU.:+1-877-407-8031<br/>
+                                Internacional (México):+1-877-407-8031<br/>
+                            </p>
+                            <p>
+                                <label for="">Publicación de resultados 2T21:</label><br/>
+                                Miércoles 28 de julio de 2021<br/>
+                                (al cierre de mercado
+                            </p>
+                        </div>
+                        <div class="col-md-5">
+                            <p>
+                                <label for="">Dirigida por:</label><br/>
+                                    <span>XXXX XXXX,Director XXXX</span><br/>
+                                    <span>XXXX XXXX,Director de XXXX</span><br/>
+                                    <span>XXXX XXXX,Director de  XXXX</span>
+                            </p>
+                            <p><label for="">Código de acceso:</label>XXXX</p>
+                            <br/>
+                            <p><label for="">Para mayor información:</label><br/>
+                                XXXXxxx@xxxxx.com<br/>
+                                Tel. +XXXXXXXXX
+                            </p>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row clearfix"></div>
+{% endblock %}
+{% block otherscripts %}
+    <script>
+    $(function(){
+        $('#myModal').modal('show');
+    })
+    </script>
 {% endblock %}
