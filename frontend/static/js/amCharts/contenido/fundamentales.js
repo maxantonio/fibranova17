@@ -131,6 +131,14 @@ var chart = AmCharts.makeChart("chart_situacion", {
     "allLabels": [],
     "balloon": {},
     "dataProvider": [
+      {
+          "year": "2T21",
+          "sf_activo": 10286826,
+          "sf_pasivo": 3169585,
+          "sf_capital": 7117241,
+          "sf_efectivo": 26525,
+          "sf_propiedades": 9579359,
+      },
         {
             "year": "1T21",
             "sf_activo": 	7575229,
@@ -162,14 +170,6 @@ var chart = AmCharts.makeChart("chart_situacion", {
             "sf_capital": 4826936,
             "sf_efectivo": 3859,
             "sf_propiedades": 6727966,
-        },
-        {
-            "year": "1T20",
-            "sf_activo": 6992124,
-            "sf_pasivo": 2278843,
-            "sf_capital": 4713281,
-            "sf_efectivo": 13030,
-            "sf_propiedades": 6666476,
         },
 
     ],
@@ -314,6 +314,14 @@ var configFundamentales = {
         "balloon": {},
         "dataProvider": [
           {
+              "year": "2T21",
+              "sf_activo": 10286826,
+              "sf_pasivo": 3169585,
+              "sf_capital": 7117241,
+              "sf_efectivo": 26525,
+              "sf_propiedades": 9579359,
+          },
+          {
               "year": "1T21",
               "sf_activo": 	7575229,
               "sf_pasivo": 2368112,
@@ -345,14 +353,7 @@ var configFundamentales = {
               "sf_efectivo": 3859,
               "sf_propiedades": 6727966,
           },
-          {
-              "year": "1T20",
-              "sf_activo": 6992124,
-              "sf_pasivo": 2278843,
-              "sf_capital": 4713281,
-              "sf_efectivo": 13030,
-              "sf_propiedades": 6666476,
-          },
+
         ],
         "export": {
             "enabled": true
@@ -457,6 +458,15 @@ var configFundamentales = {
         },
         "balloon": {},
         "dataProvider": [
+          {
+              "year": "2T21",
+              "er_ingresos": 153099,
+              "er_ion": 148802,
+              "er_utilidad": 137946,
+              "er_ebitda": 137975,
+              "er_impuestos": 0,
+              "er_neta": 208077,
+          },
             {
                 "year": "1T21",
                 "er_ingresos": 144088,
@@ -493,15 +503,6 @@ var configFundamentales = {
                 "er_impuestos": -70946,
                 "er_neta": 219962,
             },
-            {
-                "year": "1T20",
-                "er_ingresos": 130233,
-                "er_ion": 126457,
-                "er_utilidad": 117326,
-                "er_ebitda": 117331,
-                "er_impuestos": 204700,
-                "er_neta": -66241,
-            }
         ],
         "export": {
             "enabled": true
@@ -547,7 +548,8 @@ var configFundamentales = {
                 "unitPosition": "left",
                 "id": "ValueAxis-1",
                 "position": "left",
-                "axisAlpha": 0
+                "axisAlpha": 0,
+                "minimum": 200000,
             }
         ], "legend": {
             "align": "center",
@@ -559,6 +561,10 @@ var configFundamentales = {
         "allLabels": [],
         "balloon": {},
         "dataProvider": [
+          {
+              "year": "2T21",
+              "io_abr": 390619,
+          },
             {
                 "year": "1T21",
                 "io_abr": 372793,
@@ -575,11 +581,6 @@ var configFundamentales = {
                 "year": "2T20",
                 "io_abr": 342737,
             },
-            {
-                "year": "1T20",
-                "io_abr": 342737,
-            },
-
         ],
         "export": {
             "enabled": true
@@ -655,6 +656,13 @@ var configFundamentales = {
         "balloon": {},
         "titles": [],
         "dataProvider": [
+          {
+              "year": "2T21",
+              "fe_operacion":  681459,
+              "fe_inversion": -967909,
+              "fe_financiamiento": 301459,
+              "fe_efectivo": 15009,
+          },
             {
                 "year": "1T21",
                 "fe_operacion": 192597,
@@ -683,13 +691,7 @@ var configFundamentales = {
                 "fe_financiamiento": -164206,
                 "fe_efectivo": -9171,
             },
-            {
-                "year": "1T20",
-                "fe_operacion":  101264,
-                "fe_inversion": -546137,
-                "fe_financiamiento": 452296,
-                "fe_efectivo": 7423,
-            },
+
         ],
         "export": {
             "enabled": true
