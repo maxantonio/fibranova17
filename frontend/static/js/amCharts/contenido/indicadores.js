@@ -1,7 +1,7 @@
 var chart = AmCharts.makeChart("pie_1", {
     "type": "pie",
     "theme": "none",
-    "colors": ["#1F478D", "#E11D50", "#08193B", "#B81F3C", "#4F709E", "#F16991", "#8EBEE6"],
+    "colors": ["#24448D"," #577FD7", "#002060", "#D3D3D3", "#041228","#1B656D","#14D0EF", "#0A3F2B"],
     "legend": {
         valueText: '' //or \n if you want new lines
     },
@@ -43,7 +43,7 @@ var chart = AmCharts.makeChart("pie_1", {
 var chart = AmCharts.makeChart("pie_2", {
     "type": "pie",
     "theme": "none",
-    "colors": ["#1F478D", "#E11D50", "#08193B", "#B81F3C", "#4F709E", "#F16991", "#8EBEE6"],
+    "colors": ["#24448D"," #577FD7", "#002060", "#D3D3D3", "#041228","#1B656D","#14D0EF", "#0A3F2B"],
     "legend": {
         valueText: '' //or \n if you want new lines
     },
@@ -88,7 +88,7 @@ var chart = AmCharts.makeChart("pie_2", {
 var chart = AmCharts.makeChart("pie_3", {
     "type": "pie",
     "theme": "none",
-    "colors": ["#1F478D", "#E11D50", "#08193B", "#B81F3C", "#4F709E", "#F16991", "#8EBEE6"],
+    "colors": ["#24448D"," #577FD7", "#002060", "#D3D3D3", "#041228", , "#2BD6B5" ,"#1B656D","#14D0EF", "#0A3F2B"],
     "legend": {
         valueText: '\n', //or \n if you want new lines
         maxColumns: 1,
@@ -120,7 +120,7 @@ var chart = AmCharts.makeChart("pie_3", {
 var chart = AmCharts.makeChart("pie_4", {
     "type": "pie",
     "theme": "none",
-    "colors": ["#1F478D", "#E11D50", "#08193B", "#B81F3C", "#4F709E", "#F16991", "#8EBEE6"],
+    "colors": ["#24448D"," #577FD7", "#002060", "#D3D3D3", "#041228", "#14D0EF", "#1B656D", "#2BD6B5", "#0A3F2B"],
     "legend": {
         valueText: '\n', //or \n if you want new lines
         maxColumns: 1,
