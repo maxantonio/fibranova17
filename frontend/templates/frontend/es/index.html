@@ -352,4 +352,145 @@
     </section>
     <div class="row clearfix">
     <!--End Clients Section-->
+    <div id="myModal" class="modal">
+        <div class="modal-dialog modal-confirm" style="max-width: 820px">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 style="width: 100%;text-align: center"> Canal de Denuncias </h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Aquí puede consultar cualquier aspecto relacionado con los <i>lineamientos y políticas de Negocio
+                        Responsable de Cox Energy América.</i></p>
+                    <p>
+                        Todas las comunicaciones recibidas se tratarán de acuerdo a los principios de respeto,
+                        fundamento y
+                        confidencialidad y de acuerdo con un procedimiento de tramitación y recepción de denuncias
+                        recibidas
+                        aprobado por el Consejo de Administración de la Compañía.
+                    </p>
+                    <form action="{% url 'denuncia' %}" method="post" id="form_denuncia"
+                          data-success="Correo enviado correctamente">
+                        {% csrf_token %}
+                        <div class="row">
+                            <div class="col-md-4 mb-3 mb-md-0">
+                                <label for="pais" style="font-size: 0.83em">Selecciona el país<br><br class="d-none d-md-block"></label>
+                                <select name="pais" id="pais" class="form-control">
+                                    <option value="Chile">Chile</option>
+                                    <option value="Colombia">Colombia</option>
+                                    <option value="España">España</option>
+                                    <option value="Guatemala">Guatemala</option>
+                                    <option value="México">México</option>
+                                    <option value="Panamá">Panamá</option>
+                                </select>
+                            </div>
+
+                            <div class="col-md-4  pl-md-0 mb-3 mb-md-0">
+                                <label for="tematica" style="font-size: 0.83em">Indica la temática de tu consulta o
+                                    denuncia</label>
+                                <select name="tematica" id="tematica" class="form-control">
+
+                                    <option value="Comunicación responsable">Comunicación responsable</option>
+                                    <option value="Derechos humanos">Derechos humanos</option>
+                                    <option value="Gestión del talento">Gestión del talento</option>
+                                    <option value="Integridad">Integridad</option>
+                                    <option value="Libertad de expresión">Libertad de expresión</option>
+                                    <option value="Medioambiente">Medioambiente</option>
+                                    <option value="Privacidad">Privacidad</option>
+                                    <option value="Otros">Otros</option>
+                                </select>
+                            </div>
+
+                            <div class="col-md-4 pl-md-0 mb-3 mb-md-0">
+                                <label for="relacion" style="font-size: 0.83em">Señala tu relación con Cox Energy
+                                    América</label>
+                                <select name="relacion" id="relacion" class="form-control">
+                                    <option value="Accionista">Accionista</option>
+                                    <option value="Cliente">Cliente</option>
+                                    <option value="Funcionario/Empleado">Funcionario/Empleado</option>
+                                    <option value="Inversionista">Inversionista</option>
+                                    <option value="Regulador">Regulador</option>
+                                    <option value="Colombia">Socio Comercial/Proveedor</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-12 mb-3">
+                                <label for="denuncia_text" style="font-size: 0.83em">Escribe tu consulta o
+                                    denuncia</label>
+                                <textarea name="denuncia" id="denuncia_text" cols="30" rows="10" class="form-control"
+                                          data-rule-required="true"
+                                          data-msg-required="Por favor escriba su consulta o denuncia"></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 mb-3">
+                                <label for="consulta" class="mr-1">¿Quieres hacer la consulta de modo anónimo?</label>
+                                <br class="d-block d-md-none">
+                                <div class="btn si pl-0 pl-md-3" id="Si" onclick="anoniMo()"><i class="fa fa-dot-circle-o"></i> Sí
+                                </div>
+                                <div class="btn no active" id="No" onclick="noAnoniMo()"><i
+                                        class="fa fa-dot-circle-o"></i> No
+                                </div>
+                                <input type="radio" name="consulta" id="consulta" checked="false" style="display: none">
+
+                            </div>
+                        </div>
+                        <div class="row anonimo">
+                            <div class="col-12 mb-3">
+                                <label for="nombre" style="font-size: 0.83em">Nombre y apellido:</label>
+
+                                <input type="text" name="nombre" id="nombre" class="form-control "
+                                       data-rule-required="true" data-msg-required="Por favor escriba su nombre">
+
+                            </div>
+                        </div>
+                        <div class="row ">
+                            <div class="col-md-4 anonimo mb-3">
+                                <label for="telefono" style="font-size: 0.83em">Teléfono de contacto:</label>
+
+                                <input type="text" name="telefono" id="telefono" class="form-control "
+                                       data-rule-required="true" data-msg-required="Por favor escriba su teléfono">
+
+                            </div>
+                            <div class="col-md-8 noanonimo mb-3">
+                                <label for="correo" style="font-size: 0.83em">Correo electrónico para hacerte llegar la
+                                    respuesta a tu consulta</label>
+
+                                <input type="text" name="correo" id="correo" class="form-control "
+                                       data-rule-required="true" data-rule-email="true"
+                                       data-msg-required="Por favor escriba su email"
+                                       data-msg-email="Por favor escriba una dirección de correo correcta ">
+
+                            </div>
+
+                        </div>
+                        <div class="row mt-4 justify-content-center">
+                            <div class="col-10 text-center">
+                                Al hacer clic en "Enviar" muestra su conformidad con nuestras Condiciones y acepta
+                                haber leído y comprendido nuestra <a href="{% url 'index' %}"
+                                                                     style="text-decoration: underline;font-weight: bold">Política
+                                de Privacidad</a>
+                            </div>
+                        </div>
+
+
+                    </form>
+                </div>
+                <div class="modal-footer justify-content-center ">
+                    <button class="btn color-btn btn-block  btn-bg-white enviar col-4" id="send_denuncia">Enviar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+{% block otherscripts %}
+    <script>
+    $(function(){
+        $('#myModal').modal('show');
+    })
+    </script>
 {% endblock %}
