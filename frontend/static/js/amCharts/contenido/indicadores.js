@@ -7,19 +7,22 @@ var chart = AmCharts.makeChart("pie_1", {
     },
     "dataProvider": [{
         "country": "Industrial",
-        "litres": 59
+        "litres": 48
     }, {
         "country": "Educativo",
-        "litres": 16
+        "litres": 12
     }, {
         "country": "Comercio",
-        "litres": 6
+        "litres": 4
     }, {
         "country": "Logística",
-        "litres": 7
+        "litres": 5
     }, {
-        "country": "Oficinas",
-        "litres": 13
+        "country": "Centros Ingeniería",
+        "litres": 10
+    }, {
+        "country": "Agroindustrial",
+        "litres": 20
     }],
     "valueField": "litres",
     "titleField": "country",
@@ -47,25 +50,25 @@ var chart = AmCharts.makeChart("pie_2", {
     "dataProvider": [{
         "country": "Chih",
 
-        "litres": 56
+        "litres": 66
     }, {
         "country": "Mich",
-        "litres": 14
+        "litres": 10
     }, {
         "country": "Jal",
-        "litres": 6
+        "litres":5
     }, {
         "country": "Qro",
-        "litres": 11
+        "litres": 9
     }, {
         "country": "NL",
-        "litres": 4
+        "litres": 3
     }, {
         "country": "Tamps",
-        "litres": 4
+        "litres": 3
     }, {
         "country": "Otros",
-        "litres": 5
+        "litres": 4
     }],
     "valueField": "litres",
     "titleField": "country",
@@ -126,10 +129,10 @@ var chart = AmCharts.makeChart("pie_4", {
     "dataProvider": [{
         "country": "MXN",
 
-        "litres": 57
+        "litres": 44
     }, {
         "country": "USD",
-        "litres": 43
+        "litres": 56
     }],
     "valueField": "litres",
     "titleField": "country",
@@ -189,7 +192,7 @@ var chart5 = AmCharts.makeChart("chart_5", {
             "fillAlphas": 1,
             "id": "AmGraph-1",
             "lineAlpha": 0.2,
-            // "title": sf_activo,
+            "title": "Renta anualizada",
             "type": "column",
             "valueField": "sf_activo",
             "labelText": "[[sf_activo_d]]"
@@ -207,14 +210,13 @@ var chart5 = AmCharts.makeChart("chart_5", {
             "labelsEnabled": false
         }
     ],
-    // "legend": {
-    //     "align": "center",
-    //     "position": "bottom",
-    //     "right": -4,
-    //
-    //     "color": "gray",
-    //     "textClickEnabled": true
-    // },
+    "legend": {
+        "align": "center",
+        "position": "bottom",
+        // "right": -4,
+        "color": "gray",
+        "textClickEnabled": true
+    },
     "allLabels": [],
     "balloon": {},
     "dataProvider": [
@@ -240,8 +242,8 @@ var chart5 = AmCharts.makeChart("chart_5", {
         },
         {
             "year": "2025",
-            "sf_activo": 45914,
-            "sf_activo_d": "45,914",
+            "sf_activo": 71482,
+            "sf_activo_d": "71,482",
         },
         {
             "year": "2026",
@@ -250,8 +252,8 @@ var chart5 = AmCharts.makeChart("chart_5", {
         },
         {
             "year": "2027",
-            "sf_activo": 61189,
-            "sf_activo_d": "61,189",
+            "sf_activo": 61183,
+            "sf_activo_d": "61,183",
         },
         {
             "year": "2028",
@@ -272,6 +274,11 @@ var chart5 = AmCharts.makeChart("chart_5", {
             "year": "2031",
             "sf_activo": 38485,
             "sf_activo_d": "38,485",
+        },
+        {
+            "year": "2036",
+            "sf_activo": 172646,
+            "sf_activo_d": "172,646",
         }
     ],
     "export": {

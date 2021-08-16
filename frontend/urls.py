@@ -17,6 +17,7 @@ urlpatterns = [
     path('perfil/presencia-geografica', views.presencia_geografica, name='perfil-presencia-geografica'),
     path('perfil/historia', views.historia, name='perfil-historia'),
     path('perfil/estrategia', views.estrategia, name='perfil-estrategia'),
+    path('perfil/video', views.video, name='perfil-video'),
     path('inversionistas/reportes-trimestrales', views.reportes_trimestrales, name='inversionistas-reportes-trimestrales'),
     path('inversionistas/reportes-anuales', views.reportes_anuales, name='inversionistas-reportes-anuales'),
     path('inversionistas/fundamentales', views.fundamentales, name='inversionistas-fundamentales'),

@@ -9,6 +9,7 @@ django = "==2.1.5"
 django-heroku = "*"
 gunicorn = "==19.7.1"
 python-dotenv = "*"
+requests = "*"
 #dotenv = "*"
 #upgrade = "*"
 
