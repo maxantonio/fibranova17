@@ -7,110 +7,124 @@
             <div class="row clearfix">
                 <div class="col-sm-12 col-md-6">
                     <div class="contact-info text-center wow fadeInUp" data-wow-duration="3s" data-wow-delay="0.2s">
-                        <h2>Asuntos Inmobiliarios </h2>
+                        <h2>Real Estate Matters</h2>
                         <br/>
-                        <i class="fa fa-envelope font-36 mb-20 text-theme-colored"></i>
-                        <h3>Relación con Inversionistas</h3>
-                        <h4 class="text-gray"><a href="mailto:investor@fibra-nova.com">investor@fibra-nova.com</a></h4>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <i class="fa fa-envelope font-36 mb-20 text-theme-colored"></i>
+                                <h4>Guillermo Mendrano</h4>
+                                <h5 class="text-gray"><a
+                                        href="mailto:gmedrano@fibra-nova.com">gmedrano@fibra-nova.com</a></h5>
+                                <h4>+52 (614) 5115093</h4>
+                            </div>
+                            <div class="col-md-6">
+                                <i class="fa fa-envelope font-36 mb-20 text-theme-colored"></i>
+                                <h4>Laura Garza</h4>
+                                <h5 class="text-gray"><a
+                                        href="mailto:lgarza@fibra-nova.com">lgarza@fibra-nova.com</a></h5>
+                                <h4>+52 (81) 86009567</h4>
+                            </div>
+                        </div>
                     </div>
-                    <div class="sec-title wow fadeInUp" data-wow-duration="3s" data-wow-delay="0.2s">
-                        <h2 class="text-center">Contáctanos </h2>
+                    <div class="sec-title wow fadeInUp pt-5" data-wow-duration="3s" data-wow-delay="0.2s">
+                        <h2 class="text-center">Contact Us</h2>
                     </div>
                     <div class="p-5 panel-body">
-                    <div class="contact-form default-form">
-                        <form action="{% url 'frontend:send-mail-inmobiliarios' %}" method="post">
-                            {% csrf_token %}
-                            <div class="row clearfix">
-                                <div class="form-group col-md-6 col-sm-6 col-xs-12">
-                                    <div class="group-inner">
-                                        <input type="text" name="username" value="" placeholder="Nombre *">
+                        <div class="contact-form default-form">
+                            <form action="{% url 'frontend:send-mail-inmobiliarios' %}" method="post">
+                                {% csrf_token %}
+                                <div class="row clearfix">
+                                    <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                                        <div class="group-inner">
+                                            <input type="text" name="Nombre" value="" placeholder="Name *">
+                                        </div>
                                     </div>
-                                </div>
 
-                                <div class="form-group col-md-6 col-sm-6 col-xs-12">
-                                    <div class="group-inner">
-                                        <input type="email" required name="email" value="" placeholder="Email *">
+                                    <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                                        <div class="group-inner">
+                                            <input type="email" required name="email" value="" placeholder="Email *">
+                                        </div>
                                     </div>
-                                </div>
 
-                                <div class="form-group col-md-12 col-sm-12 col-xs-12">
-                                    <div class="group-inner">
-                                        <input type="text" name="subject" placeholder="Asunto">
+                                    <div class="form-group col-md-12 col-sm-12 col-xs-12">
+                                        <div class="group-inner">
+                                            <input type="text" name="subject" placeholder="Subject">
+                                        </div>
                                     </div>
-                                </div>
 
-                                <div class="form-group col-md-12 col-sm-12 col-xs-12">
-                                    <div class="group-inner">
-                                        <input type="text" name="telefono" placeholder="Teléfono">
+                                    <div class="form-group col-md-12 col-sm-12 col-xs-12">
+                                        <div class="group-inner">
+                                            <input type="text" name="telefono" placeholder="Phone">
+                                        </div>
                                     </div>
-                                </div>
 
-                                <div class="form-group col-md-12 col-sm-12 col-xs-12">
-                                    <div class="group-inner">
-                                        <textarea name="message" required placeholder="Mensaje *"></textarea>
+                                    <div class="form-group col-md-12 col-sm-12 col-xs-12">
+                                        <div class="group-inner">
+                                            <textarea name="message" required placeholder="Message *"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="form-group col-md-12 col-sm-12 col-xs-12">
+                                        <button type="submit" class="theme-btn btn-style-one cp">Send</button>
                                     </div>
                                 </div>
-                                <div class="form-group col-md-12 col-sm-12 col-xs-12">
-                                    <button type="submit" class="theme-btn btn-style-one cp">Enviar</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
 
                 <div class="col-sm-12 col-md-6">
                     <div class="contact-info text-center wow fadeInUp" data-wow-duration="3s" data-wow-delay="0.2s">
-                        <h2>Sobre Inversión </h2>
-<br/>
+                        <h2>Investors Relations</h2>
+                        <br/>
                         <i class="fa fa-envelope font-36 mb-20 text-theme-colored"></i>
-                        <h3>Luis Carlos Piñón</h3>
-                        <h4 class="text-gray"><a href="mailto:lpinon@fibra-nova.com">lpinon@fibra-nova.com</a></h4>
+                        <h4>Luis Carlos Piñón</h4>
+                        <h5 class="text-gray"><a href="mailto:lpinon@fibra-nova.com">lpinon@fibra-nova.com</a></h5>
+                        <h5 class="text-gray"><a href="mailto:investor@fibra-nova.com">investor@fibra-nova.com</a></h5>
                     </div>
-                    <div class="sec-title wow fadeInUp" data-wow-duration="3s" data-wow-delay="0.2s">
-                        <h2 class="text-center">Contáctanos </h2>
+                    <div class="sec-title wow fadeInUp pt-5" data-wow-duration="3s" data-wow-delay="0.2s">
+                        <h2 class="text-center">Contact Us</h2>
                     </div>
                     <div class="p-5 panel-body">
-                    <div class="contact-form default-form">
-                        <form action="{% url 'frontend:send-mail-inversion' %}" method="post">
-                            {% csrf_token %}
-                            <div class="row clearfix">
-                                <div class="form-group col-md-6 col-sm-6 col-xs-12">
-                                    <div class="group-inner">
-                                        <input type="text" name="username" value="" placeholder="Nombre *">
+                        <div class="contact-form default-form">
+                            <form action="{% url 'frontend:send-mail-inversion' %}" method="post">
+                                {% csrf_token %}
+                                <div class="row clearfix">
+                                    <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                                        <div class="group-inner">
+                                            <input type="text" name="username" value="" placeholder="Name *">
+                                        </div>
                                     </div>
-                                </div>
 
-                                <div class="form-group col-md-6 col-sm-6 col-xs-12">
-                                    <div class="group-inner">
-                                        <input type="email" required name="email" value="" placeholder="Email *">
+                                    <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                                        <div class="group-inner">
+                                            <input type="email" required name="email" value="" placeholder="Email *">
+                                        </div>
                                     </div>
-                                </div>
 
-                                <div class="form-group col-md-12 col-sm-12 col-xs-12">
-                                    <div class="group-inner">
-                                        <input type="text" name="subject" placeholder="Asunto">
+                                    <div class="form-group col-md-12 col-sm-12 col-xs-12">
+                                        <div class="group-inner">
+                                            <input type="text" name="subject" placeholder="Subject">
+                                        </div>
                                     </div>
-                                </div>
 
-                                <div class="form-group col-md-12 col-sm-12 col-xs-12">
-                                    <div class="group-inner">
-                                        <input type="text" name="telefono" placeholder="Teléfono">
+                                    <div class="form-group col-md-12 col-sm-12 col-xs-12">
+                                        <div class="group-inner">
+                                            <input type="text" name="telefono" placeholder="Phone">
+                                        </div>
                                     </div>
-                                </div>
 
-                                <div class="form-group col-md-12 col-sm-12 col-xs-12">
-                                    <div class="group-inner">
-                                        <textarea name="message" required placeholder="Mensaje *"></textarea>
+                                    <div class="form-group col-md-12 col-sm-12 col-xs-12">
+                                        <div class="group-inner">
+                                            <textarea name="message" required placeholder="Message *"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="form-group col-md-12 col-sm-12 col-xs-12">
+                                        <button type="submit" class="theme-btn btn-style-one cp">Send</button>
                                     </div>
                                 </div>
-                                <div class="form-group col-md-12 col-sm-12 col-xs-12">
-                                    <button type="submit" class="theme-btn btn-style-one cp">Enviar</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                    <br><br><br>
+                            </form>
+                        </div>
+                        <br><br><br>
                     </div>
                 </div>
             </div>

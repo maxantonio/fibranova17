@@ -9,19 +9,18 @@
                         <div class="col-md-6">
                             <div class="">
                                 <div class="panel-heading bg-primary p-2">
-                                    Datos de la inversión
+                                    Investment Figures
                                 </div>
                                 <div class="panel-body ">
                                     <form class="form" id="calculadora" action="/es/calculate">
                                         <div class="form-group" id="group_cbfi">
-                                            <label for="cbfis" class="control-label">CANTIDAD DE ACCIONES
-                                                FNOVA17 </label>
+                                            <label for="cbfis" class="control-label">NUMBER OF FNOVA17 CBFIs </label>
                                             <input type="number" id="cbfis" min="0" step="1" data-bind="value:cbfis"
                                                    class="form-control"/>
                                             <!--<span class="form-control-feedback">Debe seleccionar un número mayor a 0</span>-->
                                         </div>
                                         <div class="form-group group-fechas">
-                                            <label for="start_date" class="control-label">FECHA INICIAL</label>
+                                            <label for="start_date" class="control-label">INITIAL DATE</label>
                                             <div class="input-group">
                                                 <input type="text" class="form-control datepicker" id="start_date">
                                                 <div class="input-group-addon">
@@ -31,7 +30,7 @@
                                             <!--<span class="form-control-feedback">Debe seleccionar una fecha inferior a la fecha final</span>-->
                                         </div>
                                         <div class="form-group group-fechas">
-                                            <label for="end_date">FECHA FINAL</label>
+                                            <label for="end_date">END DATE</label>
                                             <div class="input-group">
                                                 <input type="text" class="form-control datepicker" id="end_date">
                                                 <div class="input-group-addon">
@@ -43,7 +42,7 @@
                                         <br>
                                         <div class="input-group mb-15">
                                             <button type="button" class="btn btn-info disabled btn-maincolor"
-                                                    id="calculate">CALCULAR
+                                                    id="calculate">CALCULATE
                                             </button>
                                         </div>
                                     </form>
@@ -53,18 +52,18 @@
                         <div class="col-md-6">
                             <div class="">
                                 <div class="panel-heading bg-primary p-2">
-                                    Inversión inicial
+                                    Initial Investment
                                 </div>
                                 <div class="panel-body ">
-                                    <div class="form-group"><label for="precio_i">PRECIO DE ACCIONES DE FNOVA17:</label>
+                                    <div class="form-group"><label for="precio_i">FNOVA17 CBFI PRICE:</label>
                                         <div class="value" id="precio_i">0</div>
                                     </div>
 
-                                    <div class="form-group"><label for="cantidad_i">CANTIDAD DE ACCIONES:</label>
+                                    <div class="form-group"><label for="cantidad_i">NUMBER OF CBFIs:</label>
                                         <div class="value" id="cantidad_i">0</div>
                                     </div>
 
-                                    <div class="form-group"><label for="monto_i">MONTO INVERTIDO:</label>
+                                    <div class="form-group"><label for="monto_i">TOTAL INVESTMENT:</label>
                                         <div class="value" id="monto_i">0</div>
                                     </div>
                                 </div>
@@ -75,25 +74,25 @@
                         <div class="col-md-6">
                             <div class="">
                                 <div class="panel-heading bg-primary p-2">
-                                    RESULTADO FINAL
+                                    FINAL OUTCOME
                                 </div>
                                 <div class="panel-body ">
-                                    <div class="form-group"><label for="precio_f">PRECIO DE ACCIONES DE FNOVA17:
+                                    <div class="form-group"><label for="precio_f">FNOVA17 CBFI PRICE:
                                     </label>
 
                                         <div class="value" id="precio_f">0</div>
                                     </div>
 
-                                    <div class="form-group"><label for="monto_f">VALOR INVERSIÓN:</label>
+                                    <div class="form-group"><label for="monto_f">INVESTMENT VALUE:</label>
 
                                         <div class="value" id="monto_f">0</div>
                                     </div>
 
-                                    <div class="form-group"><label for="rendimiento">RENDIMIENTO:</label>
+                                    <div class="form-group"><label for="rendimiento">RETURN:</label>
                                         <div class="value" id="rendimiento">0</div>
                                     </div>
 
-                                    <div class="form-group"><label for="rendimiento_p">RENDIMIENTO:</label>
+                                    <div class="form-group"><label for="rendimiento_p">RETURN:</label>
                                         <div class="value" id="rendimiento_p">0</div>
 
                                     </div>
@@ -103,20 +102,20 @@
                         <div class="col-md-6">
                             <div class="">
                                 <div class="panel-heading bg-primary p-2">
-                                    Dividendos recibido
+                                    Distributions
                                 </div>
                                 <div class="panel-body ">
-                                    <div class="form-group"><label for="cantidad_d">CANTIDAD DE ACCIONES:</label>
+                                    <div class="form-group"><label for="cantidad_d">NUMBER OF CBFIs:</label>
                                         <div class="value" id="cantidad_d">0</div>
                                     </div>
 
-                                    <div class="form-group"><label for="dividendos_p">DIVIDENDOS PERIODO EMISORA
+                                    <div class="form-group"><label for="dividendos_p">ANNOUNCED DISTRIBUTIONS:
                                         :</label>
 
                                         <div class="value" id="dividendos_p">0</div>
                                     </div>
 
-                                    <div class="form-group"><label for="monto_d">DIVIDENDOS RECIBIDOS:</label>
+                                    <div class="form-group"><label for="monto_d">DISTRIBUTIONS RECEIVED:</label>
                                         <div class="value" id="monto_d">0</div>
                                     </div>
                                 </div>
@@ -127,28 +126,25 @@
                         <div class="col-md-12">
                             <div class="">
                                 <div class="panel-heading bg-primary p-2">
-                                    Rendimiento final
+                                    Final Return
                                 </div>
 
                                 <div class="panel-body ">
                                     <div class="row">
                                         <div class="col-md-4">
-                                            <div class="form-group"><label for="rendimiento_t">RENDIMIENTO
-                                                TOTAL:</label>
+                                            <div class="form-group"><label for="rendimiento_t">TOTAL RETURN:</label>
                                                 <div class="value" id="rendimiento_t">0</div>
                                             </div>
                                             <br/>
                                         </div>
                                         <div class="col-md-4">
-                                            <div class="form-group"><label for="rendimiento_tp">RENDIMIENTO
-                                                TOTAL:</label>
+                                            <div class="form-group"><label for="rendimiento_tp">TOTAL RETURN:</label>
                                                 <div class="value" id="rendimiento_tp">0</div>
                                             </div>
                                             <br/>
                                         </div>
                                         <div class="col-md-4">
-                                            <div class="form-group"><label for="rendimiento_a">RENDIMIENTO
-                                                ANUALIZADO:</label>
+                                            <div class="form-group"><label for="rendimiento_a">ANNUALIZED RETURN:</label>
                                                 <div class="value" id="rendimiento_a">0</div>
                                             </div>
                                         </div>
@@ -166,16 +162,16 @@
                         <div class="col-md-12">
                             <div class="">
                                 <div class="panel-heading bg-primary p-2">
-                                    Visualiza tu inversión
+                                    Visualize your investment
                                 </div>
                                 <div class="panel-body ">
                                     <div class="row d-flex align-items-center">
                                         <div class="col-md-6 d-flex justify-content-center">
                                             <div class="index-graph-info">
-                                                <p><strong>Elige:</strong> </p><br>
+                                                <p><strong>Choose:</strong> </p><br>
                                                 <div class="row d-flex align-items-center">
                                                     <div class="col-md-6">
-                                                        <p>Monto inicial</p>
+                                                        <p>Initial amount</p>
                                                     </div>
                                                     <div class="col-md-6">
                                                         <select class="form-control" name="montoinicial"
@@ -196,7 +192,7 @@
                                                 <br>
                                                 <div class="row d-flex align-items-center">
                                                     <div class="col-md-6">
-                                                        <p>Depósito anual</p>
+                                                        <p>Annual Deposit</p>
                                                     </div>
                                                     <div class="col-md-6">
                                                         <select class="form-control" name="depositomensual"
@@ -217,7 +213,7 @@
                                                 <br>
                                                 <div class="row d-flex align-items-center">
                                                     <div class="col-md-6">
-                                                        <p>Plazo de inversión</p>
+                                                        <p>Investment term</p>
                                                     </div>
                                                     <div class="col-md-6">
                                                         <select class="form-control" name="plazoinversion"
@@ -264,22 +260,20 @@
                                     <div class="row d-flex chart-legend-calc" style="justify-content: space-between">
                                             <div class="d-flex justify-content-between">
                                                 <div class="d-flex align-items-center bl-blue">
-                                                    <p class="font-weight-normal mr-2 pl-2">Inversión en
-                                                        Fibra Nova</p>
+                                                    <p class="font-weight-normal mr-2 pl-2">Investment in Fibra Nova</p>
                                                 </div>
                                                 <p class="strong">MX$<span id="inversion_fmty">25,688,779</span></p>
                                             </div>
                                             <div class="d-flex justify-content-between">
                                                 <div class="d-flex align-items-center bl-gray">
-                                                    <p class="font-weight-normal mr-2 pl-2">Inversión
-                                                        tradicional</p>
+                                                    <p class="font-weight-normal mr-2 pl-2">Traditional investment</p>
                                                 </div>
                                                 <p class="strong">MX$<span id="inversion_tradicional">12,227,499</span></p>
                                             </div>
 
                                             <div class="d-flex justify-content-between">
                                                 <div class="d-flex align-items-center bl-black">
-                                                    <p class="font-weight-normal mr-2 pl-2">Bancos</p>
+                                                    <p class="font-weight-normal mr-2 pl-2">Banks</p>
                                                 </div>
                                                 <p class="strong">MX$<span id="inversion_bancos">5,868,170</span></p>
                                             </div>
@@ -292,9 +286,9 @@
                 </div><!-- end col-lg-9 -->
             </div><!-- end row -->
             <div class="clearfix"></div>
-            <p><sup>•	Inversión Tradicional se calcula una tasa similar de Cetes a 364 días.<br>
-                    •	Bancos se considera 2%.<br>
-                    •	Fibra Nova basado en Rendimiento Histórico de Distribución, no se garantiza rendimiento futuro.
+            <p><sup>•	Traditional investment is calculated with a similar 364-day cetes rate.<br>
+                    •	Banks are considered to be 2%.<br>
+                    •	Fibra Nova based on historical distribution performance, no future performance guaranteed
             </sup></p>
         </div>
     </section>
