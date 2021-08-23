@@ -1,46 +1,51 @@
 {% extends 'layouts/base.html' %}
-{% load static %}
+{% load static i18n %}
 
 {% block content %}
 
     <section class="default-section">
         <div class="auto-container">
             <div class="row clearfix mb-20">
-              <p class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.2s">Al 31 de marzo de 2021 nuestro portafolio estaba compuesto por 100
-                  propiedades, cuya Área Bruta Rentable ascendía a 372,793 metros cuadrados, localizados
-                  en 40 ciudades de 19 entidades federativas, principalmente en las que se
-                  muestran a continuación:</p>
+                <p class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.2s">As of March 31, 2021, our portfolio consisted of {{ Total_propiedades }}
+                    properties, with a Gross Leasable Area of                                   <script>
+                                                            document.write(numberWithCommas('{{ Total_abr | safe }}'))</script> square meters, distributed
+                    in 40 cities across {{ Presencia_entidades }} Mexican States, as shown below:</p>
                 <div class="col-md-12 text-center mb-20">
                     <img src="{% static 'images/contenido/mapa2.png' %}" alt="" class="wow fadeInUp" width="80%">
                 </div>
             </div>
             <div class="row clearfix mb-20">
-
-            <div>
-                    <div class="col-md-12 " >
-
-                        <ul class="sponsors-carousel owl-carousel owl-theme owl-dots-none owl-nav-none" style="background-color: #1F478D;">
+                <div>
+                    <div class="col-md-12">
+                        <ul class="sponsors-carousel owl-carousel owl-theme owl-dots-none owl-nav-none"
+                            style="background-color: #1F478D;">
                             <li class="slide-item text-center" style="color: white;">
-                               <b> 19 Estados</b>
-                            </li><li class="slide-item text-center" style="color: white; font-size:14px;">
-                            <b>100 Propiedades</b>
-                        </li><li class="slide-item text-center" style="color: white; font-size:14px;">
-                            <b> 372,793 m<sup>2</sup> de ABR</b>
-                        </li><li class="slide-item text-center" style="color: white; font-size:14px;">
-                            <b>100% de Ocupación</b>
-                        </li><li class="slide-item text-center" style="color: white; font-size:14px;">
-                            <b>Ps.648 mills. de Renta Anualizada</b>
-                        </li><li class="slide-item text-center" style="color: white; font-size:14px;">
-                            <b>6.2 Años de Vencimiento</b>
-
+                                <b>{{ Presencia_entidades }} {% trans 'States' %}</b>
+                            </li>
+                            <li class="slide-item text-center" style="color: white; font-size:14px;">
+                                <b>{{ Total_propiedades }} {% trans 'Properties' %}</b>
+                            </li>
+                            <li class="slide-item text-center" style="color: white; font-size:14px;">
+                                <b>
+                                    <script>
+                                        document.write(numberWithCommas('{{ Total_abr | safe }}'))</script>
+                                    m<sup>2</sup> GLA</b>
+                            </li>
+                            <li class="slide-item text-center" style="color: white; font-size:14px;">
+                                <b>{{ Ocupacion }}% {% trans 'Occupancy' %}</b>
+                            </li>
+                            <li class="slide-item text-center" style="color: white; font-size:14px;">
+                                <b>${{ Rentas_anualizadas }} million pesos of {% trans 'Annualized Rent' %}</b>
+                            </li>
+                            <li class="slide-item text-center" style="color: white; font-size:14px;">
+                                <b>{{ Annos_vencimiento }} {% trans 'Years to Contracts Maturity' %}</b>
                             </li>
                         </ul>
                     </div>
                 </div>
 
             </div>
-            <p>*Incluye a los estados de Baja California, Baja California Sur, Estado de México,
-            Quintana Roo, Sonora, Sinaloa, Durango, Morelos, Nayarit, Coahuila, Guanajuato, Veracruz y Guerrero.</p>
+
             <!--<div class="row clearfix">
                 <p>Al 31 de diciembre de 2018 nuestro portafolio este compuesto por 92
                     propiedades con un total de 285,758 metros cuadrados de Área Bruta Rentable

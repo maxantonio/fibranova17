@@ -139,6 +139,8 @@ var chart = AmCharts.makeChart( "chart_distribuciones", {
     }
 } );
 
+
+
 // var chart2 = AmCharts.makeChart("chart_distribuciones", {
 //     "type": "serial",
 //     "theme": "none",

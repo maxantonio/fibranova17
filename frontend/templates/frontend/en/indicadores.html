@@ -7,30 +7,33 @@
 
             <div class="row">
                 <div class="col-md-3 col-sm-6">
-                    <div class="text-center title">Propiedades por Segmento</div>
+                    <div class="text-center title">Properties by Segment</div>
                     <div id="pie_1" class="chartpie"></div>
                 </div>
                 <div class="col-md-3 col-sm-6">
-                    <div class="text-center title">Diversificación Geográfica</div>
+                    <div class="text-center title">Geographic Diversification</div>
 
                     <div id="pie_2" class="chartpie"></div>
 
                 </div>
                 <div class="col-md-3 col-sm-6">
-                    <div class="text-center title">Nivel de Ocupación</div>
+                    <div class="text-center title">Occupancy</div>
                     <div id="pie_3" class="chartpie">
 
                     </div>
 
                 </div>
                 <div class="col-md-3 col-sm-6">
-                    <div class="text-center title">Ingresos por Moneda</div>
+                    <div class="text-center title">Revenue by Currency</div>
                     <div id="pie_4" class="chartpie"></div>
                 </div>
             </div>
-            <div class="row text-center">
-              <br>
-                <img src="{% static 'images/grafico.png' %}" alt="" width="70%" class="mt-2 wow fadeInUpBig">
+            <div class="row text-center" style="margin-top: 50px;">
+                <div class="sec-title centered wow fadeInUp">
+                    <h2>Maturities of staggered leases</h2>
+                </div>
+                <div id="chart_5" class="char-fundamentales chartdiv" style="width: 80%; height: 300px; margin: 0 auto;" ></div>
+                {#                <img src="{% static 'images/grafico.png' %}" alt="" width="70%" class="mt-2 wow fadeInUpBig">#}
             </div>
         </div>
     </section>
@@ -38,6 +41,7 @@
 
 {% block otherscripts %}
     <script src="{% static 'js/amCharts/amcharts.js' %}"></script>
+    <script src="{% static 'js/amCharts/serial.js' %}"></script>
     <script src="{% static 'js/amCharts/pie.js' %}"></script>
     <script src="{% static 'js/amCharts/contenido/indicadores.js' %}?v=1.02"></script>
     <script type="text/javascript">
