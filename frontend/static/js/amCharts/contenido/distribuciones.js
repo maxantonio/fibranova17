@@ -1,3 +1,44 @@
+if (locale == "es") {
+    var sf_4T17 = "4T17";
+    var sf_1T18 = "1T18";
+    var sf_2T18 = "2T18";
+    var sf_3T18 = "3T18";
+    var sf_4T18 = "4T18";
+    var sf_1T19 = "1T19";
+    var sf_2T19 = "2T19";
+    var sf_3T19 = "3T19";
+    var sf_4T19 = "4T19";
+    var sf_1T20 = "1T20";
+    var sf_2T20 = "2T20";
+    var sf_3T20 = "3T20";
+    var sf_4T20 = "4T20";
+    var sf_1T21 = "1T21";
+    var sf_2T21 = "2T21";
+    var sf_precio = "Precio";
+    var sf_distribucion = "Distribución";
+    var sf_enel = " en el ";
+} else {
+    var sf_2T20 = "2Q20";
+    var sf_3T20 = "3Q20";
+    var sf_4T20 = "4Q20";
+    var sf_1T21 = "1Q21";
+    var sf_2T21 = "2Q21";
+    var sf_4T17 = "4Q17";
+    var sf_1T18 = "1Q18";
+    var sf_2T18 = "2Q18";
+    var sf_3T18 = "3Q18";
+    var sf_4T18 = "4Q18";
+    var sf_1T19 = "1Q19";
+    var sf_2T19 = "2Q19";
+    var sf_3T19 = "3Q19";
+    var sf_4T19 = "4Q19";
+    var sf_1T20 = "1Q20";
+    var sf_precio = "Price";
+    var sf_distribucion = "Distribution";
+    var sf_enel = " in the ";
+}
+
+
 var chart = AmCharts.makeChart( "chart_distribuciones", {
     "type": "serial",
     "addClassNames": true,
@@ -21,65 +62,65 @@ var chart = AmCharts.makeChart( "chart_distribuciones", {
 
     "dataProvider": [
         {
-        "trimestre": "4T17",
+        "trimestre": sf_4T17,
         "Precio": 19.50,
         "Distribución": 0.1990
     }, {
-        "trimestre": "1T18",
+        "trimestre": sf_1T18,
         "Precio": 19.50,
         "Distribución": 0.3673
     }, {
-        "trimestre": "2T18",
+        "trimestre": sf_2T18,
         "Precio": 19.50,
         "Distribución": 0.3737
     }, {
-        "trimestre": "3T18",
+        "trimestre": sf_3T18,
         "Precio": 19.50,
         "Distribución": 0.3814
     }, {
-        "trimestre": "4T18",
+        "trimestre": sf_4T18,
         "Precio": 19.50,
         "Distribución": 0.3913
     }, {
-        "trimestre": "1T19",
+        "trimestre": sf_1T19,
         "Precio": 19.50,
         "Distribución": 0.3941
     }, {
-        "trimestre": "2T19",
+        "trimestre": sf_2T19,
         "Precio": 19.50,
         "Distribución": 0.3980
     }, {
-        "trimestre": "3T19",
+        "trimestre": sf_3T19,
         "Precio": 19.50,
         "Distribución": 0.4167
     }, {
-        "trimestre": "4T19",
+        "trimestre": sf_4T19,
         "Precio": 19.60,
         "Distribución": 0.4193
     }, {
-        "trimestre": "1T20",
+        "trimestre": sf_1T20,
         "Precio": 19.50,
         "Distribución": 0.4333
     }, {
-        "trimestre": "2T20",
+        "trimestre": sf_2T20,
         "Precio": 18.99,
         "Distribución": 0.4411
     }, {
-        "trimestre": "3T20",
+        "trimestre": sf_3T20,
         "Precio": 18.30,
         "Distribución": 0.4695
     }, {
-        "trimestre": "4T20",
+        "trimestre": sf_4T20,
         "Precio": 18.50,
         "Distribución": 0.4680,
         "dashLengthLine": 5
     }, {
-        "trimestre": "1T21",
+        "trimestre": sf_1T21,
         "Precio": 21.90,
         "Distribución": 0.4623,
         "dashLengthLine": 5
     }, {
-        "trimestre": "2T21",
+        "trimestre": sf_2T21,
         "Precio": 21.0,
         "Distribución": 0.4623,
         "dashLengthColumn": 5,
@@ -103,16 +144,16 @@ var chart = AmCharts.makeChart( "chart_distribuciones", {
     "startDuration": 1,
     "graphs": [ {
         "alphaField": "alpha",
-        "balloonText": "<span style='font-size:12px;'>[[title]] en el [[category]]:<br><span style='font-size:20px;'>[[value]]</span> [[additional]]</span>",
+        "balloonText": "<span style='font-size:12px;'>[[title]]" + sf_enel + "[[category]]:<br><span style='font-size:20px;'>[[value]]</span> [[additional]]</span>",
         "fillAlphas": 1,
-        "title": "Precio",
+        "title": sf_precio,
         "type": "column",
         "valueField": "Precio",
         "dashLengthField": "dashLengthColumn",
         "valueAxis":"barAxis"
     }, {
         "id": "graph2",
-        "balloonText": "<span style='font-size:12px;'>[[title]] en el [[category]]:<br><span style='font-size:20px;'>[[value]]</span> [[additional]]</span>",
+        "balloonText": "<span style='font-size:12px;'>[[title]]" + sf_enel + "[[category]]:<br><span style='font-size:20px;'>[[value]]</span> [[additional]]</span>",
         "bullet": "round",
         "lineThickness": 3,
         "bulletSize": 7,
@@ -122,7 +163,7 @@ var chart = AmCharts.makeChart( "chart_distribuciones", {
         "bulletBorderThickness": 3,
         "fillAlphas": 0,
         "lineAlpha": 1,
-        "title": "Distribución",
+        "title": sf_distribucion,
         "valueField": "Distribución",
         "dashLengthField": "dashLengthLine",
         "valueAxis": "lineAxis"

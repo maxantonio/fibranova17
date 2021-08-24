@@ -1,3 +1,39 @@
+if (locale == "es") {
+    var sf_industrial = "Industrial";
+    var sf_educacional = "Educacional";
+    var sf_comercio = "Comercio";
+    var sf_logistica = "Logística";
+    var sf_centros = "Centros Ingeniería";
+    var sf_agro = "Agroindustrial";
+    var sf_chih = "Chih";
+    var sf_mich = "Mich";
+    var sf_jal = "Jal";
+    var sf_qro = "Qro";
+    var sf_nl = "NL";
+    var sf_tamps = "Tamps";
+    var sf_otros = "otros";
+    var sf_ocupado = "Ocupado";
+    var sf_disponible = "Disponible";
+    var sf_renta = "Renta Anualizada"
+} else {
+  var sf_industrial = "Industrial";
+  var sf_educacional = "Educational";
+  var sf_comercio = "Retail";
+  var sf_logistica = "Logistics";
+  var sf_centros = "Offices";
+  var sf_agro = "Agroindustrial";
+  var sf_chih = "CHH";
+  var sf_mich = "MIC";
+  var sf_jal = "JAL";
+  var sf_qro = "QUE";
+  var sf_nl = "NLE";
+  var sf_tamps = "TAM";
+  var sf_otros = "Others";
+  var sf_ocupado = "Leased";
+  var sf_disponible = "Vacant";
+  var sf_renta = "Annualized Rent"
+}
+
 var chart = AmCharts.makeChart("pie_1", {
     "type": "pie",
     "theme": "none",
@@ -6,22 +42,22 @@ var chart = AmCharts.makeChart("pie_1", {
         valueText: '' //or \n if you want new lines
     },
     "dataProvider": [{
-        "country": "Industrial",
+        "country": sf_industrial,
         "litres": 48
     }, {
-        "country": "Educativo",
+        "country": sf_educacional,
         "litres": 12
     }, {
-        "country": "Comercio",
+        "country": sf_comercio,
         "litres": 4
     }, {
-        "country": "Logística",
+        "country": sf_logistica,
         "litres": 5
     }, {
-        "country": "Centros Ingeniería",
+        "country": sf_centros,
         "litres": 10
     }, {
-        "country": "Agroindustrial",
+        "country": sf_agro,
         "litres": 20
     }],
     "valueField": "litres",
@@ -48,26 +84,26 @@ var chart = AmCharts.makeChart("pie_2", {
         valueText: '' //or \n if you want new lines
     },
     "dataProvider": [{
-        "country": "Chih",
+        "country": sf_chih,
 
         "litres": 66
     }, {
-        "country": "Mich",
+        "country": sf_mich,
         "litres": 10
     }, {
-        "country": "Jal",
+        "country": sf_jal,
         "litres":5
     }, {
-        "country": "Qro",
+        "country": sf_qro,
         "litres": 9
     }, {
-        "country": "NL",
+        "country": sf_nl,
         "litres": 3
     }, {
-        "country": "Tamps",
+        "country": sf_tamps,
         "litres": 3
     }, {
-        "country": "Otros",
+        "country": sf_otros,
         "litres": 4
     }],
     "valueField": "litres",
@@ -95,11 +131,11 @@ var chart = AmCharts.makeChart("pie_3", {
         "align": "center"
     },
     "dataProvider": [{
-        "country": "Ocupado",
+        "country": sf_ocupado,
 
         "litres": 100
     }, {
-        "country": "Disponible",
+        "country": sf_disponible,
         "litres": 0
     }],
     "valueField": "litres",
@@ -192,7 +228,7 @@ var chart5 = AmCharts.makeChart("chart_5", {
             "fillAlphas": 1,
             "id": "AmGraph-1",
             "lineAlpha": 0.2,
-            "title": "Renta anualizada",
+            "title": sf_renta,
             "type": "column",
             "valueField": "sf_activo",
             "labelText": "[[sf_activo_d]]"
