@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-09 11:24-0400\n"
+"POT-Creation-Date: 2021-08-25 17:59-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,30 +18,169 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: .\fibranova\settings.py:136
+#: .\fibranova\settings.py:137
 msgid "Spanish"
 msgstr ""
 
-#: .\fibranova\settings.py:137
+#: .\fibranova\settings.py:138
 msgid "English"
 msgstr ""
 
-#: .\frontend\templates\frontend\es\perfil\presencia_geografica.html:24
+#: .\frontend\templates\frontend\en\perfil\presencia_geografica.html:23
+msgid "States"
+msgstr ""
+
+#: .\frontend\templates\frontend\en\perfil\presencia_geografica.html:26
+msgid "Properties"
+msgstr ""
+
+#: .\frontend\templates\frontend\en\perfil\presencia_geografica.html:35
+msgid "Occupancy"
+msgstr ""
+
+#: .\frontend\templates\frontend\en\perfil\presencia_geografica.html:38
+msgid "Annualized Rent"
+msgstr ""
+
+#: .\frontend\templates\frontend\en\perfil\presencia_geografica.html:41
+msgid "Years to Contracts Maturity"
+msgstr ""
+
+#: .\frontend\templates\frontend\es\perfil\presencia_geografica.html:25
 msgid "Estados"
 msgstr ""
 
-#: .\frontend\templates\frontend\es\perfil\presencia_geografica.html:27
+#: .\frontend\templates\frontend\es\perfil\presencia_geografica.html:28
+#: .\frontend\templates\partials\menu.html:13
 msgid "Propiedades"
-msgstr ""
+msgstr "Properties"
 
-#: .\frontend\templates\frontend\es\perfil\presencia_geografica.html:33
+#: .\frontend\templates\frontend\es\perfil\presencia_geografica.html:37
 msgid "de Ocupación"
 msgstr ""
 
-#: .\frontend\templates\frontend\es\perfil\presencia_geografica.html:36
+#: .\frontend\templates\frontend\es\perfil\presencia_geografica.html:40
 msgid "de Renta Anualizada"
 msgstr ""
 
-#: .\frontend\templates\frontend\es\perfil\presencia_geografica.html:39
+#: .\frontend\templates\frontend\es\perfil\presencia_geografica.html:43
 msgid "Años de Vencimiento"
 msgstr ""
+
+#: .\frontend\templates\partials\menu.html:3
+msgid "Perfil"
+msgstr "Profile"
+
+#: .\frontend\templates\partials\menu.html:5
+msgid "Nosotros"
+msgstr "About Us"
+
+#: .\frontend\templates\partials\menu.html:6
+msgid "Presencia Geográfica"
+msgstr "Our Presence"
+
+#: .\frontend\templates\partials\menu.html:7
+msgid "Historia"
+msgstr "Our Journey"
+
+#: .\frontend\templates\partials\menu.html:8
+msgid "Estrategia"
+msgstr "Our Business Strategy"
+
+#: .\frontend\templates\partials\menu.html:11
+msgid "Portafolio"
+msgstr "Portfolio"
+
+#: .\frontend\templates\partials\menu.html:14
+msgid "Indicadores Operativos"
+msgstr "Operating Metrics"
+
+#: .\frontend\templates\partials\menu.html:18
+msgid "Noticias"
+msgstr "Press releases"
+
+#: .\frontend\templates\partials\menu.html:19
+msgid "Inversionistas"
+msgstr "Investors"
+
+#: .\frontend\templates\partials\menu.html:21
+msgid "Reportes Trimestrales"
+msgstr "Quarterly Reports"
+
+#: .\frontend\templates\partials\menu.html:24
+msgid "Fundamentales"
+msgstr ""
+
+#: .\frontend\templates\partials\menu.html:25
+msgid "Eventos Relevantes"
+msgstr ""
+
+#: .\frontend\templates\partials\menu.html:26
+msgid ""
+"Prospectos <span style=\"text-transform: lowercase\">y</span> Suplementos"
+msgstr ""
+"Prospectuses  <span style=\"text-transform: lowercase\">&</span> Supplements"
+
+#: .\frontend\templates\partials\menu.html:27
+msgid "Cómo Invertir"
+msgstr ""
+
+#: .\frontend\templates\partials\menu.html:28
+msgid "Preguntas Frecuentes"
+msgstr "FAQ<span style=\"text-transform: lowercase\">s</span>"
+
+#: .\frontend\templates\partials\menu.html:38
+msgid "Gobierno <br>Corporativo"
+msgstr "Corporate <br>Governance"
+
+#: .\frontend\templates\partials\menu.html:40
+msgid "Directivos"
+msgstr "Executive Officers"
+
+#: .\frontend\templates\partials\menu.html:41
+msgid "Comités"
+msgstr "Committees"
+
+#: .\frontend\templates\partials\menu.html:42
+msgid "Auditor Externo"
+msgstr "Independent Auditor"
+
+#: .\frontend\templates\partials\menu.html:43
+msgid "Asambleas"
+msgstr "Meetings"
+
+#: .\frontend\templates\partials\menu.html:48
+msgid "Información<br> Bursátil"
+msgstr "Stock<br> Information"
+
+#: .\frontend\templates\partials\menu.html:50
+msgid "Distribuciones"
+msgstr "Distributions"
+
+#: .\frontend\templates\partials\menu.html:51
+msgid ""
+"Comportamiento <span style=\"text-transform: lowercase\">de</span> <span "
+"style=\"text-transform: lowercase\">la</span> acción"
+msgstr ""
+
+#: .\frontend\templates\partials\menu.html:53
+msgid "Precios Históricos"
+msgstr "Historical Prices"
+
+#: .\frontend\templates\partials\menu.html:54
+msgid ""
+"Calculadora <span style=\"text-transform: lowercase\">de</span> rendimientos"
+msgstr ""
+"Performance Calculator"
+
+#: .\frontend\templates\partials\menu.html:55
+msgid "Cobertura <span style=\"text-transform: lowercase\">de</span> Analistas"
+msgstr ""
+
+#: .\frontend\templates\partials\menu.html:58
+msgid "ESG"
+msgstr ""
+
+#: .\frontend\templates\partials\menu.html:59
+msgid "Contacto"
+msgstr "Contact us"

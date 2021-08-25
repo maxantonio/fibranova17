@@ -1,31 +1,31 @@
-{% load change_languaje %}
+{% load change_languaje i18n %}
 
-<li class="current dropdown"><a href="#">Perfil</a>
+<li class="current dropdown"><a href="#">{% trans 'Perfil' %}</a>
     <ul>
-        <li><a href="{% url 'frontend:perfil-nosotros' %}">Nosotros</a></li>
-        <li><a href="{% url 'frontend:perfil-presencia-geografica' %}">Presencia Geográfica</a></li>
-        <li><a href="{% url 'frontend:perfil-historia' %}">Historia</a></li>
-        <li><a href="{% url 'frontend:perfil-estrategia' %}">Estrategia</a></li>
+        <li><a href="{% url 'frontend:perfil-nosotros' %}">{% trans 'Nosotros' %}</a></li>
+        <li><a href="{% url 'frontend:perfil-presencia-geografica' %}">{% trans 'Presencia Geográfica' %}</a></li>
+        <li><a href="{% url 'frontend:perfil-historia' %}">{% trans 'Historia' %}</a></li>
+        <li><a href="{% url 'frontend:perfil-estrategia' %}">{% trans 'Estrategia' %}</a></li>
     </ul>
 </li>
-<li class="dropdown"><a href="#">Portafolio</a>
+<li class="dropdown"><a href="#">{% trans 'Portafolio' %}</a>
     <ul>
-        <li><a href="{% url 'frontend:portafolio' tab='todos' %}">Propiedades</a></li>
-        <li><a href="{% url 'frontend:indicadores-operativos' %}">Indicadores Operativos</a></li>
+        <li><a href="{% url 'frontend:portafolio' tab='todos' %}">{% trans 'Propiedades' %}</a></li>
+        <li><a href="{% url 'frontend:indicadores-operativos' %}">{% trans 'Indicadores Operativos' %}</a></li>
     </ul>
 </li>
 
-<li><a href="{% url 'frontend:noticias' %}">Noticias</a></li>
-<li class="dropdown"><a href="#">Inversionistas</a>
+<li><a href="{% url 'frontend:noticias' %}">{% trans 'Noticias' %}</a></li>
+<li class="dropdown"><a href="#">{% trans 'Inversionistas' %}</a>
     <ul>
-        <li><a href="{% url 'frontend:inversionistas-reportes-trimestrales' %}">Reportes Trimestrales</a></li>
+        <li><a href="{% url 'frontend:inversionistas-reportes-trimestrales' %}">{% trans 'Reportes Trimestrales' %}</a>
+        </li>
         {#        <li><a href="{% url 'frontend:inversionistas-reportes-anuales' %}">Reportes Anuales</a></li>#}
-        <li><a href="{% url 'frontend:inversionistas-fundamentales' %}">Fundamentales</a></li>
-        <li><a href="{% url 'frontend:inversionistas-eventos-relevantes' %}">Eventos Relevantes</a></li>
-        <li><a href="{% url 'frontend:gobierno-prospectos-suplementos' %}">Prospectos <span
-                style="text-transform: lowercase">y</span> Suplementos</a></li>
-        <li><a href="{% url 'frontend:como-invertir' %}">Cómo Invertir</a></li>
-        <li><a href="{% url 'frontend:inversionistas-faqs' %}">Preguntas Frecuentes</a></li>
+        <li><a href="{% url 'frontend:inversionistas-fundamentales' %}">{% trans 'Fundamentales' %}</a></li>
+        <li><a href="{% url 'frontend:inversionistas-eventos-relevantes' %}">{% trans 'Eventos Relevantes' %}</a></li>
+        <li><a href="{% url 'frontend:gobierno-prospectos-suplementos' %}">{% trans 'Prospectos <span style="text-transform: lowercase">y</span> Suplementos' %}</a></li>
+        <li><a href="{% url 'frontend:como-invertir' %}">{% trans 'Cómo Invertir' %}</a></li>
+        <li><a href="{% url 'frontend:inversionistas-faqs' %}">{% trans 'Preguntas Frecuentes' %}</a></li>
     </ul>
 </li>
 {#<li class="dropdown"><a href="#">Información Bursátil</a>#}
@@ -35,31 +35,28 @@
 {#        <li><a href="{% url 'frontend:bursatil-distribuciones' %}">Distribuciones</a></li>#}
 {#    </ul>#}
 {#</li>#}
-<li class="dropdown"><a href="#">Gobierno <br>Corporativo</a>
+<li class="dropdown"><a href="#">{% trans 'Gobierno <br>Corporativo' %}</a>
     <ul>
-        <li><a href="{% url 'frontend:gobierno-directivos' %}">Directivos</a></li>
-        <li><a href="{% url 'frontend:gobierno-comites' %}">Comités</a></li>
-        <li><a href="{% url 'frontend:gobierno-auditor-externo' %}">Auditor Externo</a></li>
-        <li><a href="{% url 'frontend:gobierno-asambleas' %}">Asambleas</a></li>
+        <li><a href="{% url 'frontend:gobierno-directivos' %}">{% trans 'Directivos' %}</a></li>
+        <li><a href="{% url 'frontend:gobierno-comites' %}">{% trans 'Comités' %}</a></li>
+        <li><a href="{% url 'frontend:gobierno-auditor-externo' %}">{% trans 'Auditor Externo' %}</a></li>
+        <li><a href="{% url 'frontend:gobierno-asambleas' %}">{% trans 'Asambleas' %}</a></li>
         {#        <li><a href="{% url 'frontend:gobierno-codigo-etica' %}">Código <span style="text-transform: lowercase">d</span>e#}
         {#            ética</a></li>#}
     </ul>
 </li>
-<li class="dropdown"><a href="#">Información<br> Bursátil</a>
+<li class="dropdown"><a href="#">{% trans 'Información<br> Bursátil' %}</a>
     <ul>
-        <li><a href="{% url 'frontend:bursatil-distribuciones' %}">Distribuciones</a></li>
-        <li><a href="{% url 'frontend:bursatil-cotizacion' %}">Comportamiento <span
-                style="text-transform: lowercase">d</span>e <span style="text-transform: lowercase">l</span>a acción</a>
+        <li><a href="{% url 'frontend:bursatil-distribuciones' %}">{% trans 'Distribuciones' %}</a></li>
+        <li><a href="{% url 'frontend:bursatil-cotizacion' %}">{% trans 'Comportamiento <span style="text-transform: lowercase">de</span> <span style="text-transform: lowercase">la</span> acción' %}</a>
         </li>
-        <li><a href="{% url 'frontend:bursatil-precio-historico' %}">Precios Históricos</a></li>
-        <li><a href="{% url 'frontend:bursatil-calculadora' %}">Calculadora <span
-                style="text-transform: lowercase">d</span>e rendimientos</a></li>
-        <li><a href="{% url 'frontend:bursatil-cobertura-analistas' %}">Cobertura <span
-                style="text-transform: lowercase">d</span>e Analistas</a></li>
+        <li><a href="{% url 'frontend:bursatil-precio-historico' %}">{% trans 'Precios Históricos' %}</a></li>
+        <li><a href="{% url 'frontend:bursatil-calculadora' %}">{% trans 'Calculadora <span style="text-transform: lowercase">de</span> rendimientos' %}</a></li>
+        <li><a href="{% url 'frontend:bursatil-cobertura-analistas' %}">{% trans 'Cobertura <span style="text-transform: lowercase">de</span> Analistas' %}</a></li>
     </ul>
 </li>
-<li><a href="{% url 'frontend:ESG' %}">ESG</a></li>
-<li><a href="{% url 'frontend:contacto' %}">Contacto</a></li>
+<li><a href="{% url 'frontend:ESG' %}">{% trans 'ESG' %}</a></li>
+<li><a href="{% url 'frontend:contacto' %}">{% trans 'Contacto' %}</a></li>
 {% if request.LANGUAGE_CODE == 'en' %}
     <li class="nav-item nav-item-anim-icon">
         <a class="nav-link pl-0" href="{% change_lang 'es' %}">
