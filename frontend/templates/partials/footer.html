@@ -1,4 +1,4 @@
-{% load static %}
+{% load static i18n %}
 <div class="theme-bg pt-5">
 <section class="">
     <div class="container-fluid container-relative">
@@ -6,7 +6,7 @@
             <div class="col-12 col-lg-6 col-md-10 p-5">
                 <div class="p-5">
                 <div class="sec-title sec-title wow fadeInLeft" style="margin-bottom: 20px;">
-                    <h2>Informate más</h2>
+                    <h2>{% trans 'Informate más' %}</h2>
                 </div>
                 <div class="panel-group accordion-event accordion-style-03 margin-4-rem-bottom lg-margin-2-rem-bottom">
                     <!-- start accordion item -->
@@ -15,7 +15,7 @@
                         <div class="panel-heading">
                             <a class="accordion-toggle" href="{% url 'frontend:perfil-nosotros' %}" aria-expanded="false">
                                 <div class="boton-info1">
-                                    <span>Conoce más de Fibra Nova </span>
+                                    <span>{% trans 'Conoce más de Fibra Nova' %}</span>
                                     <i class="indicator fa fa-angle-right text-tussock icon-extra-small"></i>
                                 </div>
                             </a>
@@ -30,7 +30,7 @@
                             <a class="accordion-toggle collapsed" href="{% url 'frontend:portafolio' tab='manufactura' %}"
                                aria-expanded="false">
                                 <div class="boton-info1">
-                                    <span>Conoce más del portafolio</span>
+                                    <span>{% trans 'Conoce más del portafolio' %}</span>
                                     <i class="indicator fa fa-angle-right text-tussock icon-extra-small"></i>
                                 </div>
                             </a>
@@ -45,7 +45,7 @@
                             <a class="accordion-toggle collapsed" href="{% url 'frontend:como-invertir' %}"
                                aria-expanded="false">
                                 <div class="boton-info1">
-                                    <span>Conoce cómo invertir</span>
+                                    <span>{% trans 'Conoce cómo invertir' %}</span>
                                     <i class="indicator fa fa-angle-right text-tussock icon-extra-small"></i>
                                 </div>
                             </a>
@@ -62,7 +62,7 @@
                     <img src="{% static 'images/main-slider/slider2.jpg' %}" class="overflow-hidden"
                          data-no-retina="">
                     <div class="texto-redes mt-2">
-                        <h2>Síguenos en nuestras redes sociales </h2>
+                        <h2>{% trans 'Síguenos en nuestras redes sociales' %} </h2>
                         <div class="mt-2">
                         <a target="_blank" class="index-social-link" href="https://twitter.com/NovaFibra">
                             <i class="fa fa-twitter fa-3x"></i>
@@ -88,11 +88,8 @@
 </section>
 </div>
 <footer class="main-footer">
-
     <div class="ph-50">
         <div class="row clearfix justify-content-center">
-
-
             <!--Footer Column-->
             <div class="footer-column col-md-3 col-sm-6 col-xs-12">
                 <div class="footer-widget logo-widget">
@@ -102,13 +99,7 @@
                                 alt=""></a></figure>
                     </div>
                     <div class="widget-content">
-                        <div class="text">Fibra Nova es un Fideicomiso de Inversión en Bienes
-                            raíces (FIBRA), su objetivo es el de adquirir, administrar y desarrollar
-                            un portafolio de bienes inmuebles de alta calidad en México, contando en
-                            la actualidad con más de 372 mil m<sup>2</sup> en sus 100 propiedades distribuidas
-                            en 19 entidades federativas del país
-                        </div>
-
+                        <div class="text">{% trans 'Fibra Nova es un Fideicomiso de Inversión en Bienes raíces (FIBRA), su objetivo es el de adquirir, administrar y desarrollar un portafolio de bienes inmuebles de alta calidad en México, contando en la actualidad con más de 372 mil m<sup>2</sup> en sus 100 propiedades distribuidas en 19 entidades federativas del país' %}</div>
                     </div>
                 </div>
             </div>
@@ -116,15 +107,14 @@
             <!--Footer Column-->
             <div class="footer-column col-md-3 col-sm-6 col-xs-12">
                 <div class="footer-widget links-widget">
-                    <h2>Enlaces sugeridos</h2>
+                    <h2>{% trans 'Enlaces sugeridos' %}</h2>
                     <div class="widget-content">
                         <ul class="list">
-                            <li><a href="{% url 'frontend:perfil-historia' %}">Historia</a></li>
-                            <li><a href="{% url 'frontend:portafolio' tab='todos' %}">Portafolio</a></li>
+                            <li><a href="{% url 'frontend:perfil-historia' %}">{% trans 'Historia' %}</a></li>
+                            <li><a href="{% url 'frontend:portafolio' tab='todos' %}">{% trans 'Portafolio' %}</a></li>
                             {#                                    <li><a href="{% url '' %}">Inversionistas</a></li>#}
-                            <li><a href="{% url 'frontend:inversionistas-eventos-relevantes' %}">Eventos
-                                Relevantes</a></li>
-                            <li><a href="{% url 'frontend:gobierno-directivos' %}">Directivos</a></li>
+                            <li><a href="{% url 'frontend:inversionistas-eventos-relevantes' %}">{% trans 'Eventos Relevantes' %}</a></li>
+                            <li><a href="{% url 'frontend:gobierno-directivos' %}">{% trans 'Directivos' %}</a></li>
                         </ul>
                     </div>
                 </div>
@@ -156,10 +146,10 @@
             <!--Footer Column-->
             <div class="footer-column col-md-3 col-sm-6 col-xs-12">
                 <div class="footer-widget info-widget">
-                    <h2>Contacto</h2>
+                    <h2>{% trans 'Contacto' %}</h2>
                     <div class="widget-content">
                         <ul class="list-style-one">
-                          <li style="font-size: 19px !important;">Inversionistas:</li>
+                          <li style="font-size: 19px !important;">{% trans 'Inversionistas' %}:</li>
                             <li style="margin-top:-5px;"><span class="icon flaticon-user"></span>Luis Carlos Piñón Reza</li>
                             <li style="margin-top:-12px;"><span class="icon flaticon-envelope"></span>
                               <a class="tc-white" href="mailto:lpinon@fibra-nova.com">lpinon@fibra-nova.com</a>
@@ -167,7 +157,7 @@
                             <li style="margin-top:-12px;"><span class="icon flaticon-envelope"></span>
                               <a class="tc-white"href="mailto:investor@fibra-nova.com">investor@fibra-nova.com</a>
                             </li>
-                            <li style="font-size: 19px; !important">Asuntos inmobiliarios:</li>
+                            <li style="font-size: 19px; !important">{% trans 'Asuntos inmobiliarios' %}:</li>
                             <li style="margin-top:-5px;"><span class="icon flaticon-user"></span>Guillermo Medrano</li>
                             <li style="margin-top:-12px;"><span class="icon flaticon-envelope"></span>
                               <a class="tc-white"href="mailto:gmedrano@fibra-nova.com">gmedrano@fibra-nova.com</a>
@@ -176,13 +166,11 @@
                             <li style="margin-top:-12px;"><span class="icon flaticon-envelope"></span>
                               <a class="tc-white"href="mailto:lgarza@fibra-nova.com">lgarza@fibra-nova.com</a>
                             </li>
-                            <li style="font-size: 19px; !important">Clientes:</li>
+                            <li style="font-size: 19px; !important">{% trans 'Clientes' %}:</li>
                             <li style="margin-top:-5px;"><span class="icon flaticon-user"></span>Gilberto Delgado</li>
                             <li style="margin-top:-12px;"><span class="icon flaticon-envelope"></span>
                               <a class="tc-white"href="mailto:gdelgado@fibra-nova.comm">gdelgado@fibra-nova.com</a>
                             </li>
-
-
                             {#<li><span class="icon flaticon-line-chart"></span>Director de Finanzas yAdministración</li>#}
                             {#<li><span class="icon flaticon-phone-call"></span>+880 1723 801 729</li>#}
                         </ul>
@@ -198,15 +186,15 @@
             </div>
             <div class="footer-column col-md-3 col-sm-6 col-xs-12">
                 <div class="footer-widget info-widget logo-widget">
-                    <h2 >Mantente informado</h2>
+                    <h2>{% trans 'Mantente informado' %}</h2>
                     <div class="text">
-                        Suscríbete para recibir información relacionada con FNOVA
+                        {% trans 'Suscríbete para recibir información relacionada con FNOVA' %}
                     </div>
                 <div class="emailed-form">
                     <form method="post" action="{% url 'frontend:suscribir' %}">
                         {% csrf_token %}
                         <div class="form-group">
-                            <input type="email" name="email" value="" placeholder="Correo electrónico"
+                            <input type="email" name="email" value="" placeholder="{% trans 'Correo electrónico' %}"
                                    required>
                             <button type="submit" class="theme-btn"><span
                                     class="fa fa-angle-right"></span></button>
@@ -224,8 +212,8 @@
         <div class="auto-container">
             <div class="row clearfix">
                 <div class="col-md-6 col-sm-6 col-xs-12">
-                    <div class="copyright">&copy; 2021 Fibra Nova -
-                        Diseñado y generado por <a href="http://www.irdesign.mx/" target="_blank" class="theme_color">IRDesign</a>
+                    <div class="copyright">&copy;
+                        <script !src="">document.write(new Date().getFullYear())</script> {% trans 'Fibra Nova - Diseñado y generado por' %} <a href="http://www.irdesign.mx/" target="_blank" class="theme_color">IRDesign</a>
                     </div>
                 </div>
             </div>

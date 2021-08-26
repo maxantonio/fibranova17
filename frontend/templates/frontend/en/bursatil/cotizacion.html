@@ -7,9 +7,9 @@
                 <h1>{{ title }}</h1>
                 <div id="chartdiv3" class="mt-5 mb-3" style="width:100%; min-height:600px;">
                   <div class="text-center">
-                    <img  src="{% static 'images/PreLoader-Fibra-Nova.gif' %}" ></div>
+                    <img src="{% static 'images/PreLoader-Fibra-Nova.gif' %}"></div>
                 </div>
-
+                <small>* Information with at least 20 minutes delay, for reference purposes only </small>
             </div>
             <br><br>
         </div>
@@ -20,9 +20,8 @@
     <script src="{% static 'js/amCharts/serial.js' %}"></script>
     <script src="{% static 'js/amCharts/amstock.js' %}"></script>
     <script src="{% static 'js/jquery-ui-1.11.0.min.js' %}"></script>
-    <script src="{% static 'js/amCharts/themes/iredge.js' %}"></script>
-    <script src="{% static 'js/amCharts/es.js' %}"></script>
-    <script src="{% static 'js/amCharts/contenido/dashboard.js' %}?v=1.0.5"></script>
+    <script src="{% static 'js/amCharts/themes/iredge-en.js' %}"></script>
+    <script src="{% static 'js/amCharts/contenido/dashboard-en.js' %}?v=1.0.5"></script>
 {% endblock %}
 {% block otherstyles %}
     <link rel="stylesheet" href="{% static 'css/jquery-ui.css' %}">

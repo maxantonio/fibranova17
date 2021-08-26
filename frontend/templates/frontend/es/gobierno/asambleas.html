@@ -196,50 +196,83 @@
 {% endblock %}
 
 {% block otherscripts %}
-    <script !src="">
-        var trime = $('#table1').DataTable({
-            "language": {
-                "lengthMenu": "Mostrar en bloques de  _MENU_  registros",
-                "zeroRecords": "No se he encontrado",
-                "info": "Mostrando desde _START_ hasta _END_ de _TOTAL_ registros",
-                "infoEmpty": "No hay registros disponibles",
-                "infoFiltered": "(filtrado de _MAX_ registros en total)",
-                "sSearch": "Buscar:",
-                "oPaginate": {
-                    "sFirst": "Primero",
-                    "sPrevious": "Anterior",
-                    "sNext": "Siguiente",
-                    "sLast": "Último"
-                }
-            },
-            "pagingType": $(window).width() < 768 ? "full" : "full_numbers",
-            "bSort": true,
-            "order": [[1, 'desc']],
-            "dom": "<'row'<'col-lg-9 d-flex align-items-center'l><'col-lg-3'<'#year.mb-2 mr-5 d-flex align-items-center'>>" +
-                "<'row'<'col-sm-12'tr>>" +
-                "<'row'<'col-sm-12 col-md-5'i><'col-sm-12 col-md-7'p>>",
-            initComplete: function () {
-                var label = $('<label class="mb-0" style="margin-right:10px;">Año</label>')
-                    .appendTo($('#year'));
-                var select = $('<select class="form-control form-control-sm" id="t_doc"><option value="">Todos</option></select>')
-                    .appendTo($('#year'))
-                    .on('change', function () {
-                        trime
-                            .columns(1)
-                            .search($(this).val())
-                            .draw();
+    <script>
+        if (locale === 'es') {
+            var trime = $('#table1').DataTable({
+                "language": {
+                    "lengthMenu": "Mostrar en bloques de  _MENU_  registros",
+                    "zeroRecords": "No se he encontrado",
+                    "info": "Mostrando desde _START_ hasta _END_ de _TOTAL_ registros",
+                    "infoEmpty": "No hay registros disponibles",
+                    "infoFiltered": "(filtrado de _MAX_ registros en total)",
+                    "sSearch": "Buscar:",
+                    "oPaginate": {
+                        "sFirst": "Primero",
+                        "sPrevious": "Anterior",
+                        "sNext": "Siguiente",
+                        "sLast": "Último"
+                    }
+                },
+                "pagingType": $(window).width() < 768 ? "full" : "full_numbers",
+                "bSort": true,
+                "order": [[1, 'desc']],
+                "dom": "<'row'<'col-lg-9 d-flex align-items-center'l><'col-lg-3'<'#year.mb-2 mr-5 d-flex align-items-center'>>" +
+                    "<'row'<'col-sm-12'tr>>" +
+                    "<'row'<'col-sm-12 col-md-5'i><'col-sm-12 col-md-7'p>>",
+                initComplete: function () {
+                    var label = $('<label class="mb-0" style="margin-right:10px;">Año</label>')
+                        .appendTo($('#year'));
+                    var select = $('<select class="form-control form-control-sm" id="t_doc"><option value="">Todos</option></select>')
+                        .appendTo($('#year'))
+                        .on('change', function () {
+                            trime
+                                .columns(1)
+                                .search($(this).val())
+                                .draw();
+                        });
+                    var array_years = [
+                        {tipo: 2021, name: '2021'},
+                        {tipo: 2020, name: '2020'},
+                        {tipo: 2019, name: '2019'},
+                        {tipo: 2018, name: '2018'},
+                        {tipo: 2017, name: '2017'},
+                    ];
+                    $.each(array_years, function (index, value) {
+                        select.append('<option value="' + value.tipo + '">' + value.name + '</option>')
                     });
-                var array_years = [
-                    {tipo: 2021, name: '2021'},
-                    {tipo: 2020, name: '2020'},
-                    {tipo: 2019, name: '2019'},
-                    {tipo: 2018, name: '2018'},
-                    {tipo: 2017, name: '2017'},
-                ];
-                $.each(array_years, function (index, value) {
-                    select.append('<option value="' + value.tipo + '">' + value.name + '</option>')
-                });
-            }
-        });
+                }
+            });
+        } else {
+            var trime = $('#table1').DataTable({
+                "pagingType": $(window).width() < 768 ? "full" : "full_numbers",
+                "bSort": true,
+                "order": [[1, 'desc']],
+                "dom": "<'row'<'col-lg-9 d-flex align-items-center'l><'col-lg-3'<'#year.mb-2 mr-5 d-flex align-items-center'>>" +
+                    "<'row'<'col-sm-12'tr>>" +
+                    "<'row'<'col-sm-12 col-md-5'i><'col-sm-12 col-md-7'p>>",
+                initComplete: function () {
+                    var label = $('<label class="mb-0" style="margin-right:10px;">Year</label>')
+                        .appendTo($('#year'));
+                    var select = $('<select class="form-control form-control-sm" id="t_doc"><option value="">All</option></select>')
+                        .appendTo($('#year'))
+                        .on('change', function () {
+                            trime
+                                .columns(1)
+                                .search($(this).val())
+                                .draw();
+                        });
+                    var array_years = [
+                        {tipo: 2021, name: '2021'},
+                        {tipo: 2020, name: '2020'},
+                        {tipo: 2019, name: '2019'},
+                        {tipo: 2018, name: '2018'},
+                        {tipo: 2017, name: '2017'},
+                    ];
+                    $.each(array_years, function (index, value) {
+                        select.append('<option value="' + value.tipo + '">' + value.name + '</option>')
+                    });
+                }
+            });
+        }
     </script>
 {% endblock %}
