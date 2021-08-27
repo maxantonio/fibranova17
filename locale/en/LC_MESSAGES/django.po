@@ -117,7 +117,7 @@ msgstr "Portfolio"
 #: .\frontend\templates\partials\footer.html:116
 #: .\frontend\templates\partials\menu.html:25
 msgid "Eventos Relevantes"
-msgstr "Latest Developments"
+msgstr "Relevant Events"
 
 #: .\frontend\templates\partials\footer.html:117
 #: .\frontend\templates\partials\menu.html:40
@@ -148,7 +148,7 @@ msgstr "Stay updated"
 
 #: .\frontend\templates\partials\footer.html:191
 msgid "Suscríbete para recibir información relacionada con FNOVA"
-msgstr ""
+msgstr "Sign up to our newsletter to receive all the latest information related to FNOVA"
 
 #: .\frontend\templates\partials\footer.html:197
 msgid "Correo electrónico"
@@ -189,7 +189,7 @@ msgstr "Quarterly Reports"
 
 #: .\frontend\templates\partials\menu.html:24
 msgid "Fundamentales"
-msgstr ""
+msgstr "Fundamentals"
 
 #: .\frontend\templates\partials\menu.html:26
 msgid ""
@@ -199,7 +199,7 @@ msgstr ""
 
 #: .\frontend\templates\partials\menu.html:27
 msgid "Cómo Invertir"
-msgstr ""
+msgstr "How to invest"
 
 #: .\frontend\templates\partials\menu.html:28
 msgid "Preguntas Frecuentes"
@@ -231,9 +231,8 @@ msgstr "Distributions"
 
 #: .\frontend\templates\partials\menu.html:51
 msgid ""
-"Comportamiento <span style=\"text-transform: lowercase\">de</span> <span "
-"style=\"text-transform: lowercase\">la</span> acción"
-msgstr ""
+"Cotización"
+msgstr "Certificate Performance"
 
 #: .\frontend\templates\partials\menu.html:53
 msgid "Precios Históricos"
@@ -246,14 +245,14 @@ msgstr "Performance Calculator"
 
 #: .\frontend\templates\partials\menu.html:55
 msgid "Cobertura <span style=\"text-transform: lowercase\">de</span> Analistas"
-msgstr ""
+msgstr "Analyst Coverage"
 
 #: .\frontend\templates\partials\menu.html:58
 msgid "ESG"
 msgstr ""
 
 #: .\frontend\templates\partials\slider.html:97
-msgid "Portfolio"
+msgid "Portafolio"
 msgstr "Portfolio"
 
 #: .\frontend\templates\partials\slider.html:154
@@ -266,7 +265,7 @@ msgstr ""
 
 #: .\frontend\templates\partials\slider.html:210
 msgid "Reporte de resultados 2T21"
-msgstr "1Q21 Earnings Release "
+msgstr "2Q21 Earnings Release "
 
 #: .\frontend\templates\partials\slider.html:231
 msgid ""
