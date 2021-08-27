@@ -19,9 +19,9 @@ def contacto(request):
     return render(request, f'frontend/{request.LANGUAGE_CODE}/contacto.html', context)
 
 
-def noticias(request):
+def noticias(request, no):
     header_img = staticfiles_storage.url('images/background/noticias.png')
-    context = {'title': _('Noticias'), 'urlbase': urlbase, 'header_img': header_img}
+    context = {'title': _('Noticias'), 'urlbase': urlbase, 'header_img': header_img, 'no': no}
     return render(request, f'frontend/{request.LANGUAGE_CODE}/noticias.html', context)
 
 
