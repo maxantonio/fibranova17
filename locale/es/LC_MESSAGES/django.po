@@ -89,7 +89,7 @@ msgstr ""
 
 #: .\frontend\templates\partials\menu.html:11
 msgid "Portafolio"
-msgstr ""
+msgstr "Portafolio"
 
 #: .\frontend\templates\partials\menu.html:14
 msgid "Indicadores Operativos"
@@ -167,9 +167,8 @@ msgid "Precios Históricos"
 msgstr ""
 
 #: .\frontend\templates\partials\menu.html:54
-msgid ""
-"Calculadora <span style=\"text-transform: lowercase\">de</span> rendimientos"
-msgstr ""
+msgid "Calculadora"
+msgstr ""Calculadora de rendimientos"
 
 #: .\frontend\templates\partials\menu.html:55
 msgid "Cobertura <span style=\"text-transform: lowercase\">de</span> Analistas"
@@ -182,3 +181,7 @@ msgstr ""
 #: .\frontend\templates\partials\menu.html:59
 msgid "Contacto"
 msgstr ""
+
+
+msgid "Calculadora de Rendimientos"
+msgstr "Calculadora de Rendimientos"

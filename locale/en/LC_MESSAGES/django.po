@@ -109,11 +109,6 @@ msgstr "Key Links"
 msgid "Historia"
 msgstr "Our Journey"
 
-#: .\frontend\templates\partials\footer.html:114
-#: .\frontend\templates\partials\menu.html:11
-msgid "Portafolio"
-msgstr "Portfolio"
-
 #: .\frontend\templates\partials\footer.html:116
 #: .\frontend\templates\partials\menu.html:25 .\frontend\views.py:253
 msgid "Eventos Relevantes"
@@ -229,18 +224,12 @@ msgstr "Stock<br> Information"
 msgid "Distribuciones"
 msgstr "Distributions"
 
-#: .\frontend\templates\partials\menu.html:51
-msgid ""
-"Cotización"
-msgstr "Certificate Performance"
-
 #: .\frontend\templates\partials\menu.html:53
 msgid "Precios Históricos"
 msgstr "Historical Prices"
 
 #: .\frontend\templates\partials\menu.html:54
-msgid ""
-"Calculadora <span style=\"text-transform: lowercase\">de</span> rendimientos"
+msgid "Calculadora"
 msgstr "Performance Calculator"
 
 #: .\frontend\templates\partials\menu.html:55
@@ -265,7 +254,7 @@ msgstr ""
 
 #: .\frontend\templates\partials\slider.html:210
 msgid "Reporte de resultados 2T21"
-msgstr "2Q21 Earnings Release "
+msgstr "2Q21 Earnings Release"
 
 #: .\frontend\templates\partials\slider.html:231
 msgid ""
@@ -304,10 +293,6 @@ msgstr "Stock Performance"
 msgid "Precio Histórico"
 msgstr "Historical Prices"
 
-#: .\frontend\views.py:287
-msgid "Calculadora de Rendimientos"
-msgstr ""
-
 #: .\frontend\views.py:293
 msgid "Cobertura de Analistas"
 msgstr "Analyst Coverage"
@@ -319,3 +304,7 @@ msgstr "Prospectuses & Supplements"
 #: .\frontend\views.py:332
 msgid "Código de Ética"
 msgstr ""
+
+
+msgid "Calculadora de Rendimientos"
+msgstr "Performance Calculator"
