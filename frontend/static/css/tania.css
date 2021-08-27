@@ -225,7 +225,7 @@ input, button, select, textarea {
 }
 
 .gallery-item .lower-content {
-    min-height: 250px;
+    min-height: 260px;
 }
 
 .nosotros .row {
@@ -477,7 +477,8 @@ footer a {
     .modal-content {
         width: 100%;
     }
-    .modal-index .modal-content .card{
+
+    .modal-index .modal-content .card {
         margin-right: 5px;
         margin-left: 5px;
     }
@@ -1154,35 +1155,46 @@ th.datepicker-switch {
     font-weight: bold;
     margin-left: 10px;
 }
-.modal-index{
+
+.modal-index {
     width: 1024px;
     max-width: 1024px;
 }
-.modal-index .modal-content{
+
+.modal-index .modal-content {
     background-image: url("../images/fibranova_pop-01.jpg");
     background-size: cover;
     width: 1024px;
     max-width: 1024px;
     height: 400px;
 }
-.modal-index .modal-content .modal-header{
+
+.modal-index .modal-content .modal-header {
     border-bottom: none;
     height: 50px;
 }
+
 .modal-index .modal-content .card {
     margin-right: 400px;
-    background: rgba(255,255,255, 0.1);
+    background: rgba(255, 255, 255, 0.1);
     margin-left: 20px;
     padding: 10px;
     margin-top: 25px;
 }
+
 .modal-index button.close {
     top: 9px;
     right: 10px;
     color: darkgray;
     font-size: 25px;
 }
-.ml-3{
+
+.ml-3 {
     margin-left: 3.6em;
 }
+
 /**/
+
+.amChartsCompareList > div > div:last-child {
+    top: 6px !important;
+}

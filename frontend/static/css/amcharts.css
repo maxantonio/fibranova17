@@ -45,11 +45,6 @@
     color: #FFF;
 }
 
-
-.amChartsCompareList > div > div:last-child {
-    top: -2px !important;
-}
-
 select {
     border-radius: 5px;
     border: 1px solid rgb(169, 169, 169);
