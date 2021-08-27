@@ -220,7 +220,7 @@ def reportes_trimestrales(request):
     ]
 
     header_img = staticfiles_storage.url('images/background/reportes_trimestrales.png')
-    context = {'title': 'Reportes Trimestrales',
+    context = {'title': _('Reportes Trimestrales'),
                'annos': annos,
                'info': info,
                'urlbase': urlbase,
@@ -243,7 +243,7 @@ def fundamentales(request):
 
 def como_invertir(request):
     header_img = staticfiles_storage.url('images/background/como_invertir.png')
-    context = {'title': _('¿Cómo invertir en Fibra Nova?'),
+    context = {'title': _('Cómo Invertir'),
                'urlbase': urlbase, 'header_img': header_img}
     return render(request, f'frontend/{request.LANGUAGE_CODE}/inversionistas/como-invertir.html', context)
 
