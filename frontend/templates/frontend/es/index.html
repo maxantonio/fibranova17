@@ -15,7 +15,8 @@
                             <div class="icon-box">
                                 <img src="{% static 'images/contenido/icono1.png' %}" alt="">
                             </div>
-                            <h3><a href="{% url 'frontend:portafolio' tab='manufactura' %}">Portafolio Industrial</a></h3>
+                            <h3><a href="{% url 'frontend:portafolio' tab='manufactura' %}">Portafolio Industrial</a>
+                            </h3>
                             <div class="text">
                                 <p>18 propiedades</p>
                                 <p>262,837 m<sup>2</sup></p>
@@ -101,7 +102,8 @@
                         </figure>
                         <div class="content">
                             <div class="icon-box"><img src="{% static 'images/contenido/icono2.png' %}" alt=""></div>
-                            <h3><a href="{% url 'frontend:portafolio' tab='educacion' %}">Portafolio Agroindustrial</a></h3>
+                            <h3><a href="{% url 'frontend:portafolio' tab='educacion' %}">Portafolio Agroindustrial</a>
+                            </h3>
                             <div class="text">
                                 <p>2 propiedades</p>
                                 <p>1,645 ha</p>
@@ -120,7 +122,7 @@
              style="background-image:url({% static 'images/background/parallax-3.jpg' %});">
         <div class="auto-container">
             <!--Sec Title-->
-            <div class="sec-title light centered wow fadeInUp"  data-wow-duration="1.5s" >
+            <div class="sec-title light centered wow fadeInUp" data-wow-duration="1.5s">
                 <h2>FIBRA NOVA EN NÚMEROS (2T21)</h2>
             </div>
             <div class="fact-counter">
@@ -132,7 +134,7 @@
                             <div class="inner">
                                 <div class="count-outer count-box">
                                     <span class="count-text" data-speed="3500" data-stop="846">0</span><span
-                                        class="plus-icon">+</span>
+                                        class="" style="color: white;">+</span>
                                 </div>
                                 <h4 class="counter-title">Rentas Anualizadas (Ps. mills.)</h4>
                             </div>
@@ -180,7 +182,7 @@
     <section class="news-section sp-two grey-bg">
         <div class="auto-container">
             <!--Sec Title-->
-            <div class="sec-title wow fadeInUpBig"  data-wow-duration="1.5s" >
+            <div class="sec-title wow fadeInUpBig" data-wow-duration="1.5s">
                 <h2>Eventos Destacados</h2>
             </div>
             <div class="row clearfix">
@@ -205,9 +207,9 @@
                             <a href="{{ urlbase }}/InformacionFinanciera/ReportesTrimestrales/2021-2T21.pdf"
                                target="_blank" class="detail">Ver más <span
                                     class="fa fa-angle-right"></span></a>
-{#                            <a href="{{ urlbase }}/InformacionFinanciera/ReportesTrimestrales/2021-2T21.pdf"#}
-{#                               target="_blank" class="detail">Ver más <span#}
-{#                                    class="fa fa-angle-right"></span></a>#}
+                            {#                            <a href="{{ urlbase }}/InformacionFinanciera/ReportesTrimestrales/2021-2T21.pdf"#}
+                            {#                               target="_blank" class="detail">Ver más <span#}
+                            {#                                    class="fa fa-angle-right"></span></a>#}
                         </div>
                     </div>
                 </div>
@@ -216,42 +218,36 @@
                 <div class="news-block col-md-4 col-sm-6 col-xs-12  wow fadeInRightBig">
                     <div class="inner-box">
                         <div class="image">
-                            <a target="_blank"
-                               href="{% url 'frontend:noticia' no=28 %}"><img
+                            <a href="{% url 'frontend:noticias' no=35 %}"><img
                                     src="{% static 'images/contenido/contrato.png' %}"
                                     alt=""/></a>
                         </div>
                         <div class="lower-content">
                             <!--<div class="author">08-10-2018</div>-->
-                            <h3><a target="_blank"
-                                   href="{% url 'frontend:noticia' no=28 %}">Fibra Nova firma promesa de compraventa </a></h3>
+                            <h3><a href="{% url 'frontend:noticias' no=35 %}">Nuevo contrato de arrendamiento en Ciudad
+                                Juarez</a></h3>
                             <div class="text">
                             </div>
-                            <a target="_blank"
-                               href="{% url 'frontend:noticia' no=28 %}"
+                            <a href="{% url 'frontend:noticias' no=35 %}"
                                class="detail">Ver más <span
                                     class="fa fa-angle-right"></span></a>
                         </div>
                     </div>
                 </div>
 
-                <!--News Block-->
                 <div class="news-block col-md-4 col-sm-6 col-xs-12  wow fadeInLeftBig">
                     <div class="inner-box">
                         <div class="image">
-                            <a target="_blank"
-                               href="{% url 'frontend:noticia' no=27 %}"><img
+                            <a href="{% url 'frontend:noticias' no=30 %}"><img
                                     src="{% static 'images/contenido/firma_promesa.png' %}"
                                     alt=""/></a>
                         </div>
                         <div class="lower-content">
-                            <!--<div class="author">22-10-2017</div>-->
-                            <h3><a target="_blank"
-                                   href="{% url 'frontend:noticia' no=27 %}">Nuevo contrato de arrendamiento en Ciudad Juárez</a></h3>
+                            <h3><a href="{% url 'frontend:noticias' no=30 %}">Nuevo contrato de arrendamiento en
+                                Reynosa</a></h3>
                             <div class="text">
                             </div>
-                            <a target="_blank"
-                               href="{% url 'frontend:noticia' no=27 %}"
+                            <a href="{% url 'frontend:noticias' no=30 %}"
                                class="detail">Ver más <span
                                     class="arrow flaticon-arrow-pointing-to-right"></span></a>
                         </div>
@@ -352,10 +348,12 @@
             </div>
             <div class="row d-flex align-items-center">
                 <div class="col-md-4">
-                    <h4>Proyectos ubicados en zonas con un alto potencial de crecimiento económico y demográfico en {{ Presencia_ciudades }} ciudades de {{ Presencia_entidades }} entidades federativas</h4>
+                    <h4>Proyectos ubicados en zonas con un alto potencial de crecimiento económico y demográfico
+                        en {{ Presencia_ciudades }} ciudades de {{ Presencia_entidades }} entidades federativas</h4>
                     <br><br>
                     <div class="btns-wrap">
-                        <a href="{% url 'frontend:perfil-presencia-geografica' %}" class="theme-btn btn-style-one"> Conocer más</a>
+                        <a href="{% url 'frontend:perfil-presencia-geografica' %}" class="theme-btn btn-style-one">
+                            Conocer más</a>
                     </div>
 
                 </div>
@@ -372,63 +370,63 @@
     <!--End Clients Section-->
     <!--INVITACIÓN TRIMESTRAL INICIO-->
     <div id="myModal" class="modal">
-        <div class="modal-dialog modal-confirm modal-index" >
+        <div class="modal-dialog modal-confirm modal-index">
             <div class="modal-content">
                 <div class="modal-header border-bottom-0">
-                    <h3 style="width: 100%;text-align: center"> </h3>
+                    <h3 style="width: 100%;text-align: center"></h3>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">×</span>
                     </button>
                 </div>
                 <div class="modal-body">
-                  <div class="card">
-                      <div class="row justify-content-center">
-                          <div class="col-md-11 text-center">
-                              <h5>FIBRA NOVA LE INVITA A PARTICIPAR EN SU</h5>
-                              <h4 style="color: #5254ce">CONFERENCIA TELEFÓNICA</h4>
-                              <h5>DE RESULTADOS DEL</h5>
-                              <h4 style="color: #5254ce">TERCER TRIMESTRE DE 2021</h4>
-                          </div>
-                      </div>
-
-                    <div class="row">
-                        <div class="col-md-7">
-                            <p>
-                                <label for="">Fecha:</label>
-                                Jueves XX de octubre de 2021
-                            </p>
-                            <p>
-                                <label for="">Hora:</label>
-                                xx:xx a.m. (Hora del centro,México)<br/>
-                                <span class="ml-3">xx:xx a.m. (Hora del Este, N.Y.</span>
-                            </p>
-                            <p>
-                                <label>Números de marcación:</label><br/>
-                                EE. UU.:+1-XXX-XXX-XXXX<br/>
-                                Internacional (México):+1-XX-XXX-XXXX<br/>
-                            </p>
-                            <p>
-                                <label for="">Publicación de resultados 3T21:</label><br/>
-                                XXXXXX XX de octubre de 2021<br/>
-                                (al cierre de mercado)
-                            </p>
+                    <div class="card">
+                        <div class="row justify-content-center">
+                            <div class="col-md-11 text-center">
+                                <h5>FIBRA NOVA LE INVITA A PARTICIPAR EN SU</h5>
+                                <h4 style="color: #5254ce">CONFERENCIA TELEFÓNICA</h4>
+                                <h5>DE RESULTADOS DEL</h5>
+                                <h4 style="color: #5254ce">TERCER TRIMESTRE DE 2021</h4>
+                            </div>
                         </div>
-                        <div class="col-md-5">
-                            <p>
-                                <label for="">Dirigida por:</label><br/>
+
+                        <div class="row">
+                            <div class="col-md-7">
+                                <p>
+                                    <label for="">Fecha:</label>
+                                    Jueves XX de octubre de 2021
+                                </p>
+                                <p>
+                                    <label for="">Hora:</label>
+                                    xx:xx a.m. (Hora del centro,México)<br/>
+                                    <span class="ml-3">xx:xx a.m. (Hora del Este, N.Y.</span>
+                                </p>
+                                <p>
+                                    <label>Números de marcación:</label><br/>
+                                    EE. UU.:+1-XXX-XXX-XXXX<br/>
+                                    Internacional (México):+1-XX-XXX-XXXX<br/>
+                                </p>
+                                <p>
+                                    <label for="">Publicación de resultados 3T21:</label><br/>
+                                    XXXXXX XX de octubre de 2021<br/>
+                                    (al cierre de mercado)
+                                </p>
+                            </div>
+                            <div class="col-md-5">
+                                <p>
+                                    <label for="">Dirigida por:</label><br/>
                                     <span>XXXX XXXX,Director XXXX</span><br/>
                                     <span>XXXX XXXX,Director de XXXX</span><br/>
                                     <span>XXXX XXXX,Director de  XXXX</span>
-                            </p>
-                            <p><label for="">Código de acceso:</label>XXXX</p>
-                            <br/>
-                            <p><label for="">Para mayor información:</label><br/>
-                                XXXXxxx@xxxxx.com<br/>
-                                Tel. +XXXXXXXXX
-                            </p>
+                                </p>
+                                <p><label for="">Código de acceso:</label>XXXX</p>
+                                <br/>
+                                <p><label for="">Para mayor información:</label><br/>
+                                    XXXXxxx@xxxxx.com<br/>
+                                    Tel. +XXXXXXXXX
+                                </p>
+                            </div>
                         </div>
                     </div>
-                  </div>
                 </div>
             </div>
         </div>
@@ -439,8 +437,8 @@
 {% endblock %}
 {% block otherscripts %}
     <script>
-    $(function(){
-        $('#myModal').modal('show');
-    })
+        $(function () {
+            $('#myModal').modal('show');
+        })
     </script>
 {% endblock %}

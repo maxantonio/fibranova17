@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-26 12:03-0400\n"
+"POT-Creation-Date: 2021-08-27 15:28-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -51,7 +51,7 @@ msgid "Estados"
 msgstr ""
 
 #: .\frontend\templates\frontend\es\perfil\presencia_geografica.html:28
-#: .\frontend\templates\partials\menu.html:13
+#: .\frontend\templates\partials\menu.html:13 .\frontend\views.py:43
 msgid "Propiedades"
 msgstr "Properties"
 
@@ -105,7 +105,7 @@ msgid "Enlaces sugeridos"
 msgstr "Key Links"
 
 #: .\frontend\templates\partials\footer.html:113
-#: .\frontend\templates\partials\menu.html:7
+#: .\frontend\templates\partials\menu.html:7 .\frontend\views.py:63
 msgid "Historia"
 msgstr "Our Journey"
 
@@ -115,17 +115,17 @@ msgid "Portafolio"
 msgstr "Portfolio"
 
 #: .\frontend\templates\partials\footer.html:116
-#: .\frontend\templates\partials\menu.html:25
+#: .\frontend\templates\partials\menu.html:25 .\frontend\views.py:253
 msgid "Eventos Relevantes"
 msgstr "Relevant Events"
 
 #: .\frontend\templates\partials\footer.html:117
-#: .\frontend\templates\partials\menu.html:40
+#: .\frontend\templates\partials\menu.html:40 .\frontend\views.py:302
 msgid "Directivos"
 msgstr "Executive Officers"
 
 #: .\frontend\templates\partials\footer.html:149
-#: .\frontend\templates\partials\menu.html:59
+#: .\frontend\templates\partials\menu.html:59 .\frontend\views.py:18
 msgid "Contacto"
 msgstr "Contact us"
 
@@ -163,23 +163,23 @@ msgid "Perfil"
 msgstr "Profile"
 
 #: .\frontend\templates\partials\menu.html:5
-#: .\frontend\templates\partials\slider.html:175
+#: .\frontend\templates\partials\slider.html:175 .\frontend\views.py:51
 msgid "Nosotros"
 msgstr "About Us"
 
-#: .\frontend\templates\partials\menu.html:6
+#: .\frontend\templates\partials\menu.html:6 .\frontend\views.py:57
 msgid "Presencia Geográfica"
 msgstr "Our Presence"
 
-#: .\frontend\templates\partials\menu.html:8
+#: .\frontend\templates\partials\menu.html:8 .\frontend\views.py:69
 msgid "Estrategia"
 msgstr "Our Business Strategy"
 
-#: .\frontend\templates\partials\menu.html:14
+#: .\frontend\templates\partials\menu.html:14 .\frontend\views.py:37
 msgid "Indicadores Operativos"
 msgstr "Operating Metrics"
 
-#: .\frontend\templates\partials\menu.html:18
+#: .\frontend\templates\partials\menu.html:18 .\frontend\views.py:24
 msgid "Noticias"
 msgstr "Press releases"
 
@@ -187,9 +187,9 @@ msgstr "Press releases"
 msgid "Reportes Trimestrales"
 msgstr "Quarterly Reports"
 
-#: .\frontend\templates\partials\menu.html:24
+#: .\frontend\templates\partials\menu.html:24 .\frontend\views.py:240
 msgid "Fundamentales"
-msgstr "Fundamentals"
+msgstr "KPIs"
 
 #: .\frontend\templates\partials\menu.html:26
 msgid ""
@@ -201,7 +201,7 @@ msgstr ""
 msgid "Cómo Invertir"
 msgstr "How to invest"
 
-#: .\frontend\templates\partials\menu.html:28
+#: .\frontend\templates\partials\menu.html:28 .\frontend\views.py:260
 msgid "Preguntas Frecuentes"
 msgstr "FAQ<span style=\"text-transform: lowercase\">s</span>"
 
@@ -209,15 +209,15 @@ msgstr "FAQ<span style=\"text-transform: lowercase\">s</span>"
 msgid "Gobierno <br>Corporativo"
 msgstr "Corporate <br>Governance"
 
-#: .\frontend\templates\partials\menu.html:41
+#: .\frontend\templates\partials\menu.html:41 .\frontend\views.py:308
 msgid "Comités"
 msgstr "Committees"
 
-#: .\frontend\templates\partials\menu.html:42
+#: .\frontend\templates\partials\menu.html:42 .\frontend\views.py:314
 msgid "Auditor Externo"
 msgstr "Independent Auditor"
 
-#: .\frontend\templates\partials\menu.html:43
+#: .\frontend\templates\partials\menu.html:43 .\frontend\views.py:326
 msgid "Asambleas"
 msgstr "Meetings"
 
@@ -225,7 +225,7 @@ msgstr "Meetings"
 msgid "Información<br> Bursátil"
 msgstr "Stock<br> Information"
 
-#: .\frontend\templates\partials\menu.html:50
+#: .\frontend\templates\partials\menu.html:50 .\frontend\views.py:266
 msgid "Distribuciones"
 msgstr "Distributions"
 
@@ -247,7 +247,7 @@ msgstr "Performance Calculator"
 msgid "Cobertura <span style=\"text-transform: lowercase\">de</span> Analistas"
 msgstr "Analyst Coverage"
 
-#: .\frontend\templates\partials\menu.html:58
+#: .\frontend\templates\partials\menu.html:58 .\frontend\views.py:338
 msgid "ESG"
 msgstr ""
 
@@ -275,6 +275,47 @@ msgstr ""
 "Fibra Nova's total revenues as of June 30, <br class=\"visible-xs visible-sm"
 "\">2021, amounted to Ps. 153.1 million."
 
-#: .\frontend\templates\partials\slider.html:253
+#: .\frontend\templates\partials\slider.html:254
+#: .\frontend\templates\partials\slider.html:257
 msgid "Descargar"
 msgstr "Download"
+
+#: .\frontend\views.py:30
+msgid "Noticia"
+msgstr "News"
+
+#: .\frontend\views.py:75
+msgid "Video Corporativo"
+msgstr "Corporate <br>Governance"
+
+#: .\frontend\views.py:234
+msgid "Reportes Anuales"
+msgstr "Quarterly Reports"
+
+#: .\frontend\views.py:246
+msgid "¿Cómo invertir en Fibra Nova?"
+msgstr "Learn more about Fibra Nova"
+
+#: .\frontend\views.py:275
+msgid "Cotización"
+msgstr "Stock Performance"
+
+#: .\frontend\views.py:281
+msgid "Precio Histórico"
+msgstr "Historical Prices"
+
+#: .\frontend\views.py:287
+msgid "Calculadora de Rendimientos"
+msgstr ""
+
+#: .\frontend\views.py:293
+msgid "Cobertura de Analistas"
+msgstr "Analyst Coverage"
+
+#: .\frontend\views.py:320
+msgid "Prospectos y Suplementos"
+msgstr "Prospectuses & Supplements"
+
+#: .\frontend\views.py:332
+msgid "Código de Ética"
+msgstr ""
