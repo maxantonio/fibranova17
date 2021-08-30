@@ -176,7 +176,7 @@ msgstr "Operating Metrics"
 
 #: .\frontend\templates\partials\menu.html:18 .\frontend\views.py:24
 msgid "Noticias"
-msgstr "Press releases"
+msgstr "News"
 
 #: .\frontend\templates\partials\menu.html:21
 msgid "Reportes Trimestrales"

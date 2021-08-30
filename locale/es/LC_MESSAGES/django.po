@@ -168,7 +168,7 @@ msgstr ""
 
 #: .\frontend\templates\partials\menu.html:54
 msgid "Calculadora"
-msgstr ""Calculadora de rendimientos"
+msgstr "Calculadora de rendimientos"
 
 #: .\frontend\templates\partials\menu.html:55
 msgid "Cobertura <span style=\"text-transform: lowercase\">de</span> Analistas"
