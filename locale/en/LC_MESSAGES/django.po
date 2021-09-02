@@ -275,7 +275,7 @@ msgstr "News"
 
 #: .\frontend\views.py:75
 msgid "Video Corporativo"
-msgstr "Corporate <br>Governance"
+msgstr "Corporate Video"
 
 #: .\frontend\views.py:234
 msgid "Reportes Anuales"
