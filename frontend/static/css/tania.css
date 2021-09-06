@@ -228,11 +228,6 @@ input, button, select, textarea {
     min-height: 260px;
 }
 
-.nosotros .row {
-    display: flex;
-    align-items: center;
-}
-
 .pt-0 {
     padding-top: 0 !important;
 }
