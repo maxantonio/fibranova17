@@ -472,17 +472,6 @@ footer a {
     color: #ffffff !important;
 }
 
-/* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px) {
-    .modal-content {
-        width: 100%;
-    }
-
-    .modal-index .modal-content .card {
-        margin-right: 5px;
-        margin-left: 5px;
-    }
-}
 
 @media (min-width: 993px) and (max-width: 1200px) {
     .testimonial-block-four .inner-box {
@@ -505,7 +494,11 @@ footer a {
     }
 
 }
-
+.d-md-flex {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important
+}
 @media (min-width: 500px) and (max-width: 763px) {
     .testimonial-block-four .inner-box {
         min-height: 600px;
@@ -514,9 +507,16 @@ footer a {
     #text1, #text2 {
         font-size: 25px;
     }
+    .d-md-flex {
+
+        display: block !important
+    }
 }
 
 @media (max-width: 499px) {
+    .d-md-flex {
+        display: block !important
+    }
     .testimonial-block-four .inner-box {
         min-height: 900px;
     }
@@ -1197,4 +1197,45 @@ th.datepicker-switch {
 
 .amChartsCompareList > div > div:last-child {
     top: 6px !important;
+}
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px) {
+    .modal-content {
+        width: 100%;
+    }
+    .modal-index .modal-content .card {
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+    .modal-index {
+        width: 98%;
+        max-width: 98%;
+    }
+
+    .modal-index .modal-content {
+        background-image: url("../images/fibranova_pop-01.jpg");
+        background-size: cover;
+        width: 98%;
+        max-width: 98%;
+        height: 540px;
+    }
+
+    .modal-index .d-sm-none{
+        display: none;
+    }
+
+    .modal-index .modal-content .card {
+        /*margin-right: 400px;*/
+        background: rgba(255, 255, 255, 0.1);
+        margin-left: 1%;
+        padding: 5px;
+        margin-top: 55px;
+    }
+
+    .modal-index button.close {
+        top: 20px;
+        right: 10px;
+        color: darkgray;
+        font-size: 25px;
+    }
 }
