@@ -494,11 +494,13 @@ footer a {
     }
 
 }
+
 .d-md-flex {
     display: -webkit-box !important;
     display: -ms-flexbox !important;
     display: flex !important
 }
+
 @media (min-width: 500px) and (max-width: 763px) {
     .testimonial-block-four .inner-box {
         min-height: 600px;
@@ -507,6 +509,7 @@ footer a {
     #text1, #text2 {
         font-size: 25px;
     }
+
     .d-md-flex {
 
         display: block !important
@@ -517,6 +520,7 @@ footer a {
     .d-md-flex {
         display: block !important
     }
+
     .testimonial-block-four .inner-box {
         min-height: 900px;
     }
@@ -1198,15 +1202,18 @@ th.datepicker-switch {
 .amChartsCompareList > div > div:last-child {
     top: 6px !important;
 }
+
 /* 100% Image Width on Smaller Screens */
 @media only screen and (max-width: 700px) {
     .modal-content {
         width: 100%;
     }
+
     .modal-index .modal-content .card {
         margin-right: 5px;
         margin-left: 5px;
     }
+
     .modal-index {
         width: 98%;
         max-width: 98%;
@@ -1220,7 +1227,7 @@ th.datepicker-switch {
         height: 540px;
     }
 
-    .modal-index .d-sm-none{
+    .modal-index .d-sm-none {
         display: none;
     }
 
@@ -1238,4 +1245,13 @@ th.datepicker-switch {
         color: darkgray;
         font-size: 25px;
     }
+}
+
+.invertir-ver {
+    display: flex;
+    visibility: visible;
+    animation-name: fadeInRight;
+    align-items: center;
+    background-image: url('../images/background/ganancias.jpg');
+    min-height: 250px;
 }
