@@ -68,7 +68,7 @@ msgid "Años de Vencimiento"
 msgstr ""
 
 #: .\frontend\templates\partials\footer.html:9
-msgid "Infórmate más"
+msgid "Infórmate mas"
 msgstr "Learn more"
 
 #: .\frontend\templates\partials\footer.html:18

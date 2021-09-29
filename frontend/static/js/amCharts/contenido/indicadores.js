@@ -165,10 +165,10 @@ var chart = AmCharts.makeChart("pie_4", {
     "dataProvider": [{
         "country": "MXN",
 
-        "litres": 44
+        "litres": 46
     }, {
         "country": "USD",
-        "litres": 56
+        "litres": 54
     }],
     "valueField": "litres",
     "titleField": "country",
